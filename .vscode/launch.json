@@ -1,0 +1,21 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug ANTLR4 grammar",
+            "type": "antlr-debug",
+            "request": "launch",
+            "input": "${file}",
+            "grammar": "/home/whr/Mx/antlr/MxParser.g4",
+            // 语法入口规则，我们的公式语法入口规则是 start 
+            //"startRule": "complileototal",
+            // 是否 打印/可视化 parse tree 
+            // "printParseTree": true,
+            "visualParseTree": true
+        }
+    ]
+    
+}
