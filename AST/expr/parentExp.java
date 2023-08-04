@@ -2,10 +2,9 @@ package AST.expr;
 
 import Utils.position;
 
-public class assignExp extends ExprNode{
-    public ExprNode l;
-    public ExprNode r;
-    public assignExp(position pos) {
+public class parentExp extends ExprNode{
+    public ExprNode expr;
+    public parentExp(position pos) {
         super(pos);
     }
 

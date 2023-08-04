@@ -4,7 +4,7 @@ import Utils.position;
 
 public class UnaryExp extends ExprNode{
     public ExprNode expr;
-    public char op;
+    public String op;
     public UnaryExp(position pos) {
         super(pos);
     }

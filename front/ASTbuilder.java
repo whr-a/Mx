@@ -4,6 +4,7 @@ import AST.*;
 import antlr.*;
 import antlr.MxParser.*;
 import AST.expr.*;
+import AST.expr.literal.literalNode;
 import AST.expr.literal.logicLiteral;
 import AST.expr.literal.nullLiteral;
 import AST.expr.literal.numberLiteral;
@@ -313,57 +314,129 @@ public class ASTbuilder extends MxParserBaseVisitor<Node>{
         lit.value = Integer.parseInt(ctx.IntegerLiteral().getText());
         return lit;
     }
-    @Override public T visitPostfixUpdateExpr(MxParser.PostfixUpdateExprContext ctx) {
+    @Override public postfixExp visitPostfixUpdateExpr(MxParser.PostfixUpdateExprContext ctx) {
+        postfixExp post = new postfixExp(new position(ctx));
+        post.exp = (ExprNode)visit(ctx.expression());
+        if(ctx.op.getText().equals("++"))post.op = true;
+        else post.op = false;
+        return post;
     }
-    @Override public T visitTernaryexp(MxParser.TernaryexpContext ctx) {
+    @Override public ternaryExp visitTernaryexp(MxParser.TernaryexpContext ctx) {
+        ternaryExp tern = new ternaryExp(new position(ctx));
+        tern.condition = (ExprNode)visit(ctx.a);
+        tern.trueExp = (ExprNode)visit(ctx.b);
+        tern.falseExp = (ExprNode)visit(ctx.c);
+        return tern;
     }
-    @Override public T visitBinaryExpr(MxParser.BinaryExprContext ctx) {
+    @Override public BinaryExp visitBinaryExpr(MxParser.BinaryExprContext ctx) {
+        String op;
+        op = ctx.op.getText();
+        BinaryExp binaryexp = new BinaryExp(new position(ctx),op, (ExprNode)visit(ctx.l), (ExprNode)visit(ctx.r));
+        return binaryexp;
     }
-    @Override public T visitNewExpr(MxParser.NewExprContext ctx) {
+    @Override public NewExprNode visitNewExpr(MxParser.NewExprContext ctx) {
+        NewExprNode news = (NewExprNode)visit(ctx.newExpression());
+        return news;
     }
-    @Override public T visitPrefixUpdateExpr(MxParser.PrefixUpdateExprContext ctx) {
+    @Override public prefixExp visitPrefixUpdateExpr(MxParser.PrefixUpdateExprContext ctx) {
+        prefixExp prefix = new prefixExp(new position(ctx));
+        prefix.exp = (ExprNode)visit(ctx.expression());
+        if(ctx.op.getText().equals("++"))prefix.op = true;
+        else prefix.op = false;
+        return prefix;
     }
-    @Override public T visitLhsExpr(MxParser.LhsExprContext ctx) {
+    @Override public ExprNode visitLhsExpr(MxParser.LhsExprContext ctx) {
+        ExprNode x = (ExprNode)visit(ctx.lhsExpression());
+        return x;
     }
-    @Override public T visitUnaryExpr(MxParser.UnaryExprContext ctx) {
+    @Override public UnaryExp visitUnaryExpr(MxParser.UnaryExprContext ctx) {
+        UnaryExp x = new UnaryExp(new position(ctx));
+        x.op = ctx.op.getText();
+        x.expr = (ExprNode)visit(ctx.r);
+        return x;
     }
-    @Override public T visitAssignExpr(MxParser.AssignExprContext ctx) {
+    @Override public assignExp visitAssignExpr(MxParser.AssignExprContext ctx) {
+        assignExp assign = new assignExp(new position(ctx));
+        assign.l = (ExprNode)visit(ctx.l);
+        assign.r = (ExprNode)visit(ctx.r);
+        return assign;
     }
     @Override public NewExprNode visitNewExpression(MxParser.NewExpressionContext ctx) {
         NewExprNode newexp;
         newexp = (NewExprNode)visit(ctx.newTypename());
         return newexp;
     }
-    @Override public T visitLiteralString(MxParser.LiteralStringContext ctx) {
+    @Override public stringLiteral visitLiteralString(MxParser.LiteralStringContext ctx) {
+        stringLiteral x = (stringLiteral)visit(ctx.stringLiteral());
+        return x;
     }
-    @Override public T visitLiteralThis(MxParser.LiteralThisContext ctx) {
+    @Override public thisLiteral visitLiteralThis(MxParser.LiteralThisContext ctx) {
+        thisLiteral x = (thisLiteral)visit(ctx.thisLiteral());
+        return x;
     }
-    @Override public T visitLiteralLogic(MxParser.LiteralLogicContext ctx) {
+    @Override public logicLiteral visitLiteralLogic(MxParser.LiteralLogicContext ctx) {
+        logicLiteral x = (logicLiteral)visit(ctx.logicLiteral());
+        return x;
     }
-    @Override public T visitLiteralNull(MxParser.LiteralNullContext ctx) {
+    @Override public nullLiteral visitLiteralNull(MxParser.LiteralNullContext ctx) {
+        nullLiteral x = (nullLiteral)visit(ctx.nullLiteral());
+        return x;
     }
-    @Override public T visitLiteralNumber(MxParser.LiteralNumberContext ctx) {   
+    @Override public numberLiteral visitLiteralNumber(MxParser.LiteralNumberContext ctx) {   
+        numberLiteral x = (numberLiteral)visit(ctx.numberLiteral());
+        return x;
     }
-    @Override public T visitArrayExpr(MxParser.ArrayExprContext ctx) {
+    @Override public ArrayExp visitArrayExpr(MxParser.ArrayExprContext ctx) {
+        ArrayExp t = new ArrayExp(new position(ctx),(ExprNode)visit(ctx.lhsExpression()),(ExprNode)visit(ctx.expression()));
+        return t;
     }
-    @Override public T visitMemberVariableAccessExpr(MxParser.MemberVariableAccessExprContext ctx) {
+    @Override public memeryvar visitMemberVariableAccessExpr(MxParser.MemberVariableAccessExprContext ctx) {
+        memeryvar vars = new memeryvar(new position(ctx));
+        vars.node = (ExprNode)visit(ctx.lhsExpression());
+        vars.variable = ctx.variable.getText();
+        return vars;
     }
-    @Override public T visitIdentifierExpr(MxParser.IdentifierExprContext ctx) {
+    @Override public identifierExp visitIdentifierExpr(MxParser.IdentifierExprContext ctx) {
+        identifierExp iden = new identifierExp(new position(ctx));
+        iden.name = ctx.identifier().getText();
+        return iden;
     }
-    @Override public T visitFunCallExpr(MxParser.FunCallExprContext ctx) {
+    @Override public FunctionExp visitFunCallExpr(MxParser.FunCallExprContext ctx) {
+        FunctionExp func = new FunctionExp(new position(ctx), ctx.identifier().getText());
+        func.args = (FuncCallArgsNode)visit(ctx.functionCallArgList());
+        return func;
     }
-    @Override public T visitLiteralExpr(MxParser.LiteralExprContext ctx) {
+    @Override public literalNode visitLiteralExpr(MxParser.LiteralExprContext ctx) {
+        literalNode lit = (literalNode)visit(ctx.literalExpression());
+        return lit;
     }
-    @Override public T visitParenthesesExpr(MxParser.ParenthesesExprContext ctx) {
+    @Override public parentExp visitParenthesesExpr(MxParser.ParenthesesExprContext ctx) {
+        parentExp par = new parentExp(new position(ctx));
+        par.expr = (ExprNode)visit(ctx.expression());
+        return par;
     }
-    @Override public T visitMemberFunctionAccessExpr(MxParser.MemberFunctionAccessExprContext ctx) {
+    @Override public memeryfunc visitMemberFunctionAccessExpr(MxParser.MemberFunctionAccessExprContext ctx) {
+        memeryfunc memfun = new memeryfunc(new position(ctx));
+        memfun.node = (ExprNode)visit(ctx.lhsExpression());
+        memfun.method = ctx.method.getText();
+        memfun.args = (FuncCallArgsNode)visit(ctx.functionCallArgList());
+        return memfun;
     }
-    @Override public T visitVoidType(MxParser.VoidTypeContext ctx) {
+    //以下四个函数不应当被用到
+    @Override public Node visitVoidType(MxParser.VoidTypeContext ctx) {
+        Node temp = new Node(null);
+        return temp;
     }
-    @Override public T visitBoolType(MxParser.BoolTypeContext ctx) {
+    @Override public Node visitBoolType(MxParser.BoolTypeContext ctx) {
+        Node temp = new Node(null);
+        return temp;
     }
-    @Override public T visitIntType(MxParser.IntTypeContext ctx) {
+    @Override public Node visitIntType(MxParser.IntTypeContext ctx) {
+        Node temp = new Node(null);
+        return temp;
     }
-    @Override public T visitStringType(MxParser.StringTypeContext ctx) {
+    @Override public Node visitStringType(MxParser.StringTypeContext ctx) {
+        Node temp = new Node(null);
+        return temp;
     }
 }

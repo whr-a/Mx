@@ -1,3 +1,9 @@
+class a{
+	int foo(int x,int y){
+		return 1;
+	}
+};
 int main(){
-	(new int[1][2][])[1];
+	a t;
+	t.foo(1,2);
 }

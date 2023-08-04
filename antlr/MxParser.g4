@@ -175,7 +175,6 @@ lhsExpression
     | lhsExpression '.' variable=identifier                           # MemberVariableAccessExpr
     | lhsExpression '.' method=identifier'(' functionCallArgList? ')' # MemberFunctionAccessExpr
     | lhsExpression '[' expression ']'                                # ArrayExpr
-    
     | identifier '(' functionCallArgList? ')'                         # FunCallExpr
     ;
 

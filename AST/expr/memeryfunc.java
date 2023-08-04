@@ -2,13 +2,13 @@ package AST.expr;
 
 import AST.FuncCallArgsNode;
 import Utils.position;
-//此文件是函数调用表达式
-public class FunctionExp extends ExprNode{
-    public String functionName;
+
+public class memeryfunc extends ExprNode{
+    public ExprNode node;
+    public String method;
     public FuncCallArgsNode args;
-    public FunctionExp(position pos,String funcName) {
+    public memeryfunc(position pos) {
         super(pos);
-        this.functionName = funcName;
     }
 
     @Override
