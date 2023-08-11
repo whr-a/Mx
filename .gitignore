@@ -1,0 +1,9 @@
+.idea
+.vscode
+gen
+out
+sema
+1.in
+judgelist.txt
+m.txt
+*.class

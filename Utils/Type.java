@@ -3,8 +3,8 @@ package Utils;
 
 public class Type{
     public String type;
-    public int dim;
-    public boolean is_Class;
+    public int dim = 0;
+    public boolean is_Class = false;
     public Type (String type){
         this.type = type;
         this.is_Class = false;
@@ -24,6 +24,9 @@ public class Type{
         Type t = (Type)obj;
         if(this.type.equals(t.type) && this.dim == t.dim)return true;
         else return false;
+    }
+    public boolean isReferenceType() {
+        return dim > 0 || is_Class;
     }
     public boolean is_array(){
         return dim>0;

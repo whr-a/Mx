@@ -1,6 +1,8 @@
 package AST.stmt;
 
 
+import AST.ASTVisitor;
+import AST.VarDefNode;
 import AST.expr.ExprNode;
 import Utils.position;
 
@@ -11,4 +13,9 @@ public class branchstmt extends StmtNode{
     public branchstmt(position pos) {
         super(pos);
     }
+    @Override
+    public void accept(ASTVisitor visitor) {
+        visitor.visit(this);
+    }
+
 }

@@ -1,5 +1,6 @@
 {
     "java.project.referencedLibraries": [
-        "/home/whr/Mx/antlr-4.11.1-complete.jar"
+        "/home/whr/Mx/antlr/antlr-4.13.0-complete.jar",
+        "/home/whr/Mx/antlr/antlr-4.13.0-runtime.jar"
     ]
 }

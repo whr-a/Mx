@@ -12,4 +12,8 @@ public class VarDefNode extends StmtNode{
     public VarDefNode(position pos){
         super(pos);
     }
+    @Override
+    public void accept(ASTVisitor visitor) {
+        visitor.visit(this);
+    }
 }

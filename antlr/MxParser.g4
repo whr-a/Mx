@@ -1,87 +1,90 @@
 parser grammar MxParser;
-
+@header{package antlr;}
 options {
   tokenVocab=MxLexer;
 }
 
-translationUnit: declaration* EOF;
-
-declaration
-    : functionDeclaration # FunctionDeclar
-    | classDeclaration    # ClassDeclar
-    | variableDeclaration # GlobalVariableDeclar
-    ;
+program: (functionDeclaration | classDeclaration | variableDeclaration)* EOF;
 
 // Function
 functionDeclaration
-    : typename identifier '(' functionDeclParamList? ')' body=blockStatement
+    : returnType Identifier '(' functionDeclParamList? ')' body=blockStatement
+    ;
+returnType
+    : typename
+    | Void
     ;
 functionDeclParamList
-    : (functionDeclParam ',')* functionDeclParam
-    ;
-functionDeclParam
-    : typename identifier
+    : (typename Identifier) (',' typename Identifier)*
     ;
 functionCallArgList
     : (expression ',')* expression
     ;
-
-// Class
-classDeclaration
-    : 'class' identifier '{' classComponents* '}' ';'
-    ;
-
-classComponents
-    : variableDeclaration    # ClassMemberDeclar
-    | functionDeclaration    # ClassMethodDeclar
-    | constructorDeclaration # ConstructorDeclar
-    ;
-
-constructorDeclaration
-    : identifier '(' ')' body=blockStatement
-    ;
-
-// statements
-statement
-    : blockStatement       # BlockStmt
-    | variableDeclaration  # VarDeclarStmt
-    | expressionStatement  # ExpressionStmt
-    | branchStatement      # BranchStmt
-    | loopStatement        # LoopStmt
-    | controlFlowStatement # CtrlFlowStmt
-    | emptyStatement       # EmptyStmt
-    ;
-
 blockStatement
     : '{' statement* '}'
     ;
+// Class
+classDeclaration
+    : 'class' Identifier '{' (variableDeclaration | functionDeclaration | constructorDeclaration)* '}' ';'
+    ;
 
+constructorDeclaration
+    : Identifier '(' ')' body=blockStatement
+    ;
 variableDeclaration
     : typename (initDeclarator ',')* initDeclarator ';'
     ;
 initDeclarator
-    : identifier ('=' initializer=expression)?
+    : Identifier ('=' initializer=expression)?
     ;
 
-expressionStatement
-    : expression ';'
+// typename
+//     : primitiveTypename # PrimitiveType
+//     | identifier        # ClassType
+//     | typename '[' ']'  # ArrayType
+//     ;
+typename
+    : typenames ('[' ']')*
+    ;
+typenames
+    : baseType | Identifier
+    ;
+baseType
+    : Int | Bool | String
+    ;
+// statements
+statement
+    : blockStatement
+    | variableDeclaration
+    | branchStatement
+    | forStatement | whileStatement
+    | continueStatement | breakStatement | returnStatement
+    | expressionStatement
     ;
 
 branchStatement
     : If '(' condition=expression ')' ifStatement=statement (Else elseStatement=statement)?
     ;
+whileStatement
+    : While '(' expression ')' statement
+    ;
 //variableDeclaration本身就有;
-loopStatement
-    : While '(' condition=expression ')' body=statement                                              # WhileLoop
-    | For '(' init=variableDeclaration condition=expression? ';' step=expression? ')' body=statement # DeclForLoop
-    | For '(' init=expression? ';'     condition=expression? ';' step=expression? ')' body=statement # ExprForLoop
+//loopStatement
+//    : While '(' condition=expression ')' body=statement                                              # WhileLoop
+//    | For '(' init=variableDeclaration condition=expression? ';' step=expression? ')' body=statement # DeclForLoop
+//    | For '(' init=expression? ';'     condition=expression? ';' step=expression? ')' body=statement # ExprForLoop
+//    ;
+forStatement : For '(' forInit expressionStatement expression? ')' statement;
+forInit : variableDeclaration | expressionStatement;
+//controlFlowStatement
+//    : continueStatement
+//    | breakStatement
+//    | returnStatement
+//    ;
+expressionStatement
+    : expression? ';'
     ;
 
-controlFlowStatement
-    : continueStatement # ContinueStmt
-    | breakStatement    # BreakStmt
-    | returnStatement   # ReturnStmt
-    ;
 continueStatement
     : Continue';'
     ;
@@ -92,57 +95,19 @@ returnStatement
     : Return expression?';'
     ;
 
-emptyStatement
-    : ';'
-    ;
 
-// Components
-typename
-    : primitiveTypename # PrimitiveType
-    | identifier        # ClassType
-    | typename '[' ']'  # ArrayType
-    ;
-
-newTypename
-    : identifier                                               # NewClass
-    | identifier newArrayExprCount+ newArrayEmptyCount*        # NewClassArray
-    | primitiveTypename newArrayExprCount+ newArrayEmptyCount* # NewPrimitiveArray
-    ;
-
-newArrayExprCount
-    : '[' expression ']'
-    ;
-newArrayEmptyCount
-    : '[' ']'
-    ;
-
-identifier
-    : Identifier
-    ;
-
-stringLiteral
-    : StringLiteral
-    ;
-thisLiteral
-    :'this'
-    ;
-logicLiteral
-    : 'true' | 'false'
-    ;
-nullLiteral
-    : 'null'
-    ;
-numberLiteral
-    : IntegerLiteral
-    ;
 
 // Expressions
 expression
-    : lhsExpression                                                        # LhsExpr
-    | newExpression                                                        # NewExpr
-    | expression op=('++' | '--')                                          # PostfixUpdateExpr
-    | (op='++' | op='--') expression                                       # PrefixUpdateExpr
-    | <assoc=right> op=('!' | '-' | '~' | '+')                r=expression # UnaryExpr
+    : '(' expression ')'                                                   # ParenthesesExpr
+    | 'new' typename (newArrayUnit)* ('(' ')')?                            # NewExpr
+    | expression op=OpMemberAccess Identifier                              # MemberExpr
+    | expression '[' expression ']'                                        # ArrayExpr
+    | expression '(' functionCallArgList? ')'                              # FuncExpr 
+    // | expression op=('++' | '--')                                          # PostfixUpdateExpr
+    | expression op=(OpIncre | OpDecre)                                    # UnaryExpr
+    | <assoc=right>(op='++' | op='--') expression                          # PrefixUpdateExpr
+    | <assoc=right> op=('!' | '-' | '~')                      r=expression # UnaryExpr
     | l=expression op=('*' | '/' | '%')                       r=expression # BinaryExpr
     | l=expression op=('+' | '-')                             r=expression # BinaryExpr
     | l=expression op=('<<' | '>>')                           r=expression # BinaryExpr
@@ -153,34 +118,14 @@ expression
     | l=expression op='&&'                                    r=expression # BinaryExpr
     | l=expression op='||'                                    r=expression # BinaryExpr
     | <assoc=right> a=expression op='?' b=expression ':'      c=expression # Ternaryexp
-    | <assoc=right> l=expression '='                       r=expression # AssignExpr
+    | <assoc=right> l=expression '='                          r=expression # AssignExpr
+    | primary                                                              # AtomExpr
     ;
 
-newExpression
-    : 'new' newTypename ('(' ')')?
-    ;
+newArrayUnit: '[' expression? ']';
 
-literalExpression
-    : stringLiteral # LiteralString
-    | thisLiteral   # LiteralThis
-    | logicLiteral  # LiteralLogic
-    | nullLiteral   # LiteralNull
-    | numberLiteral # LiteralNumber
-    ;
-
-lhsExpression
-    : identifier                                                      # IdentifierExpr
-    | literalExpression                                               # LiteralExpr
-    | '(' expression ')'                                              # ParenthesesExpr
-    | lhsExpression '.' variable=identifier                           # MemberVariableAccessExpr
-    | lhsExpression '.' method=identifier'(' functionCallArgList? ')' # MemberFunctionAccessExpr
-    | lhsExpression '[' expression ']'                                # ArrayExpr
-    | identifier '(' functionCallArgList? ')'                         # FunCallExpr
-    ;
-
-primitiveTypename
-    : Void   # VoidType
-    | Bool   # BoolType
-    | Int    # IntType
-    | String # StringType
-    ;
+primary
+  : IntegerLiteral | StringLiteral | True | False | Null
+  | Identifier
+  | This
+  ;

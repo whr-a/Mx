@@ -1,5 +1,6 @@
 package AST.expr;
 
+import AST.ASTVisitor;
 import Utils.position;
 
 public class BinaryExp extends ExprNode{
@@ -14,5 +15,9 @@ public class BinaryExp extends ExprNode{
     @Override
     public boolean isLeftValue() {
         return false;
+    }
+    @Override
+    public void accept(ASTVisitor visitor) {
+        visitor.visit(this);
     }
 }

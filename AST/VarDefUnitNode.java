@@ -18,5 +18,8 @@ public class VarDefUnitNode extends Node{
         this.name = name;
         this.inival = inival;
     }
-    
+    @Override
+    public void accept(ASTVisitor visitor) {
+        visitor.visit(this);
+    }
 }

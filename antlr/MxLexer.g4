@@ -1,5 +1,5 @@
 lexer grammar MxLexer;
-
+@header{package antlr;}
 // Comments
 
 LineComments: '//' ~[\r\n\u2028\u2029]* -> channel(HIDDEN);

@@ -5,15 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "Mx_769baa7a"
+        },
+        {
             "name": "Debug ANTLR4 grammar",
             "type": "antlr-debug",
             "request": "launch",
             "input": "${file}",
             "grammar": "/home/whr/Mx/antlr/MxParser.g4",
-            // 语法入口规则，我们的公式语法入口规则是 start 
-            //"startRule": "complileototal",
-            // 是否 打印/可视化 parse tree 
-            // "printParseTree": true,
             "visualParseTree": true
         }
     ]

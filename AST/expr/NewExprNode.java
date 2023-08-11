@@ -2,6 +2,7 @@ package AST.expr;
 
 import java.util.ArrayList;
 
+import AST.ASTVisitor;
 import Utils.position;
 
 public class NewExprNode extends ExprNode{
@@ -16,5 +17,9 @@ public class NewExprNode extends ExprNode{
     @Override
     public boolean isLeftValue() {
         return false;
+    }
+    @Override
+    public void accept(ASTVisitor visitor) {
+        visitor.visit(this);
     }
 }
