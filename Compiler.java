@@ -12,7 +12,7 @@ import org.antlr.v4.runtime.tree.*;
 
 import front.*;
 
-public class Main2 {
+public class Compiler {
     public static void main(String[] args) throws Exception {
 
 //        try {
