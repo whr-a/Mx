@@ -6,10 +6,10 @@ ANTLR_JAR = antlr/antlr-4.13.0-complete.jar
 .PHONY: all
 all: Compiler
 
+.PHONY: Compiler
+Compiler: $(JAVA_SRC)
+	javac -d bin $(JAVA_SRC) -cp $(ANTLR_JAR)
+
 .PHONY: clean
 clean:
-	rm -f bin/*.class bin/*.jar
-
-.PHONY: Compiler
-Compiler: clean
-	javac -d bin $(JAVA_SRC) -cp $(ANTLR_JAR)
+	find bin -name '*.class' -or -name '*.jar' | xargs rm -f
