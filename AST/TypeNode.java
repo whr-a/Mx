@@ -15,16 +15,11 @@ public class TypeNode extends Node implements BuiltinElements{
         super(pos);
         if (dim == 0) {
             switch (name) {
-                case "int":
-                this.type = IntType; break;
-                case "bool":
-                this.type = BoolType; break;
-                case "string":
-                this.type = StringType; break;
-                case "void":
-                this.type = VoidType; break;
-                default:
-                this.type = new Type(name);
+                case "int" -> this.type = IntType;
+                case "bool" -> this.type = BoolType;
+                case "string" -> this.type = StringType;
+                case "void" -> this.type = VoidType;
+                default -> this.type = new Type(name);
             }
         } else {
             this.type = new Type(name, dim);
@@ -33,16 +28,11 @@ public class TypeNode extends Node implements BuiltinElements{
     public TypeNode(position pos, String name) {
         super(pos);
         switch (name) {
-            case "int":
-                this.type = IntType; break;
-            case "bool":
-                this.type = BoolType; break;
-            case "string":
-                this.type = StringType; break;
-            case "void":
-                this.type = VoidType; break;
-            default:
-                this.type = new Type(name);
+            case "int" -> this.type = IntType;
+            case "bool" -> this.type = BoolType;
+            case "string" -> this.type = StringType;
+            case "void" -> this.type = VoidType;
+            default -> this.type = new Type(name);
         }
     }
     @Override

@@ -22,7 +22,8 @@ public class ClassDefNode extends Node{
     public Type getVarType(String name) {
         VarDefUnitNode unit = varMember.get(name);
         if (unit == null) return null;
-        return unit.type.type;
+        else return unit.type.type;
+
     }
     @Override
     public void accept(ASTVisitor visitor) {

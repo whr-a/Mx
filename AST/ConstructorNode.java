@@ -5,7 +5,7 @@ import Utils.position;
 public class ConstructorNode extends Node{
     public String name;
     public StmtNode stmts;
-    public FuncDefNode info;
+//    public FuncDefNode info;
     public ConstructorNode(position pos) {
         super(pos);
     }

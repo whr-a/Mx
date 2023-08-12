@@ -17,9 +17,9 @@ public class SemanticChecker implements ASTVisitor, BuiltinElements{
         FuncDefNode mainfunc = globalScope.getFuncDef("main");
 //        for(var def : globalScope.funcMember)
         if (mainfunc == null || (!mainfunc.returnType.type.equals(IntType)) || mainfunc.args != null){
-//            if(mainfunc==null)System.out.print("shit");
-//            if(!mainfunc.returnType.type.equals(IntType))System.out.print("fuck");
-//            if(mainfunc.args != null)System.out.print("oprer");
+//            if(mainfunc==null)System.out.print("1");
+//            if(!mainfunc.returnType.type.equals(IntType))System.out.print("2");
+//            if(mainfunc.args != null)System.out.print("3");
             throw new BaseError(node.pos, "do not have correct main function");
         }
 
@@ -42,6 +42,8 @@ public class SemanticChecker implements ASTVisitor, BuiltinElements{
 
     @Override
     public void visit(FuncDefNode node) {
+//        if(currentScope.hasVarInThisScope(node.funcName))
+//            throw new BaseError(node.pos, "Function " +node.funcName +" have the same name to a variable");//this change
         node.returnType.accept(this);
         currentScope = new Scope(currentScope, node.returnType.type);
         if (node.args != null)node.args.accept(this);
@@ -114,7 +116,7 @@ public class SemanticChecker implements ASTVisitor, BuiltinElements{
         if (VoidType.equals(node.l.type) || VoidType.equals(node.r.type))
             throw new BaseError(node.pos, "invalid expression");
         //引用类别可以赋值成null
-        if (!node.l.type.equals(node.r.type) && (!node.l.type.isReferenceType() || !NullType.equals(node.r.type)))
+        if (!node.l.type.equals(node.r.type) && (!(node.l.type.isReferenceType() && NullType.equals(node.r.type))))
             throw new BaseError(node.pos, "Type mismatch");
         node.type = node.l.type;
         if (!node.l.isLeftValue())

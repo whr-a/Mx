@@ -13,9 +13,7 @@ public class VarDefUnitNode extends Node{
         this.name = name;
     }
     public VarDefUnitNode(position pos,TypeNode type,String name,ExprNode inival){
-        super(pos);
-        this.type = type;
-        this.name = name;
+        this(pos,type,name);
         this.inival = inival;
     }
     @Override

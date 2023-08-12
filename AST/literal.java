@@ -15,3 +15,4 @@ public class literal extends Node{
         throw new UnsupportedOperationException("Unimplemented method 'accept'");
     }
 }
+//not used
