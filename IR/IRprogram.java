@@ -63,10 +63,10 @@ public class IRprogram implements BuiltinElements{
         
         ans += "\ndeclare dso_local ptr @malloc(i32)\n";
         ans += "declare dso_local i32 @strlen(ptr)\n";
-//        ans += "declare void @print(i8*)\n";
-//        ans += "declare void @println(i8*)\n";
-//        ans += "declare void @printInt(i32)\n";
-//        ans += "declare void @printlnInt(i32)\n";
+        ans += "declare void @print(ptr)\n";
+        ans += "declare void @println(ptr)\n";
+        ans += "declare void @printInt(i32)\n";
+        ans += "declare void @printlnInt(i32)\n";
         ans += "declare ptr @getString()\n";
         ans += "declare i32 @getInt()\n";
         ans += "declare ptr @toString(i32)\n";

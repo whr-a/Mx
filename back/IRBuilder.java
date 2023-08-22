@@ -559,15 +559,17 @@ public class IRBuilder implements ASTVisitor,BuiltinElements{
         
         if (node.storePtr == null) { // 说明不是变量，是成员或者函数
             IRRegister thisAddr = (IRRegister) currentScope.getIRVarptr("this");
-            IRBaseType objPtrType =  ((IRPtrType) thisAddr.type).pointToType();
-            IRBaseType objRealType = ((IRPtrType) objPtrType).pointToType();
-            IRRegister thisVal = new IRRegister("this", objPtrType);//创建一个thisVal
-            if (((IRClassType) objRealType).hasMember(node.str)) {//应当有这个成员
-                currentBlock.addInst(new IRLoadInst(currentBlock, thisVal, thisAddr));
-                node.storePtr = new IRRegister("this." + node.str,
-                    new IRPtrType(((IRClassType) objRealType).gettype(node.str)));
-                currentBlock.addInst(new IRGetElementPtrInst(currentBlock, thisVal, node.storePtr, irIntConst0,
-                    new IRIntConst(((IRClassType) objRealType).memberindex.get(node.str))));
+            if(thisAddr!=null) {
+                IRBaseType objPtrType = ((IRPtrType) thisAddr.type).pointToType();
+                IRBaseType objRealType = ((IRPtrType) objPtrType).pointToType();
+                IRRegister thisVal = new IRRegister("this", objPtrType);//创建一个thisVal
+                if (((IRClassType) objRealType).hasMember(node.str)) {//应当有这个成员
+                    currentBlock.addInst(new IRLoadInst(currentBlock, thisVal, thisAddr));
+                    node.storePtr = new IRRegister("this." + node.str,
+                            new IRPtrType(((IRClassType) objRealType).gettype(node.str)));
+                    currentBlock.addInst(new IRGetElementPtrInst(currentBlock, thisVal, node.storePtr, irIntConst0,
+                            new IRIntConst(((IRClassType) objRealType).memberindex.get(node.str))));
+                }
             }
         }
     }
