@@ -10,7 +10,7 @@ public class IRStringConst extends IRConst implements BuiltinElements{
     public int id;
     public static int cnt = 0;
     public IRStringConst(String val_) {
-        super(new IRPtrType(new IRArrayType(irBoolType, val_.length() + 1)));
+        super(new IRPtrType(new IRArrayType(irCharType, val_.length() + 1)));
         this.val = val_;
         this.id = cnt++;
     }

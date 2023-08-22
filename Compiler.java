@@ -24,8 +24,8 @@ public class Compiler {
     }
     public static void main(String[] args) throws Exception {
 
-        try {
-            CharStream input = CharStreams.fromStream(new FileInputStream("1.mx"));
+//        try {
+            CharStream input = CharStreams.fromStream(new FileInputStream("1.cpp"));
 //            CharStream input = CharStreams.fromStream(System.in);
 //
             MxLexer lexer = new MxLexer(input);
@@ -47,9 +47,9 @@ public class Compiler {
             String content = irprogram.toString();
             writeToFile("1.ll", content);
 //            System.out.print(content);
-        }
-        catch (Throwable gb){
-            System.out.print(gb.toString());
-        }
+//        }
+//        catch (Throwable gb){
+//            System.out.print(gb.toString());
+//        }
     }
 }

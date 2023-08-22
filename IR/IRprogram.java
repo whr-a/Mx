@@ -63,13 +63,14 @@ public class IRprogram implements BuiltinElements{
         
         ans += "\ndeclare dso_local ptr @malloc(i32)\n";
         ans += "declare dso_local i32 @strlen(ptr)\n";
-        ans += "declare void @print(ptr)\n";
-        ans += "declare void @println(ptr)\n";
-        ans += "declare void @printInt(i32)\n";
-        ans += "declare void @printlnInt(i32)\n";
-        ans += "declare ptr @getString()\n";
-        ans += "declare i32 @getInt()\n";
-        ans += "declare ptr @toString(i32)\n";
+        ans += "declare dso_local void @print(ptr)\n";
+        ans += "declare dso_local void @println(ptr)\n";
+        ans += "declare dso_local void @printInt(i32)\n";
+        ans += "declare dso_local void @printlnInt(i32)\n";
+        ans += "declare i32 @string_length(ptr)\n";
+        ans += "declare dso_local ptr @getString()\n";
+        ans += "declare dso_local i32 @getInt()\n";
+        ans += "declare dso_local ptr @toString(i32)\n";
         ans += "declare ptr @string_substring(ptr, i32, i32)\n";
         ans += "declare i32 @string_parseInt(ptr)\n";
         ans += "declare i32 @string_ord(ptr, i32)\n";

@@ -5,7 +5,9 @@ import Utils.BuiltinElements;
 public class IRIntType extends IRBaseType implements BuiltinElements{
     public int length;
     public IRIntType(int length_){
-        super("i"+String.valueOf(length_),length_/8);
+        super("i"+String.valueOf(length_));
+        if(length_ == 1)this.size = 1;
+        else this.size = length_/8;
         length = length_;
     }
     @Override
