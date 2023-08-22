@@ -1,7 +1,8 @@
 package Utils;
 
 import AST.*;
-
+import IR.entity.*;
+import IR.IRtype.*;
 public interface BuiltinElements {
     Type VoidType = new Type("void");
     Type IntType = new Type("int");
@@ -24,4 +25,23 @@ public interface BuiltinElements {
     FuncDefNode StringOrdFunc = new FuncDefNode(null, IntType, "ord", "string", IntType, 1);
 
     FuncDefNode ArraySizeFunc = new FuncDefNode(null, IntType, "size", null, 0);
+
+    IRBaseType irVoidType = new IRVoidType("void");
+    IRBaseType irIntType = new IRIntType(32);
+    IRBaseType irIntPtrType = new IRPtrType(irIntType,1);
+    IRBaseType irNullType = new IRPtrType(irVoidType,1);
+    IRBaseType irBoolType = new IRIntType(1);
+    IRBaseType irCharType = new IRIntType(8);
+//    IRBaseType irCondType = new IRIntType(1);
+    IRBaseType irStringType = new IRPtrType(irCharType,1);
+
+    IRVoidConst irVoidConst = new IRVoidConst();
+//    IRCondConst irTrueConst = new IRCondConst(true);
+//    IRCondConst irFalseConst = new IRCondConst(false);
+    IRBoolConst irBoolTrueConst = new IRBoolConst(true);
+    IRBoolConst irBoolFalseConst = new IRBoolConst(false);
+    IRIntConst irIntConst0 = new IRIntConst(0);
+    IRIntConst irIntConst1 = new IRIntConst(1);
+    IRIntConst irIntConstn1 = new IRIntConst(-1);
+    IRIntConst irIntConst4 = new IRIntConst(4);
 }

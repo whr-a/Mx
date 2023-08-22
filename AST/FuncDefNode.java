@@ -1,7 +1,7 @@
 package AST;
 
 import Utils.*;
-
+import IR.*;
 import java.util.ArrayList;
 
 import AST.stmt.*;
@@ -11,8 +11,14 @@ public class FuncDefNode extends Node{
     public String classname = null;//这个函数是哪个类的内部函数
     public functionDeclParamListNode args = null;//函数参数定义
     public ArrayList<StmtNode> stmts = new ArrayList<StmtNode>();//函数内部内容
+
+    public IRfunction irFunc = null;
     public FuncDefNode(position pos) {
         super(pos);
+    }
+    public FuncDefNode(position pos, String name) {
+        super(pos);
+        this.funcName = name;
     }
     public FuncDefNode(position pos, Type type, String name, Type ArgsType, int cnt) {
         super(pos);

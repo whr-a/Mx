@@ -1,9 +1,10 @@
 package AST;
 
 import Utils.*;
-
+import IR.IRtype.*;
 public class TypeNode extends Node implements BuiltinElements{
     public Type type;
+    public IRBaseType irType;
     public TypeNode(position pos) {
         super(pos);
     }

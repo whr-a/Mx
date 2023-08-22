@@ -7,3 +7,9 @@ sema
 judgelist.txt
 m.txt
 *.class
+codegen
+out
+1.cpp
+1.ll
+code
+test

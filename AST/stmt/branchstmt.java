@@ -9,7 +9,7 @@ import Utils.position;
 public class branchstmt extends StmtNode{
     public ExprNode condition;
     public StmtNode thenstmt;
-    public StmtNode elsestmt;
+    public StmtNode elsestmt = null;
     public branchstmt(position pos) {
         super(pos);
     }
