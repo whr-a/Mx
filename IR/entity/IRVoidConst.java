@@ -12,4 +12,9 @@ public class IRVoidConst extends IRConst implements BuiltinElements{
     public String toString() {
         return "void";
     }
+    @Override
+    public boolean isZero() {
+        return false;
+    }
+    
 }

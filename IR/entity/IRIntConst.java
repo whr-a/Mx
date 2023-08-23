@@ -15,4 +15,8 @@ public class IRIntConst extends IRConst implements BuiltinElements{
     public String toStringWithType() {
         return "i32 " + toString();
     }
+    @Override
+    public boolean isZero() {
+        return val==0;
+    }
 }

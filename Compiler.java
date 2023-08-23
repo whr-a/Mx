@@ -1,4 +1,5 @@
 import antlr.*;
+import assembly.ASMModule;
 import Utils.*;
 import AST.*;
 import IR.IRprogram;
@@ -13,6 +14,8 @@ import org.antlr.v4.runtime.tree.*;
 
 import front.*;
 import back.IRBuilder;
+import back.InstSelector;
+import back.RegAllocator;
 
 public class Compiler {
     public static void writeToFile(String fileName, String content) {
@@ -25,8 +28,8 @@ public class Compiler {
     public static void main(String[] args) throws Exception {
 
 //        try {
-            CharStream input = CharStreams.fromStream(new FileInputStream("1.cpp"));
-//            CharStream input = CharStreams.fromStream(System.in);
+//            CharStream input = CharStreams.fromStream(new FileInputStream("1.cpp"));
+            CharStream input = CharStreams.fromStream(System.in);
 //
             MxLexer lexer = new MxLexer(input);
             lexer.removeErrorListeners();
@@ -44,9 +47,15 @@ public class Compiler {
 
             IRprogram irprogram = new IRprogram();
             new IRBuilder(globalScope, irprogram).visit(ast);
-            String content = irprogram.toString();
-            writeToFile("1.ll", content);
-//            System.out.print(content);
+//            String content1 = irprogram.toString();
+//            writeToFile("1.ll", content1);
+
+            ASMModule asmModule = new ASMModule();
+            new InstSelector(asmModule).visit(irprogram);
+            new RegAllocator(asmModule).work();
+            String content = asmModule.toString();
+//            writeToFile("2.s", content);
+            System.out.print(content);
 //        }
 //        catch (Throwable gb){
 //            System.out.print(gb.toString());

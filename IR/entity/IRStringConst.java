@@ -35,4 +35,8 @@ public class IRStringConst extends IRConst implements BuiltinElements{
     public String toStringWithType() {
         return "[" + String.valueOf(val.length() + 1) + " x i8]* " + toString();
     }
+    @Override
+    public boolean isZero() {
+        return false;
+    }
 }

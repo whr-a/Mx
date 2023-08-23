@@ -1,6 +1,9 @@
 package IR.inst;
 
 import IR.entity.*;
+
+import java.util.LinkedHashSet;
+
 import IR.*;
 
 public class IRCalcInst extends IRInst {//为了二元运算
@@ -20,5 +23,8 @@ public class IRCalcInst extends IRInst {//为了二元运算
     public String toString() {
         return res + " = " + op + " " + lhs.toStringWithType() + ", " + rhs;
     }
-
+    @Override
+    public void accept(IRVisitor visitor) {
+        visitor.visit(this);
+    }
 }

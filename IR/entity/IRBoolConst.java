@@ -15,4 +15,8 @@ public class IRBoolConst extends IRConst implements BuiltinElements{
     public String toStringWithType() {
         return "i1 " + toString();
     }
+    @Override
+    public boolean isZero() {
+        return !value;
+    }
 }

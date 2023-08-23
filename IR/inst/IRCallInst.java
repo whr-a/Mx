@@ -35,4 +35,8 @@ public class IRCallInst extends IRInst {
         ret += ")";
         return ret;
     }
+    @Override
+    public void accept(IRVisitor visitor) {
+        visitor.visit(this);
+    }
 }

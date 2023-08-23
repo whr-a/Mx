@@ -2,6 +2,9 @@ package IR.inst;
 
 import IR.entity.*;
 import IR.IRtype.*;
+
+import java.util.LinkedHashSet;
+
 import IR.*;
 
 public class IRAllocaInst extends IRInst {
@@ -25,6 +28,9 @@ public class IRAllocaInst extends IRInst {
     public String toString() {
         return allocaReg + " = alloca " + type;
     }
-
+    @Override
+    public void accept(IRVisitor visitor) {
+        visitor.visit(this);
+    }
 }
 

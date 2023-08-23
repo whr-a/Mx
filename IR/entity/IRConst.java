@@ -10,4 +10,5 @@ public abstract class IRConst extends IREntity{
     public IRConst(IRBaseType type_) {
         super(type_);
     }
+    public abstract boolean isZero();
 }

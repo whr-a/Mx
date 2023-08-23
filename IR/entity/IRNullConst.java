@@ -17,4 +17,9 @@ public class IRNullConst extends IRConst implements BuiltinElements{
     public String toStringWithType() {
         return type == irNullType ? toString()  : type + " " + toString();
     }
+    @Override
+    public boolean isZero() {
+        return true;
+    }
+    
 }

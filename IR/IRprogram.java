@@ -87,4 +87,7 @@ public class IRprogram implements BuiltinElements{
         for (IRfunction func : functions) ans += func + "\n";
         return ans;
     }
+    public void accept(IRVisitor visitor) {
+        visitor.visit(this);
+    }
 }
