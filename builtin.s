@@ -20,7 +20,7 @@ print:                                  # @print
 	lw	a1, -12(s0)
 	lui	a0, %hi(.L.str)
 	addi	a0, a0, %lo(.L.str)
-	call	printf@plt
+	call	printf
 	lw	ra, 12(sp)                      # 4-byte Folded Reload
 	lw	s0, 8(sp)                       # 4-byte Folded Reload
 	addi	sp, sp, 16
@@ -47,7 +47,7 @@ println:                                # @println
 	lw	a1, -12(s0)
 	lui	a0, %hi(.L.str.1)
 	addi	a0, a0, %lo(.L.str.1)
-	call	printf@plt
+	call	printf
 	lw	ra, 12(sp)                      # 4-byte Folded Reload
 	lw	s0, 8(sp)                       # 4-byte Folded Reload
 	addi	sp, sp, 16
@@ -74,7 +74,7 @@ printInt:                               # @printInt
 	lw	a1, -12(s0)
 	lui	a0, %hi(.L.str.2)
 	addi	a0, a0, %lo(.L.str.2)
-	call	printf@plt
+	call	printf
 	lw	ra, 12(sp)                      # 4-byte Folded Reload
 	lw	s0, 8(sp)                       # 4-byte Folded Reload
 	addi	sp, sp, 16
@@ -101,7 +101,7 @@ printlnInt:                             # @printlnInt
 	lw	a1, -12(s0)
 	lui	a0, %hi(.L.str.3)
 	addi	a0, a0, %lo(.L.str.3)
-	call	printf@plt
+	call	printf
 	lw	ra, 12(sp)                      # 4-byte Folded Reload
 	lw	s0, 8(sp)                       # 4-byte Folded Reload
 	addi	sp, sp, 16
@@ -125,12 +125,12 @@ getString:                              # @getString
 	addi	s0, sp, 16
 	.cfi_def_cfa s0, 0
 	lui	a0, 1
-	call	malloc@plt
+	call	malloc
 	sw	a0, -12(s0)
 	lw	a1, -12(s0)
 	lui	a0, %hi(.L.str)
 	addi	a0, a0, %lo(.L.str)
-	call	scanf@plt
+	call	scanf
 	lw	a0, -12(s0)
 	lw	ra, 12(sp)                      # 4-byte Folded Reload
 	lw	s0, 8(sp)                       # 4-byte Folded Reload
@@ -157,7 +157,7 @@ getInt:                                 # @getInt
 	lui	a0, %hi(.L.str.2)
 	addi	a0, a0, %lo(.L.str.2)
 	addi	a1, s0, -12
-	call	scanf@plt
+	call	scanf
 	lw	a0, -12(s0)
 	lw	ra, 12(sp)                      # 4-byte Folded Reload
 	lw	s0, 8(sp)                       # 4-byte Folded Reload
@@ -183,13 +183,13 @@ toString:                               # @toString
 	.cfi_def_cfa s0, 0
 	sw	a0, -12(s0)
 	li	a0, 16
-	call	malloc@plt
+	call	malloc
 	sw	a0, -16(s0)
 	lw	a0, -16(s0)
 	lw	a2, -12(s0)
 	lui	a1, %hi(.L.str.2)
 	addi	a1, a1, %lo(.L.str.2)
-	call	sprintf@plt
+	call	sprintf
 	lw	a0, -16(s0)
 	lw	ra, 12(sp)                      # 4-byte Folded Reload
 	lw	s0, 8(sp)                       # 4-byte Folded Reload
@@ -214,7 +214,7 @@ string_string:                          # @string_string
 	addi	s0, sp, 16
 	.cfi_def_cfa s0, 0
 	li	a0, 1
-	call	malloc@plt
+	call	malloc
 	sw	a0, -12(s0)
 	lw	a0, -12(s0)
 	sb	zero, 0(a0)
@@ -243,7 +243,7 @@ string_length:                          # @string_length
 	.cfi_def_cfa s0, 0
 	sw	a0, -12(s0)
 	lw	a0, -12(s0)
-	call	strlen@plt
+	call	strlen
 	lw	ra, 12(sp)                      # 4-byte Folded Reload
 	lw	s0, 8(sp)                       # 4-byte Folded Reload
 	addi	sp, sp, 16
@@ -275,14 +275,14 @@ string_substring:                       # @string_substring
 	sw	a0, -24(s0)
 	lw	a0, -24(s0)
 	addi	a0, a0, 1
-	call	malloc@plt
+	call	malloc
 	sw	a0, -28(s0)
 	lw	a0, -28(s0)
 	lw	a1, -12(s0)
 	lw	a2, -16(s0)
 	add	a1, a1, a2
 	lw	a2, -24(s0)
-	call	memcpy@plt
+	call	memcpy
 	lw	a0, -28(s0)
 	lw	a1, -24(s0)
 	add	a0, a0, a1
@@ -315,7 +315,7 @@ string_parseInt:                        # @string_parseInt
 	lui	a1, %hi(.L.str.2)
 	addi	a1, a1, %lo(.L.str.2)
 	addi	a2, s0, -16
-	call	sscanf@plt
+	call	sscanf
 	lw	a0, -16(s0)
 	lw	ra, 12(sp)                      # 4-byte Folded Reload
 	lw	s0, 8(sp)                       # 4-byte Folded Reload
@@ -370,10 +370,10 @@ string_add:                             # @string_add
 	sw	a0, -12(s0)
 	sw	a1, -16(s0)
 	lw	a0, -12(s0)
-	call	strlen@plt
+	call	strlen
 	sw	a0, -20(s0)
 	lw	a0, -16(s0)
-	call	strlen@plt
+	call	strlen
 	sw	a0, -24(s0)
 	lw	a0, -20(s0)
 	lw	a1, -24(s0)
@@ -381,18 +381,18 @@ string_add:                             # @string_add
 	sw	a0, -28(s0)
 	lw	a0, -28(s0)
 	addi	a0, a0, 1
-	call	malloc@plt
+	call	malloc
 	sw	a0, -32(s0)
 	lw	a0, -32(s0)
 	lw	a1, -12(s0)
 	lw	a2, -20(s0)
-	call	memcpy@plt
+	call	memcpy
 	lw	a0, -32(s0)
 	lw	a1, -20(s0)
 	add	a0, a0, a1
 	lw	a1, -16(s0)
 	lw	a2, -24(s0)
-	call	memcpy@plt
+	call	memcpy
 	lw	a0, -32(s0)
 	lw	a1, -28(s0)
 	add	a0, a0, a1
@@ -424,7 +424,7 @@ string_equal:                           # @string_equal
 	sw	a1, -16(s0)
 	lw	a0, -12(s0)
 	lw	a1, -16(s0)
-	call	strcmp@plt
+	call	strcmp
 	seqz	a0, a0
 	lw	ra, 12(sp)                      # 4-byte Folded Reload
 	lw	s0, 8(sp)                       # 4-byte Folded Reload
@@ -452,7 +452,7 @@ string_notEqual:                        # @string_notEqual
 	sw	a1, -16(s0)
 	lw	a0, -12(s0)
 	lw	a1, -16(s0)
-	call	strcmp@plt
+	call	strcmp
 	snez	a0, a0
 	lw	ra, 12(sp)                      # 4-byte Folded Reload
 	lw	s0, 8(sp)                       # 4-byte Folded Reload
@@ -480,7 +480,7 @@ string_less:                            # @string_less
 	sw	a1, -16(s0)
 	lw	a0, -12(s0)
 	lw	a1, -16(s0)
-	call	strcmp@plt
+	call	strcmp
 	srli	a0, a0, 31
 	lw	ra, 12(sp)                      # 4-byte Folded Reload
 	lw	s0, 8(sp)                       # 4-byte Folded Reload
@@ -508,7 +508,7 @@ string_lessOrEqual:                     # @string_lessOrEqual
 	sw	a1, -16(s0)
 	lw	a0, -12(s0)
 	lw	a1, -16(s0)
-	call	strcmp@plt
+	call	strcmp
 	slti	a0, a0, 1
 	lw	ra, 12(sp)                      # 4-byte Folded Reload
 	lw	s0, 8(sp)                       # 4-byte Folded Reload
@@ -536,7 +536,7 @@ string_greater:                         # @string_greater
 	sw	a1, -16(s0)
 	lw	a0, -12(s0)
 	lw	a1, -16(s0)
-	call	strcmp@plt
+	call	strcmp
 	sgtz	a0, a0
 	lw	ra, 12(sp)                      # 4-byte Folded Reload
 	lw	s0, 8(sp)                       # 4-byte Folded Reload
@@ -564,7 +564,7 @@ string_greaterOrEqual:                  # @string_greaterOrEqual
 	sw	a1, -16(s0)
 	lw	a0, -12(s0)
 	lw	a1, -16(s0)
-	call	strcmp@plt
+	call	strcmp
 	not	a0, a0
 	srli	a0, a0, 31
 	lw	ra, 12(sp)                      # 4-byte Folded Reload
@@ -617,7 +617,7 @@ __newPtrArray:                          # @__newPtrArray
 	sw	a0, -12(s0)
 	sw	a1, -16(s0)
 	lw	a0, -12(s0)
-	call	malloc@plt
+	call	malloc
 	sw	a0, -20(s0)
 	lw	a0, -16(s0)
 	lw	a1, -20(s0)
