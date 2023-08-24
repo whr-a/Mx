@@ -19,7 +19,7 @@ public class ASMBlock {
         String ret = "";
         if (name != null) ret += name + ":\n";
         for (ASMInst inst : insts)
-        ret += "  " + inst + "\n";
+            ret += "  " + inst + "\n";
         return ret;
     }
 }

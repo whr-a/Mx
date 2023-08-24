@@ -30,7 +30,7 @@ public class RegAllocator {
 
     public void visitBlock(ASMBlock block) {
         workList = new LinkedList<ASMInst>();
-        for (ASMInst inst : block.insts) {//遍历每个指令
+        for (ASMInst inst : block.insts) {
             if (inst.rs1 != null && !(inst.rs1 instanceof PhysicsReg)) {
                 allocateSrc(RegT1, inst.rs1);
                 inst.rs1 = RegT1;
@@ -49,12 +49,11 @@ public class RegAllocator {
         block.insts = workList;//用worklist替换掉原来的指令
     }
 
-    void allocateSrc(PhysicsReg reg, Reg src) {//把reg分配到src
-        if (src instanceof VirtualReg) {//如果是虚拟寄存器
+    void allocateSrc(PhysicsReg reg, Reg src) {
+        if (src instanceof VirtualReg) {
             int offset = ((VirtualReg) src).id != -1
                 ? virtualRegBegin + ((VirtualReg) src).id * 4//不是-1，说明是局部变量
                 : totalStack + ((VirtualReg) src).param_idx * 4;//是-1，说明是参数,就加到caller的位置取参数
-            // int offset = virtualRegBegin + ((VirtualReg) src).id * 4;
             if (offset < 1 << 11)
                 workList.add(new ASMLoadInst(((VirtualReg) src).size, reg, RegSp, new Imm(offset)));
             else {

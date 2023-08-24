@@ -26,7 +26,7 @@ public class ASMFunction {
         String ret = "  .text\n" + "  .globl " + name + "\n";
         ret += name + ":\n";
         for (ASMBlock block : blocks)
-        ret += block;
+            ret += block;
         return ret;
     }  
 }
