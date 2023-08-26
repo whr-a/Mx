@@ -1,10 +1,10 @@
 package assembly.inst;
 
 import assembly.operand.*;
-
+//包含 seqz, snez, slli, xori, addi
 public class ASMUnaryInst extends ASMInst {
     String op;
-    // seqz, snez, slli, xori, addi
+    
 
     public ASMUnaryInst(String op, Reg rd, Reg rs1) {
         this.op = op;

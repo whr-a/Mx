@@ -4,7 +4,7 @@ import assembly.inst.*;
 import java.util.LinkedList;
 
 public class ASMBlock {
-    public String name; // do not print when null
+    public String name; 
     public LinkedList<ASMInst> insts = new LinkedList<ASMInst>();
 
     public ASMBlock(String name) {
@@ -17,7 +17,7 @@ public class ASMBlock {
 
     public String toString() {
         String ret = "";
-        if (name != null) ret += name + ":\n";
+        if (name != null) ret += name + ":\n";//name为null的时候不输出名字
         for (ASMInst inst : insts)
             ret += "  " + inst + "\n";
         return ret;

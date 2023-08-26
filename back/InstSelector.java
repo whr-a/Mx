@@ -11,11 +11,12 @@ import IR.IRtype.*;
 
 public class InstSelector implements BuiltinElements, IRVisitor{
     ASMModule module;
-    ASMFunction curFunc;
     ASMBlock curBlock;
+    ASMFunction curFunc;
+    
+    HashMap<IRbasicblock, ASMBlock> blockMap = new HashMap<>();
     int blockCnt = 0;
 
-    HashMap<IRbasicblock, ASMBlock> blockMap = new HashMap<>();
 
     public InstSelector(ASMModule module) {
         this.module = module;
@@ -23,13 +24,21 @@ public class InstSelector implements BuiltinElements, IRVisitor{
 
     Reg getReg(IREntity entity) {
         if (entity.asmReg == null) {
-            if (entity instanceof IRRegister) {
+            if (entity instanceof IRRegister)
                 entity.asmReg = new VirtualReg(entity.type.size);
-            } else if (entity instanceof IRConst) {
+            else if (entity instanceof IRConst)
                 entity.asmReg = new VirtualImm((IRConst) entity);
-            }
         }
         return entity.asmReg;
+    }
+    void loadReg(int size, Reg dest, Reg src, int offset) {//从src+offset处取东西存入dest
+        if (offset < 1 << 11)
+            curBlock.addInst(new ASMLoadInst(size, dest, src, new Imm(offset)));
+        else {
+            VirtualReg tmp = new VirtualReg(4);
+            curBlock.addInst(new ASMBinaryInst("add", tmp, src, new VirtualImm(offset)));
+            curBlock.addInst(new ASMLoadInst(size, dest, tmp));
+        }
     }
     void storeReg(int size, Reg value, Reg dest, int offset) {//往dest+offset处存入value
         if (offset < 1 << 11)
@@ -40,31 +49,27 @@ public class InstSelector implements BuiltinElements, IRVisitor{
             curBlock.addInst(new ASMStoreInst(size, tmp, value));
         }
     }
-    void loadReg(int size, Reg dest, Reg src, int offset) {
-        if (offset < 1 << 11)
-            curBlock.addInst(new ASMLoadInst(size, dest, src, new Imm(offset)));
-        else {
-            VirtualReg tmp = new VirtualReg(4);
-            curBlock.addInst(new ASMBinaryInst("add", tmp, src, new VirtualImm(offset)));
-            curBlock.addInst(new ASMLoadInst(size, dest, tmp));
+
+    public void visit(IRprogram node) {
+        for(var def : node.gVariables) {//添加全局变量
+            def.asmReg = new GlobalValue(def);
+            module.globalValues.add((GlobalValue) def.asmReg);
+        }
+        for(var def : node.stringConst.values()){//添加字符串常量
+            GlobalString globalStr = new GlobalString(".str." + String.valueOf(def.id), def.val);
+            module.globalStrings.add(globalStr);
+            def.asmReg = globalStr;
+        }
+        for(var def : node.functions){
+            curFunc = new ASMFunction(def.name);
+            module.functions.add(curFunc);
+            def.accept(this);
         }
     }
 
-    public void visit(IRprogram node) {
-        node.gVariables.forEach(globalVar -> {//添加全局变量
-            globalVar.asmReg = new GlobalValue(globalVar);
-            module.globalValues.add((GlobalValue) globalVar.asmReg);
-        });
-        node.stringConst.values().forEach(str -> {//添加字符串常量
-            GlobalString globalStr = new GlobalString(".str." + String.valueOf(str.id), str.val);
-            module.globalStrings.add(globalStr);
-            str.asmReg = globalStr;
-        });
-        node.functions.forEach(func -> {
-            curFunc = new ASMFunction(func.name);
-            module.functions.add(curFunc);
-            func.accept(this);
-        });
+    public void visit(IRbasicblock node) {
+        for(var inst : node.insts)inst.accept(this);
+        node.terminalInst.accept(this);
     }
 
     public void visit(IRfunction node) {
@@ -84,7 +89,6 @@ public class InstSelector implements BuiltinElements, IRVisitor{
                 node.params.get(i).asmReg = PhysicsReg.regMap.get("a" + i);//前8个参数放在a0-a7中，取出来
             else
                 node.params.get(i).asmReg = new VirtualReg(4,i);//后面的参数放在虚拟寄存器中
-
 
         for (int i = 0; i < node.blocklist.size(); ++i) {
             curBlock = blockMap.get(node.blocklist.get(i));
@@ -109,13 +113,6 @@ public class InstSelector implements BuiltinElements, IRVisitor{
         exitBlock.insts.add(new ASMRetInst());
     }
 
-    public void visit(IRbasicblock node) {
-        node.insts.forEach(inst -> {
-            inst.accept(this);
-        });
-        node.terminalInst.accept(this);
-    }
-
     public void visit(IRAllocaInst node) {
         curBlock.addInst(new ASMBinaryInst("add", getReg(node.allocaReg), PhysicsReg.regMap.get("sp"),
             new VirtualImm(curFunc.paramUsed + curFunc.allocaUsed)));
@@ -126,11 +123,6 @@ public class InstSelector implements BuiltinElements, IRVisitor{
     public void visit(IRBranchInst node) {
         curBlock.addInst(new ASMBeqzInst(getReg(node.cond), blockMap.get(node.elseBlock)));
         curBlock.addInst(new ASMJumpInst(blockMap.get(node.thenBlock)));
-    }
-
-    public void visit(IRCalcInst node) {
-        curBlock.addInst(new ASMBinaryInst(node.op, getReg(node.res), getReg(node.lhs), getReg(node.rhs)));
-        //lhs和rhs相作用，结果存入res
     }
 
     public void visit(IRCallInst node) {
@@ -148,13 +140,17 @@ public class InstSelector implements BuiltinElements, IRVisitor{
             //把a0的值存入callReg
     }
 
+    public void visit(IRCalcInst node) {
+        curBlock.addInst(new ASMBinaryInst(node.op, getReg(node.res), getReg(node.lhs), getReg(node.rhs)));
+        //lhs和rhs相作用，结果存入res
+    }
+
     public void visit(IRGetElementPtrInst node) {
         if (node.pToType == irBoolType || node.pToType == irCharType) {
             curBlock.addInst(new ASMBinaryInst("add", getReg(node.res), getReg(node.ptr), getReg(node.indexList.get(0))));
             //如果指针指向的类型是1字节 node.ptr加上第一个参数以后存入node.res
         } else {
             Reg idx = node.pToType instanceof IRClassType ? getReg(node.indexList.get(1)) : getReg(node.indexList.get(0));
-
             VirtualReg tmp = new VirtualReg(4);
             curBlock.addInst(new ASMUnaryInst("slli", tmp, idx, new Imm(2)));
             //把idx左移2位，存入tmp
@@ -198,7 +194,6 @@ public class InstSelector implements BuiltinElements, IRVisitor{
     }
 
     public void visit(IRRetInst node) {
-
         if (node.val != irVoidConst)
             curBlock.addInst(new ASMMvInst(PhysicsReg.regMap.get("a0"), getReg(node.val)));//把val的值存入a0
         loadReg(4, PhysicsReg.regMap.get("ra"), PhysicsReg.regMap.get("sp"), curFunc.paramUsed);

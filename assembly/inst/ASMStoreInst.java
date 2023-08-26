@@ -4,7 +4,7 @@ import assembly.operand.*;
 
 public class ASMStoreInst extends ASMInst {
     int size;
-    // size : 1 -> sb, 4 -> sw
+    
 
     public ASMStoreInst(int size, Reg rs1, Reg rs2, Imm imm) {
         this.size = size;
@@ -19,6 +19,6 @@ public class ASMStoreInst extends ASMInst {
     @Override
     public String toString() {
         return "s" + (size == 1 ? "b" : "w") + " " + rs2 + ", " + imm + "(" + rs1 + ")";
-        // sw rs2, imm(rs1)
-    }
+        //形如 sw rs2, imm(rs1)
+    }//size为1是sb，size为4是lw
 }

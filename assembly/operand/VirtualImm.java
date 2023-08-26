@@ -9,11 +9,11 @@ public class VirtualImm extends Reg {
     }
 
     public VirtualImm(IRConst constVal) {
-        if (constVal instanceof IRIntConst) {
+        if (constVal instanceof IRIntConst)
             value = ((IRIntConst) constVal).val;
-        } else if (constVal instanceof IRBoolConst) {
+        else if (constVal instanceof IRBoolConst) 
             value = ((IRBoolConst) constVal).value ? 1 : 0;
-        }else value = 0;
+        else value = 0;
     }
 
     public String toString() {
