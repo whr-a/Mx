@@ -204,4 +204,16 @@ public class InstSelector implements BuiltinElements, IRVisitor{
         //往rs1的地址处存入rs2
         storeReg(node.val.type.size, getReg(node.val), getReg(node.destAddr), 0);
     }
+
+    public void visit(IRPhiInst node) {
+        VirtualReg tmp = new VirtualReg(node.dest.type.size);
+        curBlock.addInst(new ASMMvInst(getReg(node.dest), tmp));
+        for (int i = 0; i < node.values.size(); ++i) {
+            IREntity val = node.values.get(i);
+            if (val instanceof IRConst constVal)
+                blockMap.get(node.blocks.get(i)).phiConvert.add(new ASMLiInst(tmp, new VirtualImm(constVal)));
+            else
+                blockMap.get(node.blocks.get(i)).phiConvert.add(new ASMMvInst(tmp, getReg(node.values.get(i))));
+        }
+    }
 }

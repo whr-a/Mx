@@ -9,13 +9,11 @@ import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 
+import back.*;
 import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.tree.*;
 
 import front.*;
-import back.IRBuilder;
-import back.InstSelector;
-import back.RegAllocator;
 
 public class Compiler {
     public static void writeToFile(String fileName, String content) {
@@ -28,8 +26,8 @@ public class Compiler {
     public static void main(String[] args) throws Exception {
 
 //        try {
-            CharStream input = CharStreams.fromStream(new FileInputStream("1.cpp"));
-//            CharStream input = CharStreams.fromStream(System.in);
+//            CharStream input = CharStreams.fromStream(new FileInputStream("1.cpp"));
+            CharStream input = CharStreams.fromStream(System.in);
 //
             MxLexer lexer = new MxLexer(input);
             lexer.removeErrorListeners();
@@ -47,15 +45,17 @@ public class Compiler {
 
             IRprogram irprogram = new IRprogram();
             new IRBuilder(globalScope, irprogram).visit(ast);
-            String content1 = irprogram.toString();
-            writeToFile("1.ll", content1);
+            new CFGBuilder(irprogram);
+            new Mem2Reg(irprogram).work();
+//            String content1 = irprogram.toString();
+//            writeToFile("1.ll", content1);
 
             ASMModule asmModule = new ASMModule();
             new InstSelector(asmModule).visit(irprogram);
             new RegAllocator(asmModule).work();
             String content = asmModule.toString();
-            writeToFile("1.s", content);
-//            System.out.print(content);
+//            writeToFile("1.s", content);
+            System.out.print(content);
 //        }
 //        catch (Throwable gb){
 //            System.out.print(gb.toString());

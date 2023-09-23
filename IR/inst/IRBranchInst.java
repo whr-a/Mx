@@ -24,9 +24,15 @@ public class IRBranchInst extends IRTerminalInst {
     public void accept(IRVisitor visitor) {
         visitor.visit(this);
     }
+    @Override
+    public void replaceUse(IREntity old, IREntity newOne) {
+        cond = cond == old ? newOne : cond;
+    }
+    @Override
     public LinkedHashSet<IREntity> getUse() {
         LinkedHashSet<IREntity> ret = new LinkedHashSet<>();
         ret.add(cond);
         return ret;
     }
+
 }

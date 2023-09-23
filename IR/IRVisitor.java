@@ -16,4 +16,6 @@ public interface IRVisitor {
     public void visit(IRLoadInst node);
     public void visit(IRRetInst node);
     public void visit(IRStoreInst node);
+
+    public void visit(IRPhiInst node);
 }

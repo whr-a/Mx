@@ -12,6 +12,12 @@ public class IRbasicblock {
     public int loopDepth = 0;
     public static int Cnt = 0;
     public boolean isFinished = false;
+    public LinkedList<IRbasicblock> front = new LinkedList<>();
+    public LinkedList<IRbasicblock> behind = new LinkedList<>();
+    public IRbasicblock domfather = null;
+    public LinkedList<IRbasicblock> domChildren = new LinkedList<>();
+    public LinkedList<IRbasicblock> domFrontier = new LinkedList<>();
+    public LinkedList<IRPhiInst> phiInsts = new LinkedList<>();
     public IRbasicblock(String lable_){
         this.name = lable_;
     }
@@ -28,6 +34,12 @@ public class IRbasicblock {
         insts.add(stmt);
     }
     public void addInst(IRInst inst) {
+        if(inst instanceof IRPhiInst phiInst){
+            for(IRPhiInst def : phiInsts)
+                if(phiInst.src == def.src)return;//不允许有来源相同的phi
+            phiInsts.add((IRPhiInst)inst);
+            return;
+        }
         if (isFinished) return;
         if (inst instanceof IRAllocaInst)
             parentFunction.allocaInsts.add((IRAllocaInst) inst);

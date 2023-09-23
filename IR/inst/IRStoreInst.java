@@ -3,6 +3,8 @@ package IR.inst;
 import IR.entity.*;
 import IR.*;
 
+import java.util.LinkedHashSet;
+
 public class IRStoreInst extends IRInst {
     public IREntity val;//存入的值
     public IRRegister destAddr;//存入哪个地址
@@ -29,5 +31,19 @@ public class IRStoreInst extends IRInst {
     @Override
     public void accept(IRVisitor visitor) {
         visitor.visit(this);
+    }
+    @Override
+    public void replaceUse(IREntity old, IREntity newOne) {
+        if (val == old)
+            val = newOne;
+        if (destAddr == old)
+            destAddr = (IRRegister) newOne;
+    }
+    @Override
+    public LinkedHashSet<IREntity> getUse() {
+        LinkedHashSet<IREntity> ret = new LinkedHashSet<>();
+        ret.add(val);
+        ret.add(destAddr);
+        return ret;
     }
 }

@@ -5,6 +5,7 @@ import IR.entity.*;
 import IR.IRtype.*;
 
 import java.util.ArrayList;
+import java.util.LinkedHashSet;
 
 public class IRCallInst extends IRInst {
     public IRBaseType returnType;
@@ -38,5 +39,16 @@ public class IRCallInst extends IRInst {
     @Override
     public void accept(IRVisitor visitor) {
         visitor.visit(this);
+    }
+    @Override
+    public void replaceUse(IREntity old, IREntity newOne) {
+        for (int i = 0; i < args.size(); ++i)
+            args.set(i, args.get(i) == old ? newOne : args.get(i));
+    }
+    @Override
+    public LinkedHashSet<IREntity> getUse() {
+        LinkedHashSet<IREntity> ret = new LinkedHashSet<>();
+        for (IREntity arg : args) ret.add(arg);
+        return ret;
     }
 }

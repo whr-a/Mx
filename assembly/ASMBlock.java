@@ -6,6 +6,7 @@ import java.util.LinkedList;
 public class ASMBlock {
     public String name; 
     public LinkedList<ASMInst> insts = new LinkedList<ASMInst>();
+    public LinkedList<ASMInst> phiConvert = new LinkedList<ASMInst>();
 
     public ASMBlock(String name) {
         this.name = name;

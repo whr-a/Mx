@@ -32,5 +32,11 @@ public class IRAllocaInst extends IRInst {
     public void accept(IRVisitor visitor) {
         visitor.visit(this);
     }
+    @Override
+    public LinkedHashSet<IREntity> getUse() {
+        return new LinkedHashSet<>();
+    }
+    @Override
+    public void replaceUse(IREntity old, IREntity newOne) {}
 }
 
