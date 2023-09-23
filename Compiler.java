@@ -23,9 +23,10 @@ public class Compiler {
             e.printStackTrace();
         }
     }
+
     public static void main(String[] args) throws Exception {
 
-//        try {
+        try {
 //            CharStream input = CharStreams.fromStream(new FileInputStream("1.cpp"));
             CharStream input = CharStreams.fromStream(System.in);
 //
@@ -52,13 +53,14 @@ public class Compiler {
 
             ASMModule asmModule = new ASMModule();
             new InstSelector(asmModule).visit(irprogram);
+//            String content_1 = asmModule.toString();
+//            writeToFile("1.shit", content_1);
             new RegAllocator(asmModule).work();
             String content = asmModule.toString();
 //            writeToFile("1.s", content);
             System.out.print(content);
-//        }
-//        catch (Throwable gb){
-//            System.out.print(gb.toString());
-//        }
+        } catch (Throwable gb) {
+            System.out.print(gb.toString());
+        }
     }
 }

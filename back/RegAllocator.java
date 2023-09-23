@@ -29,6 +29,15 @@ public class RegAllocator {
     }
 
     public void visitBlock(ASMBlock block) {
+        block.insts.addAll(block.phiConvert);
+        if (block.branch_terminal != null) {
+            block.insts.add(block.branch_terminal);
+        }
+        if (block.terminal != null) {
+            block.insts.add(block.terminal);
+        }
+        block.phiConvert.clear();
+        block.branch_terminal = block.terminal = null;
         workList = new LinkedList<ASMInst>();
         for (ASMInst inst : block.insts) {
             if (inst.rs1 != null && !(inst.rs1 instanceof PhysicsReg)) {
@@ -47,6 +56,7 @@ public class RegAllocator {
             
         }
         block.insts = workList;//用worklist替换掉原来的指令
+
     }
 
     void allocateSrc(PhysicsReg reg, Reg src) {

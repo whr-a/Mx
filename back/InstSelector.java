@@ -28,6 +28,12 @@ public class InstSelector implements BuiltinElements, IRVisitor{
                 entity.asmReg = new VirtualReg(entity.type.size);
             else if (entity instanceof IRConst)
                 entity.asmReg = new VirtualImm((IRConst) entity);
+        } else if (entity.asmReg instanceof Global) {
+            VirtualReg reg = new VirtualReg(4);
+            String name = ((Global) entity.asmReg).name;
+            curBlock.addInst(new ASMLuiInst(reg, new RelocationFunc(RelocationFunc.Type.hi, name)));
+            curBlock.addInst(new ASMUnaryInst("addi", reg, reg, new RelocationFunc(RelocationFunc.Type.lo, name)));
+            return reg;
         }
         return entity.asmReg;
     }
@@ -86,10 +92,9 @@ public class InstSelector implements BuiltinElements, IRVisitor{
 
         for (int i = 0; i < node.params.size(); ++i)
             if (i < 8)
-                node.params.get(i).asmReg = PhysicsReg.regMap.get("a" + i);//前8个参数放在a0-a7中，取出来
+                node.params.get(i).asmReg = new VirtualReg(node.params.get(i).type.size);//前8个参数放在a0-a7中，取出来
             else
                 node.params.get(i).asmReg = new VirtualReg(4,i);//后面的参数放在虚拟寄存器中
-
         for (int i = 0; i < node.blocklist.size(); ++i) {
             curBlock = blockMap.get(node.blocklist.get(i));
             if (i == 0)//如果是第一个块
@@ -98,6 +103,8 @@ public class InstSelector implements BuiltinElements, IRVisitor{
             node.blocklist.get(i).accept(this);
             curFunc.addBlock(curBlock);
         }
+        for (int i = 0; i < node.params.size() && i < 8; ++i)
+            curFunc.blocks.get(0).insts.addFirst(new ASMMvInst(node.params.get(i).asmReg, PhysicsReg.regMap.get("a" + i)));
         curFunc.virtualRegCnt = VirtualReg.cnt;
 
         curFunc.totalStack = curFunc.paramUsed + curFunc.allocaUsed + curFunc.virtualRegCnt * 4;
@@ -121,8 +128,8 @@ public class InstSelector implements BuiltinElements, IRVisitor{
     }
 
     public void visit(IRBranchInst node) {
-        curBlock.addInst(new ASMBeqzInst(getReg(node.cond), blockMap.get(node.elseBlock)));
-        curBlock.addInst(new ASMJumpInst(blockMap.get(node.thenBlock)));
+        curBlock.branch_terminal = new ASMBeqzInst(getReg(node.cond), blockMap.get(node.elseBlock));
+        curBlock.terminal = new ASMJumpInst(blockMap.get(node.thenBlock));
     }
 
     public void visit(IRCallInst node) {
@@ -186,7 +193,7 @@ public class InstSelector implements BuiltinElements, IRVisitor{
     }
 
     public void visit(IRJumpInst node) {
-        curBlock.addInst(new ASMJumpInst(blockMap.get(node.toBlock)));
+        curBlock.terminal = new ASMJumpInst(blockMap.get(node.toBlock));
     }
 
     public void visit(IRLoadInst node) {
@@ -210,10 +217,16 @@ public class InstSelector implements BuiltinElements, IRVisitor{
         curBlock.addInst(new ASMMvInst(getReg(node.dest), tmp));
         for (int i = 0; i < node.values.size(); ++i) {
             IREntity val = node.values.get(i);
-            if (val instanceof IRConst constVal)
+            var pastCur = curBlock;
+            curBlock = blockMap.get(node.blocks.get(i));
+            if (val instanceof IRConst constVal && !(val instanceof IRStringConst)) {
+                System.err.println(val);
+                System.err.println("is const~");
                 blockMap.get(node.blocks.get(i)).phiConvert.add(new ASMLiInst(tmp, new VirtualImm(constVal)));
-            else
+            } else {
                 blockMap.get(node.blocks.get(i)).phiConvert.add(new ASMMvInst(tmp, getReg(node.values.get(i))));
+            }
+            curBlock = pastCur;
         }
     }
 }

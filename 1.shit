@@ -1,0 +1,6515 @@
+  .section .data
+s:
+  .word 0
+c:
+  .word 0
+co:
+  .word 0
+a2q:
+  .word 0
+a2b:
+  .word 0
+  .section .rodata
+.str.106:
+  .string "println(c[71]+c[68]+c[7]+c[86]+c[28]+c[28]+c[21]+c[8]+c[80]+c[67]+c[82]+c[83]+c[80]+c[76]+c[0]+a2q+c[21]+a2q+c[26]);"
+.str.108:
+  .string "println(c[71]+c[68]+c[7]+c[86]+c[28]+c[28]+c[23]+c[8]+c[80]+c[67]+c[82]+c[83]+c[80]+c[76]+c[0]+a2q+c[23]+a2q+c[26]);"
+.str.16:
+  .string " "
+.str.17:
+  .string "!"
+.str.1:
+  .string "\""
+.str.18:
+  .string "#"
+.str.19:
+  .string "$"
+.str.20:
+  .string "%"
+.str.119:
+  .string "println(c[81]+c[82]+c[80]+c[71]+c[76]+c[69]+c[0]+c[65]+c[77]+c[28]+a2q+c[26]+a2q+c[26]);"
+.str.21:
+  .string "&"
+.str.22:
+  .string "'"
+.str.23:
+  .string "("
+.str.24:
+  .string ")"
+.str.25:
+  .string "*"
+.str.26:
+  .string "+"
+.str.27:
+  .string ","
+.str.115:
+  .string "println(c[80]+c[67]+c[82]+c[83]+c[80]+c[76]+c[0]+a2q+c[81]+c[58]+a2q+c[10]+c[66]+c[71]+c[69]+c[82]+c[7]+c[81]+c[81]+c[14]+c[16]+c[15]+c[8]+c[10]+c[66]+c[71]+c[69]+c[82]+c[7]+c[81]+c[81]+c[4]+c[16]+c[15]+c[8]+c[10]+a2q+c[59]+c[28]+a2q+c[26]);"
+.str.28:
+  .string "-"
+.str.29:
+  .string "."
+.str.101:
+  .string "println(c[71]+c[68]+c[7]+c[86]+c[28]+c[28]+c[16]+c[8]+c[80]+c[67]+c[82]+c[83]+c[80]+c[76]+c[0]+a2q+c[16]+a2q+c[26]);"
+.str.30:
+  .string "/"
+.str.3:
+  .string "0"
+.str.4:
+  .string "1"
+.str.5:
+  .string "2"
+.str.112:
+  .string "println(c[81]+c[82]+c[80]+c[71]+c[76]+c[69]+c[58]+c[59]+c[0]+c[65]+c[28]+c[76]+c[67]+c[85]+c[0]+c[81]+c[82]+c[80]+c[71]+c[76]+c[69]+c[58]+c[17]+c[20]+c[21]+c[59]+c[26]);"
+.str.6:
+  .string "3"
+.str.110:
+  .string "println(c[91]);"
+.str.118:
+  .string "println(c[80]+c[67]+c[82]+c[83]+c[80]+c[76]+c[0]+a2q+c[65]+c[58]+a2q+c[10]+c[66]+c[71]+c[69]+c[82]+c[7]+c[65]+c[65]+c[14]+c[16]+c[15]+c[8]+c[10]+c[66]+c[71]+c[69]+c[82]+c[7]+c[65]+c[65]+c[4]+c[16]+c[15]+c[8]+c[10]+a2q+c[59]+c[28]+a2q+c[26]);"
+.str.7:
+  .string "4"
+.str.8:
+  .string "5"
+.str.9:
+  .string "6"
+.str.10:
+  .string "7"
+.str.103:
+  .string "println(c[71]+c[68]+c[7]+c[86]+c[28]+c[28]+c[18]+c[8]+c[80]+c[67]+c[82]+c[83]+c[80]+c[76]+c[0]+a2q+c[18]+a2q+c[26]);"
+.str.11:
+  .string "8"
+.str.12:
+  .string "9"
+.str.126:
+  .string "return 0;"
+.str.31:
+  .string ":"
+.str.0:
+  .string ";"
+.str.32:
+  .string "<"
+.str.33:
+  .string "="
+.str.34:
+  .string ">"
+.str.35:
+  .string "?"
+.str.36:
+  .string "@"
+.str.37:
+  .string "A"
+.str.38:
+  .string "B"
+.str.39:
+  .string "C"
+.str.123:
+  .string "for(i=0;i<93;i++)println(c2(i)+a2q+c[i]+a2q+co);"
+.str.40:
+  .string "D"
+.str.41:
+  .string "E"
+.str.42:
+  .string "F"
+.str.43:
+  .string "G"
+.str.13:
+  .string "s["
+.str.44:
+  .string "H"
+.str.45:
+  .string "I"
+.str.46:
+  .string "J"
+.str.47:
+  .string "K"
+.str.48:
+  .string "L"
+.str.49:
+  .string "M"
+.str.50:
+  .string "N"
+.str.51:
+  .string "O"
+.str.52:
+  .string "P"
+.str.53:
+  .string "Q"
+.str.54:
+  .string "R"
+.str.55:
+  .string "S"
+.str.56:
+  .string "T"
+.str.57:
+  .string "U"
+.str.58:
+  .string "V"
+.str.59:
+  .string "W"
+.str.15:
+  .string "c["
+.str.60:
+  .string "X"
+.str.61:
+  .string "Y"
+.str.62:
+  .string "Z"
+.str.63:
+  .string "["
+.str.2:
+  .string "\\"
+.str.64:
+  .string "]"
+.str.65:
+  .string "^"
+.str.66:
+  .string "_"
+.str.67:
+  .string "`"
+.str.68:
+  .string "a"
+.str.69:
+  .string "b"
+.str.70:
+  .string "c"
+.str.120:
+  .string "println(c[81]+c[82]+c[80]+c[71]+c[76]+c[69]+c[0]+c[63]+c[17]+c[79]+c[28]+a2q+a2b+a2q+a2q+c[26]);"
+.str.71:
+  .string "d"
+.str.72:
+  .string "e"
+.str.73:
+  .string "f"
+.str.74:
+  .string "g"
+.str.75:
+  .string "h"
+.str.76:
+  .string "i"
+.str.77:
+  .string "j"
+.str.78:
+  .string "k"
+.str.117:
+  .string "println(c[71]+c[68]+c[7]+c[65]+c[65]+c[27]+c[28]+c[24]+c[8]+c[80]+c[67]+c[82]+c[83]+c[80]+c[76]+c[0]+a2q+c[65]+c[58]+a2q+c[10]+c[66]+c[71]+c[69]+c[82]+c[7]+c[65]+c[65]+c[8]+c[10]+a2q+c[59]+c[28]+a2q+c[26]);"
+.str.79:
+  .string "l"
+.str.80:
+  .string "m"
+.str.81:
+  .string "n"
+.str.82:
+  .string "o"
+.str.83:
+  .string "p"
+.str.84:
+  .string "q"
+.str.85:
+  .string "r"
+.str.86:
+  .string "s"
+.str.87:
+  .string "t"
+.str.88:
+  .string "u"
+.str.89:
+  .string "v"
+.str.90:
+  .string "w"
+.str.91:
+  .string "x"
+.str.92:
+  .string "y"
+.str.93:
+  .string "z"
+.str.122:
+  .string "println(s[0]);"
+.str.94:
+  .string "{"
+.str.95:
+  .string "|"
+.str.96:
+  .string "}"
+.str.97:
+  .string "~"
+.str.14:
+  .string "]="
+.str.105:
+  .string "println(c[71]+c[68]+c[7]+c[86]+c[28]+c[28]+c[20]+c[8]+c[80]+c[67]+c[82]+c[83]+c[80]+c[76]+c[0]+a2q+c[20]+a2q+c[26]);"
+.str.100:
+  .string "println(c[71]+c[68]+c[7]+c[86]+c[28]+c[28]+c[15]+c[8]+c[80]+c[67]+c[82]+c[83]+c[80]+c[76]+c[0]+a2q+c[15]+a2q+c[26]);"
+.str.99:
+  .string "println(c[81]+c[82]+c[80]+c[71]+c[76]+c[69]+c[0]+c[66]+c[71]+c[69]+c[82]+c[7]+c[71]+c[76]+c[82]+c[0]+c[86]+c[8]+c[89]);"
+.str.124:
+  .string "for(i=0;i<32;i++)println(s2(i)+a2q+s[i]+a2q+co);"
+.str.107:
+  .string "println(c[71]+c[68]+c[7]+c[86]+c[28]+c[28]+c[22]+c[8]+c[80]+c[67]+c[82]+c[83]+c[80]+c[76]+c[0]+a2q+c[22]+a2q+c[26]);"
+.str.98:
+  .string "int main(){int i=0;// Quine is a a program that produces its source code as output."
+.str.109:
+  .string "println(c[71]+c[68]+c[7]+c[86]+c[28]+c[28]+c[24]+c[8]+c[80]+c[67]+c[82]+c[83]+c[80]+c[76]+c[0]+a2q+c[24]+a2q+c[26]);"
+.str.113:
+  .string "println(c[81]+c[82]+c[80]+c[71]+c[76]+c[69]+c[0]+c[81]+c[17]+c[7]+c[71]+c[76]+c[82]+c[0]+c[81]+c[81]+c[8]+c[89]);"
+.str.102:
+  .string "println(c[71]+c[68]+c[7]+c[86]+c[28]+c[28]+c[17]+c[8]+c[80]+c[67]+c[82]+c[83]+c[80]+c[76]+c[0]+a2q+c[17]+a2q+c[26]);"
+.str.104:
+  .string "println(c[71]+c[68]+c[7]+c[86]+c[28]+c[28]+c[19]+c[8]+c[80]+c[67]+c[82]+c[83]+c[80]+c[76]+c[0]+a2q+c[19]+a2q+c[26]);"
+.str.111:
+  .string "println(c[81]+c[82]+c[80]+c[71]+c[76]+c[69]+c[58]+c[59]+c[0]+c[81]+c[28]+c[76]+c[67]+c[85]+c[0]+c[81]+c[82]+c[80]+c[71]+c[76]+c[69]+c[58]+c[17]+c[20]+c[21]+c[59]+c[26]);"
+.str.116:
+  .string "println(c[81]+c[82]+c[80]+c[71]+c[76]+c[69]+c[0]+c[65]+c[17]+c[7]+c[71]+c[76]+c[82]+c[0]+c[65]+c[65]+c[8]+c[89]);"
+.str.114:
+  .string "println(c[71]+c[68]+c[7]+c[81]+c[81]+c[27]+c[28]+c[24]+c[8]+c[80]+c[67]+c[82]+c[83]+c[80]+c[76]+c[0]+a2q+c[81]+c[58]+a2q+c[10]+c[66]+c[71]+c[69]+c[82]+c[7]+c[81]+c[81]+c[8]+c[10]+a2q+c[59]+c[28]+a2q+c[26]);"
+.str.125:
+  .string "for(i=1;i<32;i++)println(s[i]);"
+.str.121:
+  .string "println(c[81]+c[82]+c[80]+c[71]+c[76]+c[69]+c[0]+c[63]+c[17]+c[64]+c[28]+a2q+a2b+a2b+a2q+c[26]);"
+  .text
+  .globl global_init
+global_init:
+.L0:
+  add sp, sp, -44
+  sw ra, 0(sp)
+  mv a0, 1028
+  mv a1, 256
+  call __newPtrArray
+  mv %0, a0
+  lui %1, %hi(s)
+  addi %1, %1, %lo(s)
+  sw %0, 0(%1)
+  mv a0, 1028
+  mv a1, 256
+  call __newPtrArray
+  mv %2, a0
+  lui %3, %hi(c)
+  addi %3, %3, %lo(c)
+  sw %2, 0(%3)
+  lui %4, %hi(.str.0)
+  addi %4, %4, %lo(.str.0)
+  lui %5, %hi(co)
+  addi %5, %5, %lo(co)
+  sw %4, 0(%5)
+  lui %6, %hi(.str.1)
+  addi %6, %6, %lo(.str.1)
+  lui %7, %hi(a2q)
+  addi %7, %7, %lo(a2q)
+  sw %6, 0(%7)
+  lui %8, %hi(.str.2)
+  addi %8, %8, %lo(.str.2)
+  lui %9, %hi(a2b)
+  addi %9, %9, %lo(a2b)
+  sw %8, 0(%9)
+  j .L1
+.L1:
+  lw ra, 0(sp)
+  add sp, sp, 44
+  ret
+  .text
+  .globl digt
+digt:
+.L2:
+  add sp, sp, -140
+  mv %0, a0
+  sw ra, 0(sp)
+  sub %1, %0, 0
+  seqz %2, %1
+  beqz %2, .L4
+  j .L3
+.L3:
+  lui %33, %hi(.str.3)
+  addi %33, %33, %lo(.str.3)
+  mv %21, %33
+  j .L23
+.L4:
+  sub %3, %0, 1
+  seqz %4, %3
+  beqz %4, .L6
+  j .L5
+.L5:
+  lui %32, %hi(.str.4)
+  addi %32, %32, %lo(.str.4)
+  mv %21, %32
+  j .L23
+.L6:
+  sub %5, %0, 2
+  seqz %6, %5
+  beqz %6, .L8
+  j .L7
+.L7:
+  lui %31, %hi(.str.5)
+  addi %31, %31, %lo(.str.5)
+  mv %21, %31
+  j .L23
+.L8:
+  sub %7, %0, 3
+  seqz %8, %7
+  beqz %8, .L10
+  j .L9
+.L9:
+  lui %30, %hi(.str.6)
+  addi %30, %30, %lo(.str.6)
+  mv %21, %30
+  j .L23
+.L10:
+  sub %9, %0, 4
+  seqz %10, %9
+  beqz %10, .L12
+  j .L11
+.L11:
+  lui %29, %hi(.str.7)
+  addi %29, %29, %lo(.str.7)
+  mv %21, %29
+  j .L23
+.L12:
+  sub %11, %0, 5
+  seqz %12, %11
+  beqz %12, .L14
+  j .L13
+.L13:
+  lui %28, %hi(.str.8)
+  addi %28, %28, %lo(.str.8)
+  mv %21, %28
+  j .L23
+.L14:
+  sub %13, %0, 6
+  seqz %14, %13
+  beqz %14, .L16
+  j .L15
+.L15:
+  lui %27, %hi(.str.9)
+  addi %27, %27, %lo(.str.9)
+  mv %21, %27
+  j .L23
+.L16:
+  sub %15, %0, 7
+  seqz %16, %15
+  beqz %16, .L18
+  j .L17
+.L17:
+  lui %26, %hi(.str.10)
+  addi %26, %26, %lo(.str.10)
+  mv %21, %26
+  j .L23
+.L18:
+  sub %17, %0, 8
+  seqz %18, %17
+  beqz %18, .L20
+  j .L19
+.L19:
+  lui %25, %hi(.str.11)
+  addi %25, %25, %lo(.str.11)
+  mv %21, %25
+  j .L23
+.L20:
+  sub %19, %0, 9
+  seqz %20, %19
+  beqz %20, .L22
+  j .L21
+.L21:
+  lui %24, %hi(.str.12)
+  addi %24, %24, %lo(.str.12)
+  mv %21, %24
+  j .L23
+.L22:
+  lui %23, %hi(.str.3)
+  addi %23, %23, %lo(.str.3)
+  mv %21, %23
+  j .L23
+.L23:
+  mv %22, %21
+  mv a0, %22
+  lw ra, 0(sp)
+  add sp, sp, 140
+  ret
+  .text
+  .globl s2
+s2:
+.L24:
+  add sp, sp, -80
+  mv %0, a0
+  sw ra, 0(sp)
+  slt %1, 9, %0
+  xori %2, %1, 1
+  beqz %2, .L26
+  j .L25
+.L25:
+  mv a0, %0
+  call digt
+  mv %3, a0
+  lui %4, %hi(.str.13)
+  addi %4, %4, %lo(.str.13)
+  mv a0, %4
+  mv a1, %3
+  call string_add
+  mv %5, a0
+  mv a0, %5
+  lui %6, %hi(.str.14)
+  addi %6, %6, %lo(.str.14)
+  mv a1, %6
+  call string_add
+  mv %7, a0
+  mv %17, %7
+  j .L27
+.L26:
+  div %8, %0, 10
+  mv a0, %8
+  call digt
+  mv %9, a0
+  lui %10, %hi(.str.13)
+  addi %10, %10, %lo(.str.13)
+  mv a0, %10
+  mv a1, %9
+  call string_add
+  mv %11, a0
+  rem %12, %0, 10
+  mv a0, %12
+  call digt
+  mv %13, a0
+  mv a0, %11
+  mv a1, %13
+  call string_add
+  mv %14, a0
+  mv a0, %14
+  lui %15, %hi(.str.14)
+  addi %15, %15, %lo(.str.14)
+  mv a1, %15
+  call string_add
+  mv %16, a0
+  mv %17, %16
+  j .L27
+.L27:
+  mv %18, %17
+  mv a0, %18
+  lw ra, 0(sp)
+  add sp, sp, 80
+  ret
+  .text
+  .globl c2
+c2:
+.L28:
+  add sp, sp, -80
+  mv %0, a0
+  sw ra, 0(sp)
+  slt %1, 9, %0
+  xori %2, %1, 1
+  beqz %2, .L30
+  j .L29
+.L29:
+  mv a0, %0
+  call digt
+  mv %3, a0
+  lui %4, %hi(.str.15)
+  addi %4, %4, %lo(.str.15)
+  mv a0, %4
+  mv a1, %3
+  call string_add
+  mv %5, a0
+  mv a0, %5
+  lui %6, %hi(.str.14)
+  addi %6, %6, %lo(.str.14)
+  mv a1, %6
+  call string_add
+  mv %7, a0
+  mv %17, %7
+  j .L31
+.L30:
+  div %8, %0, 10
+  mv a0, %8
+  call digt
+  mv %9, a0
+  lui %10, %hi(.str.15)
+  addi %10, %10, %lo(.str.15)
+  mv a0, %10
+  mv a1, %9
+  call string_add
+  mv %11, a0
+  rem %12, %0, 10
+  mv a0, %12
+  call digt
+  mv %13, a0
+  mv a0, %11
+  mv a1, %13
+  call string_add
+  mv %14, a0
+  mv a0, %14
+  lui %15, %hi(.str.14)
+  addi %15, %15, %lo(.str.14)
+  mv a1, %15
+  call string_add
+  mv %16, a0
+  mv %17, %16
+  j .L31
+.L31:
+  mv %18, %17
+  mv a0, %18
+  lw ra, 0(sp)
+  add sp, sp, 80
+  ret
+  .text
+  .globl main
+main:
+.L32:
+  add sp, sp, -14120
+  sw ra, 0(sp)
+  call global_init
+  add %0, sp, 4
+  add %1, sp, 8
+  sw 0, 0(%1)
+  lui %3, %hi(c)
+  addi %3, %3, %lo(c)
+  lw %2, 0(%3)
+  slli %4, 0, 2
+  add %5, %2, %4
+  lui %6, %hi(.str.16)
+  addi %6, %6, %lo(.str.16)
+  sw %6, 0(%5)
+  lui %8, %hi(c)
+  addi %8, %8, %lo(c)
+  lw %7, 0(%8)
+  slli %9, 1, 2
+  add %10, %7, %9
+  lui %11, %hi(.str.17)
+  addi %11, %11, %lo(.str.17)
+  sw %11, 0(%10)
+  lui %13, %hi(c)
+  addi %13, %13, %lo(c)
+  lw %12, 0(%13)
+  slli %14, 2, 2
+  add %15, %12, %14
+  lui %16, %hi(.str.18)
+  addi %16, %16, %lo(.str.18)
+  sw %16, 0(%15)
+  lui %18, %hi(c)
+  addi %18, %18, %lo(c)
+  lw %17, 0(%18)
+  slli %19, 3, 2
+  add %20, %17, %19
+  lui %21, %hi(.str.19)
+  addi %21, %21, %lo(.str.19)
+  sw %21, 0(%20)
+  lui %23, %hi(c)
+  addi %23, %23, %lo(c)
+  lw %22, 0(%23)
+  slli %24, 4, 2
+  add %25, %22, %24
+  lui %26, %hi(.str.20)
+  addi %26, %26, %lo(.str.20)
+  sw %26, 0(%25)
+  lui %28, %hi(c)
+  addi %28, %28, %lo(c)
+  lw %27, 0(%28)
+  slli %29, 5, 2
+  add %30, %27, %29
+  lui %31, %hi(.str.21)
+  addi %31, %31, %lo(.str.21)
+  sw %31, 0(%30)
+  lui %33, %hi(c)
+  addi %33, %33, %lo(c)
+  lw %32, 0(%33)
+  slli %34, 6, 2
+  add %35, %32, %34
+  lui %36, %hi(.str.22)
+  addi %36, %36, %lo(.str.22)
+  sw %36, 0(%35)
+  lui %38, %hi(c)
+  addi %38, %38, %lo(c)
+  lw %37, 0(%38)
+  slli %39, 7, 2
+  add %40, %37, %39
+  lui %41, %hi(.str.23)
+  addi %41, %41, %lo(.str.23)
+  sw %41, 0(%40)
+  lui %43, %hi(c)
+  addi %43, %43, %lo(c)
+  lw %42, 0(%43)
+  slli %44, 8, 2
+  add %45, %42, %44
+  lui %46, %hi(.str.24)
+  addi %46, %46, %lo(.str.24)
+  sw %46, 0(%45)
+  lui %48, %hi(c)
+  addi %48, %48, %lo(c)
+  lw %47, 0(%48)
+  slli %49, 9, 2
+  add %50, %47, %49
+  lui %51, %hi(.str.25)
+  addi %51, %51, %lo(.str.25)
+  sw %51, 0(%50)
+  lui %53, %hi(c)
+  addi %53, %53, %lo(c)
+  lw %52, 0(%53)
+  slli %54, 10, 2
+  add %55, %52, %54
+  lui %56, %hi(.str.26)
+  addi %56, %56, %lo(.str.26)
+  sw %56, 0(%55)
+  lui %58, %hi(c)
+  addi %58, %58, %lo(c)
+  lw %57, 0(%58)
+  slli %59, 11, 2
+  add %60, %57, %59
+  lui %61, %hi(.str.27)
+  addi %61, %61, %lo(.str.27)
+  sw %61, 0(%60)
+  lui %63, %hi(c)
+  addi %63, %63, %lo(c)
+  lw %62, 0(%63)
+  slli %64, 12, 2
+  add %65, %62, %64
+  lui %66, %hi(.str.28)
+  addi %66, %66, %lo(.str.28)
+  sw %66, 0(%65)
+  lui %68, %hi(c)
+  addi %68, %68, %lo(c)
+  lw %67, 0(%68)
+  slli %69, 13, 2
+  add %70, %67, %69
+  lui %71, %hi(.str.29)
+  addi %71, %71, %lo(.str.29)
+  sw %71, 0(%70)
+  lui %73, %hi(c)
+  addi %73, %73, %lo(c)
+  lw %72, 0(%73)
+  slli %74, 14, 2
+  add %75, %72, %74
+  lui %76, %hi(.str.30)
+  addi %76, %76, %lo(.str.30)
+  sw %76, 0(%75)
+  lui %78, %hi(c)
+  addi %78, %78, %lo(c)
+  lw %77, 0(%78)
+  slli %79, 15, 2
+  add %80, %77, %79
+  lui %81, %hi(.str.3)
+  addi %81, %81, %lo(.str.3)
+  sw %81, 0(%80)
+  lui %83, %hi(c)
+  addi %83, %83, %lo(c)
+  lw %82, 0(%83)
+  slli %84, 16, 2
+  add %85, %82, %84
+  lui %86, %hi(.str.4)
+  addi %86, %86, %lo(.str.4)
+  sw %86, 0(%85)
+  lui %88, %hi(c)
+  addi %88, %88, %lo(c)
+  lw %87, 0(%88)
+  slli %89, 17, 2
+  add %90, %87, %89
+  lui %91, %hi(.str.5)
+  addi %91, %91, %lo(.str.5)
+  sw %91, 0(%90)
+  lui %93, %hi(c)
+  addi %93, %93, %lo(c)
+  lw %92, 0(%93)
+  slli %94, 18, 2
+  add %95, %92, %94
+  lui %96, %hi(.str.6)
+  addi %96, %96, %lo(.str.6)
+  sw %96, 0(%95)
+  lui %98, %hi(c)
+  addi %98, %98, %lo(c)
+  lw %97, 0(%98)
+  slli %99, 19, 2
+  add %100, %97, %99
+  lui %101, %hi(.str.7)
+  addi %101, %101, %lo(.str.7)
+  sw %101, 0(%100)
+  lui %103, %hi(c)
+  addi %103, %103, %lo(c)
+  lw %102, 0(%103)
+  slli %104, 20, 2
+  add %105, %102, %104
+  lui %106, %hi(.str.8)
+  addi %106, %106, %lo(.str.8)
+  sw %106, 0(%105)
+  lui %108, %hi(c)
+  addi %108, %108, %lo(c)
+  lw %107, 0(%108)
+  slli %109, 21, 2
+  add %110, %107, %109
+  lui %111, %hi(.str.9)
+  addi %111, %111, %lo(.str.9)
+  sw %111, 0(%110)
+  lui %113, %hi(c)
+  addi %113, %113, %lo(c)
+  lw %112, 0(%113)
+  slli %114, 22, 2
+  add %115, %112, %114
+  lui %116, %hi(.str.10)
+  addi %116, %116, %lo(.str.10)
+  sw %116, 0(%115)
+  lui %118, %hi(c)
+  addi %118, %118, %lo(c)
+  lw %117, 0(%118)
+  slli %119, 23, 2
+  add %120, %117, %119
+  lui %121, %hi(.str.11)
+  addi %121, %121, %lo(.str.11)
+  sw %121, 0(%120)
+  lui %123, %hi(c)
+  addi %123, %123, %lo(c)
+  lw %122, 0(%123)
+  slli %124, 24, 2
+  add %125, %122, %124
+  lui %126, %hi(.str.12)
+  addi %126, %126, %lo(.str.12)
+  sw %126, 0(%125)
+  lui %128, %hi(c)
+  addi %128, %128, %lo(c)
+  lw %127, 0(%128)
+  slli %129, 25, 2
+  add %130, %127, %129
+  lui %131, %hi(.str.31)
+  addi %131, %131, %lo(.str.31)
+  sw %131, 0(%130)
+  lui %133, %hi(c)
+  addi %133, %133, %lo(c)
+  lw %132, 0(%133)
+  slli %134, 26, 2
+  add %135, %132, %134
+  lui %136, %hi(.str.0)
+  addi %136, %136, %lo(.str.0)
+  sw %136, 0(%135)
+  lui %138, %hi(c)
+  addi %138, %138, %lo(c)
+  lw %137, 0(%138)
+  slli %139, 27, 2
+  add %140, %137, %139
+  lui %141, %hi(.str.32)
+  addi %141, %141, %lo(.str.32)
+  sw %141, 0(%140)
+  lui %143, %hi(c)
+  addi %143, %143, %lo(c)
+  lw %142, 0(%143)
+  slli %144, 28, 2
+  add %145, %142, %144
+  lui %146, %hi(.str.33)
+  addi %146, %146, %lo(.str.33)
+  sw %146, 0(%145)
+  lui %148, %hi(c)
+  addi %148, %148, %lo(c)
+  lw %147, 0(%148)
+  slli %149, 29, 2
+  add %150, %147, %149
+  lui %151, %hi(.str.34)
+  addi %151, %151, %lo(.str.34)
+  sw %151, 0(%150)
+  lui %153, %hi(c)
+  addi %153, %153, %lo(c)
+  lw %152, 0(%153)
+  slli %154, 30, 2
+  add %155, %152, %154
+  lui %156, %hi(.str.35)
+  addi %156, %156, %lo(.str.35)
+  sw %156, 0(%155)
+  lui %158, %hi(c)
+  addi %158, %158, %lo(c)
+  lw %157, 0(%158)
+  slli %159, 31, 2
+  add %160, %157, %159
+  lui %161, %hi(.str.36)
+  addi %161, %161, %lo(.str.36)
+  sw %161, 0(%160)
+  lui %163, %hi(c)
+  addi %163, %163, %lo(c)
+  lw %162, 0(%163)
+  slli %164, 32, 2
+  add %165, %162, %164
+  lui %166, %hi(.str.37)
+  addi %166, %166, %lo(.str.37)
+  sw %166, 0(%165)
+  lui %168, %hi(c)
+  addi %168, %168, %lo(c)
+  lw %167, 0(%168)
+  slli %169, 33, 2
+  add %170, %167, %169
+  lui %171, %hi(.str.38)
+  addi %171, %171, %lo(.str.38)
+  sw %171, 0(%170)
+  lui %173, %hi(c)
+  addi %173, %173, %lo(c)
+  lw %172, 0(%173)
+  slli %174, 34, 2
+  add %175, %172, %174
+  lui %176, %hi(.str.39)
+  addi %176, %176, %lo(.str.39)
+  sw %176, 0(%175)
+  lui %178, %hi(c)
+  addi %178, %178, %lo(c)
+  lw %177, 0(%178)
+  slli %179, 35, 2
+  add %180, %177, %179
+  lui %181, %hi(.str.40)
+  addi %181, %181, %lo(.str.40)
+  sw %181, 0(%180)
+  lui %183, %hi(c)
+  addi %183, %183, %lo(c)
+  lw %182, 0(%183)
+  slli %184, 36, 2
+  add %185, %182, %184
+  lui %186, %hi(.str.41)
+  addi %186, %186, %lo(.str.41)
+  sw %186, 0(%185)
+  lui %188, %hi(c)
+  addi %188, %188, %lo(c)
+  lw %187, 0(%188)
+  slli %189, 37, 2
+  add %190, %187, %189
+  lui %191, %hi(.str.42)
+  addi %191, %191, %lo(.str.42)
+  sw %191, 0(%190)
+  lui %193, %hi(c)
+  addi %193, %193, %lo(c)
+  lw %192, 0(%193)
+  slli %194, 38, 2
+  add %195, %192, %194
+  lui %196, %hi(.str.43)
+  addi %196, %196, %lo(.str.43)
+  sw %196, 0(%195)
+  lui %198, %hi(c)
+  addi %198, %198, %lo(c)
+  lw %197, 0(%198)
+  slli %199, 39, 2
+  add %200, %197, %199
+  lui %201, %hi(.str.44)
+  addi %201, %201, %lo(.str.44)
+  sw %201, 0(%200)
+  lui %203, %hi(c)
+  addi %203, %203, %lo(c)
+  lw %202, 0(%203)
+  slli %204, 40, 2
+  add %205, %202, %204
+  lui %206, %hi(.str.45)
+  addi %206, %206, %lo(.str.45)
+  sw %206, 0(%205)
+  lui %208, %hi(c)
+  addi %208, %208, %lo(c)
+  lw %207, 0(%208)
+  slli %209, 41, 2
+  add %210, %207, %209
+  lui %211, %hi(.str.46)
+  addi %211, %211, %lo(.str.46)
+  sw %211, 0(%210)
+  lui %213, %hi(c)
+  addi %213, %213, %lo(c)
+  lw %212, 0(%213)
+  slli %214, 42, 2
+  add %215, %212, %214
+  lui %216, %hi(.str.47)
+  addi %216, %216, %lo(.str.47)
+  sw %216, 0(%215)
+  lui %218, %hi(c)
+  addi %218, %218, %lo(c)
+  lw %217, 0(%218)
+  slli %219, 43, 2
+  add %220, %217, %219
+  lui %221, %hi(.str.48)
+  addi %221, %221, %lo(.str.48)
+  sw %221, 0(%220)
+  lui %223, %hi(c)
+  addi %223, %223, %lo(c)
+  lw %222, 0(%223)
+  slli %224, 44, 2
+  add %225, %222, %224
+  lui %226, %hi(.str.49)
+  addi %226, %226, %lo(.str.49)
+  sw %226, 0(%225)
+  lui %228, %hi(c)
+  addi %228, %228, %lo(c)
+  lw %227, 0(%228)
+  slli %229, 45, 2
+  add %230, %227, %229
+  lui %231, %hi(.str.50)
+  addi %231, %231, %lo(.str.50)
+  sw %231, 0(%230)
+  lui %233, %hi(c)
+  addi %233, %233, %lo(c)
+  lw %232, 0(%233)
+  slli %234, 46, 2
+  add %235, %232, %234
+  lui %236, %hi(.str.51)
+  addi %236, %236, %lo(.str.51)
+  sw %236, 0(%235)
+  lui %238, %hi(c)
+  addi %238, %238, %lo(c)
+  lw %237, 0(%238)
+  slli %239, 47, 2
+  add %240, %237, %239
+  lui %241, %hi(.str.52)
+  addi %241, %241, %lo(.str.52)
+  sw %241, 0(%240)
+  lui %243, %hi(c)
+  addi %243, %243, %lo(c)
+  lw %242, 0(%243)
+  slli %244, 48, 2
+  add %245, %242, %244
+  lui %246, %hi(.str.53)
+  addi %246, %246, %lo(.str.53)
+  sw %246, 0(%245)
+  lui %248, %hi(c)
+  addi %248, %248, %lo(c)
+  lw %247, 0(%248)
+  slli %249, 49, 2
+  add %250, %247, %249
+  lui %251, %hi(.str.54)
+  addi %251, %251, %lo(.str.54)
+  sw %251, 0(%250)
+  lui %253, %hi(c)
+  addi %253, %253, %lo(c)
+  lw %252, 0(%253)
+  slli %254, 50, 2
+  add %255, %252, %254
+  lui %256, %hi(.str.55)
+  addi %256, %256, %lo(.str.55)
+  sw %256, 0(%255)
+  lui %258, %hi(c)
+  addi %258, %258, %lo(c)
+  lw %257, 0(%258)
+  slli %259, 51, 2
+  add %260, %257, %259
+  lui %261, %hi(.str.56)
+  addi %261, %261, %lo(.str.56)
+  sw %261, 0(%260)
+  lui %263, %hi(c)
+  addi %263, %263, %lo(c)
+  lw %262, 0(%263)
+  slli %264, 52, 2
+  add %265, %262, %264
+  lui %266, %hi(.str.57)
+  addi %266, %266, %lo(.str.57)
+  sw %266, 0(%265)
+  lui %268, %hi(c)
+  addi %268, %268, %lo(c)
+  lw %267, 0(%268)
+  slli %269, 53, 2
+  add %270, %267, %269
+  lui %271, %hi(.str.58)
+  addi %271, %271, %lo(.str.58)
+  sw %271, 0(%270)
+  lui %273, %hi(c)
+  addi %273, %273, %lo(c)
+  lw %272, 0(%273)
+  slli %274, 54, 2
+  add %275, %272, %274
+  lui %276, %hi(.str.59)
+  addi %276, %276, %lo(.str.59)
+  sw %276, 0(%275)
+  lui %278, %hi(c)
+  addi %278, %278, %lo(c)
+  lw %277, 0(%278)
+  slli %279, 55, 2
+  add %280, %277, %279
+  lui %281, %hi(.str.60)
+  addi %281, %281, %lo(.str.60)
+  sw %281, 0(%280)
+  lui %283, %hi(c)
+  addi %283, %283, %lo(c)
+  lw %282, 0(%283)
+  slli %284, 56, 2
+  add %285, %282, %284
+  lui %286, %hi(.str.61)
+  addi %286, %286, %lo(.str.61)
+  sw %286, 0(%285)
+  lui %288, %hi(c)
+  addi %288, %288, %lo(c)
+  lw %287, 0(%288)
+  slli %289, 57, 2
+  add %290, %287, %289
+  lui %291, %hi(.str.62)
+  addi %291, %291, %lo(.str.62)
+  sw %291, 0(%290)
+  lui %293, %hi(c)
+  addi %293, %293, %lo(c)
+  lw %292, 0(%293)
+  slli %294, 58, 2
+  add %295, %292, %294
+  lui %296, %hi(.str.63)
+  addi %296, %296, %lo(.str.63)
+  sw %296, 0(%295)
+  lui %298, %hi(c)
+  addi %298, %298, %lo(c)
+  lw %297, 0(%298)
+  slli %299, 59, 2
+  add %300, %297, %299
+  lui %301, %hi(.str.64)
+  addi %301, %301, %lo(.str.64)
+  sw %301, 0(%300)
+  lui %303, %hi(c)
+  addi %303, %303, %lo(c)
+  lw %302, 0(%303)
+  slli %304, 60, 2
+  add %305, %302, %304
+  lui %306, %hi(.str.65)
+  addi %306, %306, %lo(.str.65)
+  sw %306, 0(%305)
+  lui %308, %hi(c)
+  addi %308, %308, %lo(c)
+  lw %307, 0(%308)
+  slli %309, 61, 2
+  add %310, %307, %309
+  lui %311, %hi(.str.66)
+  addi %311, %311, %lo(.str.66)
+  sw %311, 0(%310)
+  lui %313, %hi(c)
+  addi %313, %313, %lo(c)
+  lw %312, 0(%313)
+  slli %314, 62, 2
+  add %315, %312, %314
+  lui %316, %hi(.str.67)
+  addi %316, %316, %lo(.str.67)
+  sw %316, 0(%315)
+  lui %318, %hi(c)
+  addi %318, %318, %lo(c)
+  lw %317, 0(%318)
+  slli %319, 63, 2
+  add %320, %317, %319
+  lui %321, %hi(.str.68)
+  addi %321, %321, %lo(.str.68)
+  sw %321, 0(%320)
+  lui %323, %hi(c)
+  addi %323, %323, %lo(c)
+  lw %322, 0(%323)
+  slli %324, 64, 2
+  add %325, %322, %324
+  lui %326, %hi(.str.69)
+  addi %326, %326, %lo(.str.69)
+  sw %326, 0(%325)
+  lui %328, %hi(c)
+  addi %328, %328, %lo(c)
+  lw %327, 0(%328)
+  slli %329, 65, 2
+  add %330, %327, %329
+  lui %331, %hi(.str.70)
+  addi %331, %331, %lo(.str.70)
+  sw %331, 0(%330)
+  lui %333, %hi(c)
+  addi %333, %333, %lo(c)
+  lw %332, 0(%333)
+  slli %334, 66, 2
+  add %335, %332, %334
+  lui %336, %hi(.str.71)
+  addi %336, %336, %lo(.str.71)
+  sw %336, 0(%335)
+  lui %338, %hi(c)
+  addi %338, %338, %lo(c)
+  lw %337, 0(%338)
+  slli %339, 67, 2
+  add %340, %337, %339
+  lui %341, %hi(.str.72)
+  addi %341, %341, %lo(.str.72)
+  sw %341, 0(%340)
+  lui %343, %hi(c)
+  addi %343, %343, %lo(c)
+  lw %342, 0(%343)
+  slli %344, 68, 2
+  add %345, %342, %344
+  lui %346, %hi(.str.73)
+  addi %346, %346, %lo(.str.73)
+  sw %346, 0(%345)
+  lui %348, %hi(c)
+  addi %348, %348, %lo(c)
+  lw %347, 0(%348)
+  slli %349, 69, 2
+  add %350, %347, %349
+  lui %351, %hi(.str.74)
+  addi %351, %351, %lo(.str.74)
+  sw %351, 0(%350)
+  lui %353, %hi(c)
+  addi %353, %353, %lo(c)
+  lw %352, 0(%353)
+  slli %354, 70, 2
+  add %355, %352, %354
+  lui %356, %hi(.str.75)
+  addi %356, %356, %lo(.str.75)
+  sw %356, 0(%355)
+  lui %358, %hi(c)
+  addi %358, %358, %lo(c)
+  lw %357, 0(%358)
+  slli %359, 71, 2
+  add %360, %357, %359
+  lui %361, %hi(.str.76)
+  addi %361, %361, %lo(.str.76)
+  sw %361, 0(%360)
+  lui %363, %hi(c)
+  addi %363, %363, %lo(c)
+  lw %362, 0(%363)
+  slli %364, 72, 2
+  add %365, %362, %364
+  lui %366, %hi(.str.77)
+  addi %366, %366, %lo(.str.77)
+  sw %366, 0(%365)
+  lui %368, %hi(c)
+  addi %368, %368, %lo(c)
+  lw %367, 0(%368)
+  slli %369, 73, 2
+  add %370, %367, %369
+  lui %371, %hi(.str.78)
+  addi %371, %371, %lo(.str.78)
+  sw %371, 0(%370)
+  lui %373, %hi(c)
+  addi %373, %373, %lo(c)
+  lw %372, 0(%373)
+  slli %374, 74, 2
+  add %375, %372, %374
+  lui %376, %hi(.str.79)
+  addi %376, %376, %lo(.str.79)
+  sw %376, 0(%375)
+  lui %378, %hi(c)
+  addi %378, %378, %lo(c)
+  lw %377, 0(%378)
+  slli %379, 75, 2
+  add %380, %377, %379
+  lui %381, %hi(.str.80)
+  addi %381, %381, %lo(.str.80)
+  sw %381, 0(%380)
+  lui %383, %hi(c)
+  addi %383, %383, %lo(c)
+  lw %382, 0(%383)
+  slli %384, 76, 2
+  add %385, %382, %384
+  lui %386, %hi(.str.81)
+  addi %386, %386, %lo(.str.81)
+  sw %386, 0(%385)
+  lui %388, %hi(c)
+  addi %388, %388, %lo(c)
+  lw %387, 0(%388)
+  slli %389, 77, 2
+  add %390, %387, %389
+  lui %391, %hi(.str.82)
+  addi %391, %391, %lo(.str.82)
+  sw %391, 0(%390)
+  lui %393, %hi(c)
+  addi %393, %393, %lo(c)
+  lw %392, 0(%393)
+  slli %394, 78, 2
+  add %395, %392, %394
+  lui %396, %hi(.str.83)
+  addi %396, %396, %lo(.str.83)
+  sw %396, 0(%395)
+  lui %398, %hi(c)
+  addi %398, %398, %lo(c)
+  lw %397, 0(%398)
+  slli %399, 79, 2
+  add %400, %397, %399
+  lui %401, %hi(.str.84)
+  addi %401, %401, %lo(.str.84)
+  sw %401, 0(%400)
+  lui %403, %hi(c)
+  addi %403, %403, %lo(c)
+  lw %402, 0(%403)
+  slli %404, 80, 2
+  add %405, %402, %404
+  lui %406, %hi(.str.85)
+  addi %406, %406, %lo(.str.85)
+  sw %406, 0(%405)
+  lui %408, %hi(c)
+  addi %408, %408, %lo(c)
+  lw %407, 0(%408)
+  slli %409, 81, 2
+  add %410, %407, %409
+  lui %411, %hi(.str.86)
+  addi %411, %411, %lo(.str.86)
+  sw %411, 0(%410)
+  lui %413, %hi(c)
+  addi %413, %413, %lo(c)
+  lw %412, 0(%413)
+  slli %414, 82, 2
+  add %415, %412, %414
+  lui %416, %hi(.str.87)
+  addi %416, %416, %lo(.str.87)
+  sw %416, 0(%415)
+  lui %418, %hi(c)
+  addi %418, %418, %lo(c)
+  lw %417, 0(%418)
+  slli %419, 83, 2
+  add %420, %417, %419
+  lui %421, %hi(.str.88)
+  addi %421, %421, %lo(.str.88)
+  sw %421, 0(%420)
+  lui %423, %hi(c)
+  addi %423, %423, %lo(c)
+  lw %422, 0(%423)
+  slli %424, 84, 2
+  add %425, %422, %424
+  lui %426, %hi(.str.89)
+  addi %426, %426, %lo(.str.89)
+  sw %426, 0(%425)
+  lui %428, %hi(c)
+  addi %428, %428, %lo(c)
+  lw %427, 0(%428)
+  slli %429, 85, 2
+  add %430, %427, %429
+  lui %431, %hi(.str.90)
+  addi %431, %431, %lo(.str.90)
+  sw %431, 0(%430)
+  lui %433, %hi(c)
+  addi %433, %433, %lo(c)
+  lw %432, 0(%433)
+  slli %434, 86, 2
+  add %435, %432, %434
+  lui %436, %hi(.str.91)
+  addi %436, %436, %lo(.str.91)
+  sw %436, 0(%435)
+  lui %438, %hi(c)
+  addi %438, %438, %lo(c)
+  lw %437, 0(%438)
+  slli %439, 87, 2
+  add %440, %437, %439
+  lui %441, %hi(.str.92)
+  addi %441, %441, %lo(.str.92)
+  sw %441, 0(%440)
+  lui %443, %hi(c)
+  addi %443, %443, %lo(c)
+  lw %442, 0(%443)
+  slli %444, 88, 2
+  add %445, %442, %444
+  lui %446, %hi(.str.93)
+  addi %446, %446, %lo(.str.93)
+  sw %446, 0(%445)
+  lui %448, %hi(c)
+  addi %448, %448, %lo(c)
+  lw %447, 0(%448)
+  slli %449, 89, 2
+  add %450, %447, %449
+  lui %451, %hi(.str.94)
+  addi %451, %451, %lo(.str.94)
+  sw %451, 0(%450)
+  lui %453, %hi(c)
+  addi %453, %453, %lo(c)
+  lw %452, 0(%453)
+  slli %454, 90, 2
+  add %455, %452, %454
+  lui %456, %hi(.str.95)
+  addi %456, %456, %lo(.str.95)
+  sw %456, 0(%455)
+  lui %458, %hi(c)
+  addi %458, %458, %lo(c)
+  lw %457, 0(%458)
+  slli %459, 91, 2
+  add %460, %457, %459
+  lui %461, %hi(.str.96)
+  addi %461, %461, %lo(.str.96)
+  sw %461, 0(%460)
+  lui %463, %hi(c)
+  addi %463, %463, %lo(c)
+  lw %462, 0(%463)
+  slli %464, 92, 2
+  add %465, %462, %464
+  lui %466, %hi(.str.97)
+  addi %466, %466, %lo(.str.97)
+  sw %466, 0(%465)
+  lui %468, %hi(s)
+  addi %468, %468, %lo(s)
+  lw %467, 0(%468)
+  slli %469, 0, 2
+  add %470, %467, %469
+  lui %471, %hi(.str.98)
+  addi %471, %471, %lo(.str.98)
+  sw %471, 0(%470)
+  lui %473, %hi(s)
+  addi %473, %473, %lo(s)
+  lw %472, 0(%473)
+  slli %474, 1, 2
+  add %475, %472, %474
+  lui %476, %hi(.str.99)
+  addi %476, %476, %lo(.str.99)
+  sw %476, 0(%475)
+  lui %478, %hi(s)
+  addi %478, %478, %lo(s)
+  lw %477, 0(%478)
+  slli %479, 2, 2
+  add %480, %477, %479
+  lui %481, %hi(.str.100)
+  addi %481, %481, %lo(.str.100)
+  sw %481, 0(%480)
+  lui %483, %hi(s)
+  addi %483, %483, %lo(s)
+  lw %482, 0(%483)
+  slli %484, 3, 2
+  add %485, %482, %484
+  lui %486, %hi(.str.101)
+  addi %486, %486, %lo(.str.101)
+  sw %486, 0(%485)
+  lui %488, %hi(s)
+  addi %488, %488, %lo(s)
+  lw %487, 0(%488)
+  slli %489, 4, 2
+  add %490, %487, %489
+  lui %491, %hi(.str.102)
+  addi %491, %491, %lo(.str.102)
+  sw %491, 0(%490)
+  lui %493, %hi(s)
+  addi %493, %493, %lo(s)
+  lw %492, 0(%493)
+  slli %494, 5, 2
+  add %495, %492, %494
+  lui %496, %hi(.str.103)
+  addi %496, %496, %lo(.str.103)
+  sw %496, 0(%495)
+  lui %498, %hi(s)
+  addi %498, %498, %lo(s)
+  lw %497, 0(%498)
+  slli %499, 6, 2
+  add %500, %497, %499
+  lui %501, %hi(.str.104)
+  addi %501, %501, %lo(.str.104)
+  sw %501, 0(%500)
+  lui %503, %hi(s)
+  addi %503, %503, %lo(s)
+  lw %502, 0(%503)
+  slli %504, 7, 2
+  add %505, %502, %504
+  lui %506, %hi(.str.105)
+  addi %506, %506, %lo(.str.105)
+  sw %506, 0(%505)
+  lui %508, %hi(s)
+  addi %508, %508, %lo(s)
+  lw %507, 0(%508)
+  slli %509, 8, 2
+  add %510, %507, %509
+  lui %511, %hi(.str.106)
+  addi %511, %511, %lo(.str.106)
+  sw %511, 0(%510)
+  lui %513, %hi(s)
+  addi %513, %513, %lo(s)
+  lw %512, 0(%513)
+  slli %514, 9, 2
+  add %515, %512, %514
+  lui %516, %hi(.str.107)
+  addi %516, %516, %lo(.str.107)
+  sw %516, 0(%515)
+  lui %518, %hi(s)
+  addi %518, %518, %lo(s)
+  lw %517, 0(%518)
+  slli %519, 10, 2
+  add %520, %517, %519
+  lui %521, %hi(.str.108)
+  addi %521, %521, %lo(.str.108)
+  sw %521, 0(%520)
+  lui %523, %hi(s)
+  addi %523, %523, %lo(s)
+  lw %522, 0(%523)
+  slli %524, 11, 2
+  add %525, %522, %524
+  lui %526, %hi(.str.109)
+  addi %526, %526, %lo(.str.109)
+  sw %526, 0(%525)
+  lui %528, %hi(s)
+  addi %528, %528, %lo(s)
+  lw %527, 0(%528)
+  slli %529, 12, 2
+  add %530, %527, %529
+  lui %531, %hi(.str.110)
+  addi %531, %531, %lo(.str.110)
+  sw %531, 0(%530)
+  lui %533, %hi(s)
+  addi %533, %533, %lo(s)
+  lw %532, 0(%533)
+  slli %534, 13, 2
+  add %535, %532, %534
+  lui %536, %hi(.str.111)
+  addi %536, %536, %lo(.str.111)
+  sw %536, 0(%535)
+  lui %538, %hi(s)
+  addi %538, %538, %lo(s)
+  lw %537, 0(%538)
+  slli %539, 14, 2
+  add %540, %537, %539
+  lui %541, %hi(.str.112)
+  addi %541, %541, %lo(.str.112)
+  sw %541, 0(%540)
+  lui %543, %hi(s)
+  addi %543, %543, %lo(s)
+  lw %542, 0(%543)
+  slli %544, 15, 2
+  add %545, %542, %544
+  lui %546, %hi(.str.113)
+  addi %546, %546, %lo(.str.113)
+  sw %546, 0(%545)
+  lui %548, %hi(s)
+  addi %548, %548, %lo(s)
+  lw %547, 0(%548)
+  slli %549, 16, 2
+  add %550, %547, %549
+  lui %551, %hi(.str.114)
+  addi %551, %551, %lo(.str.114)
+  sw %551, 0(%550)
+  lui %553, %hi(s)
+  addi %553, %553, %lo(s)
+  lw %552, 0(%553)
+  slli %554, 17, 2
+  add %555, %552, %554
+  lui %556, %hi(.str.115)
+  addi %556, %556, %lo(.str.115)
+  sw %556, 0(%555)
+  lui %558, %hi(s)
+  addi %558, %558, %lo(s)
+  lw %557, 0(%558)
+  slli %559, 18, 2
+  add %560, %557, %559
+  lui %561, %hi(.str.110)
+  addi %561, %561, %lo(.str.110)
+  sw %561, 0(%560)
+  lui %563, %hi(s)
+  addi %563, %563, %lo(s)
+  lw %562, 0(%563)
+  slli %564, 19, 2
+  add %565, %562, %564
+  lui %566, %hi(.str.116)
+  addi %566, %566, %lo(.str.116)
+  sw %566, 0(%565)
+  lui %568, %hi(s)
+  addi %568, %568, %lo(s)
+  lw %567, 0(%568)
+  slli %569, 20, 2
+  add %570, %567, %569
+  lui %571, %hi(.str.117)
+  addi %571, %571, %lo(.str.117)
+  sw %571, 0(%570)
+  lui %573, %hi(s)
+  addi %573, %573, %lo(s)
+  lw %572, 0(%573)
+  slli %574, 21, 2
+  add %575, %572, %574
+  lui %576, %hi(.str.118)
+  addi %576, %576, %lo(.str.118)
+  sw %576, 0(%575)
+  lui %578, %hi(s)
+  addi %578, %578, %lo(s)
+  lw %577, 0(%578)
+  slli %579, 22, 2
+  add %580, %577, %579
+  lui %581, %hi(.str.110)
+  addi %581, %581, %lo(.str.110)
+  sw %581, 0(%580)
+  lui %583, %hi(s)
+  addi %583, %583, %lo(s)
+  lw %582, 0(%583)
+  slli %584, 23, 2
+  add %585, %582, %584
+  lui %586, %hi(.str.119)
+  addi %586, %586, %lo(.str.119)
+  sw %586, 0(%585)
+  lui %588, %hi(s)
+  addi %588, %588, %lo(s)
+  lw %587, 0(%588)
+  slli %589, 24, 2
+  add %590, %587, %589
+  lui %591, %hi(.str.120)
+  addi %591, %591, %lo(.str.120)
+  sw %591, 0(%590)
+  lui %593, %hi(s)
+  addi %593, %593, %lo(s)
+  lw %592, 0(%593)
+  slli %594, 25, 2
+  add %595, %592, %594
+  lui %596, %hi(.str.121)
+  addi %596, %596, %lo(.str.121)
+  sw %596, 0(%595)
+  lui %598, %hi(s)
+  addi %598, %598, %lo(s)
+  lw %597, 0(%598)
+  slli %599, 26, 2
+  add %600, %597, %599
+  lui %601, %hi(.str.122)
+  addi %601, %601, %lo(.str.122)
+  sw %601, 0(%600)
+  lui %603, %hi(s)
+  addi %603, %603, %lo(s)
+  lw %602, 0(%603)
+  slli %604, 27, 2
+  add %605, %602, %604
+  lui %606, %hi(.str.123)
+  addi %606, %606, %lo(.str.123)
+  sw %606, 0(%605)
+  lui %608, %hi(s)
+  addi %608, %608, %lo(s)
+  lw %607, 0(%608)
+  slli %609, 28, 2
+  add %610, %607, %609
+  lui %611, %hi(.str.124)
+  addi %611, %611, %lo(.str.124)
+  sw %611, 0(%610)
+  lui %613, %hi(s)
+  addi %613, %613, %lo(s)
+  lw %612, 0(%613)
+  slli %614, 29, 2
+  add %615, %612, %614
+  lui %616, %hi(.str.125)
+  addi %616, %616, %lo(.str.125)
+  sw %616, 0(%615)
+  lui %618, %hi(s)
+  addi %618, %618, %lo(s)
+  lw %617, 0(%618)
+  slli %619, 30, 2
+  add %620, %617, %619
+  lui %621, %hi(.str.126)
+  addi %621, %621, %lo(.str.126)
+  sw %621, 0(%620)
+  lui %623, %hi(s)
+  addi %623, %623, %lo(s)
+  lw %622, 0(%623)
+  slli %624, 31, 2
+  add %625, %622, %624
+  lui %626, %hi(.str.96)
+  addi %626, %626, %lo(.str.96)
+  sw %626, 0(%625)
+  lui %628, %hi(c)
+  addi %628, %628, %lo(c)
+  lw %627, 0(%628)
+  slli %629, 81, 2
+  add %630, %627, %629
+  lui %632, %hi(c)
+  addi %632, %632, %lo(c)
+  lw %631, 0(%632)
+  slli %633, 82, 2
+  add %634, %631, %633
+  lw %635, 0(%630)
+  lw %636, 0(%634)
+  mv a0, %635
+  mv a1, %636
+  call string_add
+  mv %637, a0
+  lui %639, %hi(c)
+  addi %639, %639, %lo(c)
+  lw %638, 0(%639)
+  slli %640, 80, 2
+  add %641, %638, %640
+  lw %642, 0(%641)
+  mv a0, %637
+  mv a1, %642
+  call string_add
+  mv %643, a0
+  lui %645, %hi(c)
+  addi %645, %645, %lo(c)
+  lw %644, 0(%645)
+  slli %646, 71, 2
+  add %647, %644, %646
+  lw %648, 0(%647)
+  mv a0, %643
+  mv a1, %648
+  call string_add
+  mv %649, a0
+  lui %651, %hi(c)
+  addi %651, %651, %lo(c)
+  lw %650, 0(%651)
+  slli %652, 76, 2
+  add %653, %650, %652
+  lw %654, 0(%653)
+  mv a0, %649
+  mv a1, %654
+  call string_add
+  mv %655, a0
+  lui %657, %hi(c)
+  addi %657, %657, %lo(c)
+  lw %656, 0(%657)
+  slli %658, 69, 2
+  add %659, %656, %658
+  lw %660, 0(%659)
+  mv a0, %655
+  mv a1, %660
+  call string_add
+  mv %661, a0
+  lui %663, %hi(c)
+  addi %663, %663, %lo(c)
+  lw %662, 0(%663)
+  slli %664, 0, 2
+  add %665, %662, %664
+  lw %666, 0(%665)
+  mv a0, %661
+  mv a1, %666
+  call string_add
+  mv %667, a0
+  lui %669, %hi(c)
+  addi %669, %669, %lo(c)
+  lw %668, 0(%669)
+  slli %670, 66, 2
+  add %671, %668, %670
+  lw %672, 0(%671)
+  mv a0, %667
+  mv a1, %672
+  call string_add
+  mv %673, a0
+  lui %675, %hi(c)
+  addi %675, %675, %lo(c)
+  lw %674, 0(%675)
+  slli %676, 71, 2
+  add %677, %674, %676
+  lw %678, 0(%677)
+  mv a0, %673
+  mv a1, %678
+  call string_add
+  mv %679, a0
+  lui %681, %hi(c)
+  addi %681, %681, %lo(c)
+  lw %680, 0(%681)
+  slli %682, 69, 2
+  add %683, %680, %682
+  lw %684, 0(%683)
+  mv a0, %679
+  mv a1, %684
+  call string_add
+  mv %685, a0
+  lui %687, %hi(c)
+  addi %687, %687, %lo(c)
+  lw %686, 0(%687)
+  slli %688, 82, 2
+  add %689, %686, %688
+  lw %690, 0(%689)
+  mv a0, %685
+  mv a1, %690
+  call string_add
+  mv %691, a0
+  lui %693, %hi(c)
+  addi %693, %693, %lo(c)
+  lw %692, 0(%693)
+  slli %694, 7, 2
+  add %695, %692, %694
+  lw %696, 0(%695)
+  mv a0, %691
+  mv a1, %696
+  call string_add
+  mv %697, a0
+  lui %699, %hi(c)
+  addi %699, %699, %lo(c)
+  lw %698, 0(%699)
+  slli %700, 71, 2
+  add %701, %698, %700
+  lw %702, 0(%701)
+  mv a0, %697
+  mv a1, %702
+  call string_add
+  mv %703, a0
+  lui %705, %hi(c)
+  addi %705, %705, %lo(c)
+  lw %704, 0(%705)
+  slli %706, 76, 2
+  add %707, %704, %706
+  lw %708, 0(%707)
+  mv a0, %703
+  mv a1, %708
+  call string_add
+  mv %709, a0
+  lui %711, %hi(c)
+  addi %711, %711, %lo(c)
+  lw %710, 0(%711)
+  slli %712, 82, 2
+  add %713, %710, %712
+  lw %714, 0(%713)
+  mv a0, %709
+  mv a1, %714
+  call string_add
+  mv %715, a0
+  lui %717, %hi(c)
+  addi %717, %717, %lo(c)
+  lw %716, 0(%717)
+  slli %718, 0, 2
+  add %719, %716, %718
+  lw %720, 0(%719)
+  mv a0, %715
+  mv a1, %720
+  call string_add
+  mv %721, a0
+  lui %723, %hi(c)
+  addi %723, %723, %lo(c)
+  lw %722, 0(%723)
+  slli %724, 86, 2
+  add %725, %722, %724
+  lw %726, 0(%725)
+  mv a0, %721
+  mv a1, %726
+  call string_add
+  mv %727, a0
+  lui %729, %hi(c)
+  addi %729, %729, %lo(c)
+  lw %728, 0(%729)
+  slli %730, 8, 2
+  add %731, %728, %730
+  lw %732, 0(%731)
+  mv a0, %727
+  mv a1, %732
+  call string_add
+  mv %733, a0
+  lui %735, %hi(c)
+  addi %735, %735, %lo(c)
+  lw %734, 0(%735)
+  slli %736, 89, 2
+  add %737, %734, %736
+  lw %738, 0(%737)
+  mv a0, %733
+  mv a1, %738
+  call string_add
+  mv %739, a0
+  mv a0, %739
+  call println
+  lui %741, %hi(c)
+  addi %741, %741, %lo(c)
+  lw %740, 0(%741)
+  slli %742, 71, 2
+  add %743, %740, %742
+  lui %745, %hi(c)
+  addi %745, %745, %lo(c)
+  lw %744, 0(%745)
+  slli %746, 68, 2
+  add %747, %744, %746
+  lw %748, 0(%743)
+  lw %749, 0(%747)
+  mv a0, %748
+  mv a1, %749
+  call string_add
+  mv %750, a0
+  lui %752, %hi(c)
+  addi %752, %752, %lo(c)
+  lw %751, 0(%752)
+  slli %753, 7, 2
+  add %754, %751, %753
+  lw %755, 0(%754)
+  mv a0, %750
+  mv a1, %755
+  call string_add
+  mv %756, a0
+  lui %758, %hi(c)
+  addi %758, %758, %lo(c)
+  lw %757, 0(%758)
+  slli %759, 86, 2
+  add %760, %757, %759
+  lw %761, 0(%760)
+  mv a0, %756
+  mv a1, %761
+  call string_add
+  mv %762, a0
+  lui %764, %hi(c)
+  addi %764, %764, %lo(c)
+  lw %763, 0(%764)
+  slli %765, 28, 2
+  add %766, %763, %765
+  lw %767, 0(%766)
+  mv a0, %762
+  mv a1, %767
+  call string_add
+  mv %768, a0
+  lui %770, %hi(c)
+  addi %770, %770, %lo(c)
+  lw %769, 0(%770)
+  slli %771, 28, 2
+  add %772, %769, %771
+  lw %773, 0(%772)
+  mv a0, %768
+  mv a1, %773
+  call string_add
+  mv %774, a0
+  lui %776, %hi(c)
+  addi %776, %776, %lo(c)
+  lw %775, 0(%776)
+  slli %777, 15, 2
+  add %778, %775, %777
+  lw %779, 0(%778)
+  mv a0, %774
+  mv a1, %779
+  call string_add
+  mv %780, a0
+  lui %782, %hi(c)
+  addi %782, %782, %lo(c)
+  lw %781, 0(%782)
+  slli %783, 8, 2
+  add %784, %781, %783
+  lw %785, 0(%784)
+  mv a0, %780
+  mv a1, %785
+  call string_add
+  mv %786, a0
+  lui %788, %hi(c)
+  addi %788, %788, %lo(c)
+  lw %787, 0(%788)
+  slli %789, 80, 2
+  add %790, %787, %789
+  lw %791, 0(%790)
+  mv a0, %786
+  mv a1, %791
+  call string_add
+  mv %792, a0
+  lui %794, %hi(c)
+  addi %794, %794, %lo(c)
+  lw %793, 0(%794)
+  slli %795, 67, 2
+  add %796, %793, %795
+  lw %797, 0(%796)
+  mv a0, %792
+  mv a1, %797
+  call string_add
+  mv %798, a0
+  lui %800, %hi(c)
+  addi %800, %800, %lo(c)
+  lw %799, 0(%800)
+  slli %801, 82, 2
+  add %802, %799, %801
+  lw %803, 0(%802)
+  mv a0, %798
+  mv a1, %803
+  call string_add
+  mv %804, a0
+  lui %806, %hi(c)
+  addi %806, %806, %lo(c)
+  lw %805, 0(%806)
+  slli %807, 83, 2
+  add %808, %805, %807
+  lw %809, 0(%808)
+  mv a0, %804
+  mv a1, %809
+  call string_add
+  mv %810, a0
+  lui %812, %hi(c)
+  addi %812, %812, %lo(c)
+  lw %811, 0(%812)
+  slli %813, 80, 2
+  add %814, %811, %813
+  lw %815, 0(%814)
+  mv a0, %810
+  mv a1, %815
+  call string_add
+  mv %816, a0
+  lui %818, %hi(c)
+  addi %818, %818, %lo(c)
+  lw %817, 0(%818)
+  slli %819, 76, 2
+  add %820, %817, %819
+  lw %821, 0(%820)
+  mv a0, %816
+  mv a1, %821
+  call string_add
+  mv %822, a0
+  lui %824, %hi(c)
+  addi %824, %824, %lo(c)
+  lw %823, 0(%824)
+  slli %825, 0, 2
+  add %826, %823, %825
+  lw %827, 0(%826)
+  mv a0, %822
+  mv a1, %827
+  call string_add
+  mv %828, a0
+  lui %830, %hi(a2q)
+  addi %830, %830, %lo(a2q)
+  lw %829, 0(%830)
+  mv a0, %828
+  mv a1, %829
+  call string_add
+  mv %831, a0
+  lui %833, %hi(c)
+  addi %833, %833, %lo(c)
+  lw %832, 0(%833)
+  slli %834, 15, 2
+  add %835, %832, %834
+  lw %836, 0(%835)
+  mv a0, %831
+  mv a1, %836
+  call string_add
+  mv %837, a0
+  lui %839, %hi(a2q)
+  addi %839, %839, %lo(a2q)
+  lw %838, 0(%839)
+  mv a0, %837
+  mv a1, %838
+  call string_add
+  mv %840, a0
+  lui %842, %hi(c)
+  addi %842, %842, %lo(c)
+  lw %841, 0(%842)
+  slli %843, 26, 2
+  add %844, %841, %843
+  lw %845, 0(%844)
+  mv a0, %840
+  mv a1, %845
+  call string_add
+  mv %846, a0
+  mv a0, %846
+  call println
+  lui %848, %hi(c)
+  addi %848, %848, %lo(c)
+  lw %847, 0(%848)
+  slli %849, 71, 2
+  add %850, %847, %849
+  lui %852, %hi(c)
+  addi %852, %852, %lo(c)
+  lw %851, 0(%852)
+  slli %853, 68, 2
+  add %854, %851, %853
+  lw %855, 0(%850)
+  lw %856, 0(%854)
+  mv a0, %855
+  mv a1, %856
+  call string_add
+  mv %857, a0
+  lui %859, %hi(c)
+  addi %859, %859, %lo(c)
+  lw %858, 0(%859)
+  slli %860, 7, 2
+  add %861, %858, %860
+  lw %862, 0(%861)
+  mv a0, %857
+  mv a1, %862
+  call string_add
+  mv %863, a0
+  lui %865, %hi(c)
+  addi %865, %865, %lo(c)
+  lw %864, 0(%865)
+  slli %866, 86, 2
+  add %867, %864, %866
+  lw %868, 0(%867)
+  mv a0, %863
+  mv a1, %868
+  call string_add
+  mv %869, a0
+  lui %871, %hi(c)
+  addi %871, %871, %lo(c)
+  lw %870, 0(%871)
+  slli %872, 28, 2
+  add %873, %870, %872
+  lw %874, 0(%873)
+  mv a0, %869
+  mv a1, %874
+  call string_add
+  mv %875, a0
+  lui %877, %hi(c)
+  addi %877, %877, %lo(c)
+  lw %876, 0(%877)
+  slli %878, 28, 2
+  add %879, %876, %878
+  lw %880, 0(%879)
+  mv a0, %875
+  mv a1, %880
+  call string_add
+  mv %881, a0
+  lui %883, %hi(c)
+  addi %883, %883, %lo(c)
+  lw %882, 0(%883)
+  slli %884, 16, 2
+  add %885, %882, %884
+  lw %886, 0(%885)
+  mv a0, %881
+  mv a1, %886
+  call string_add
+  mv %887, a0
+  lui %889, %hi(c)
+  addi %889, %889, %lo(c)
+  lw %888, 0(%889)
+  slli %890, 8, 2
+  add %891, %888, %890
+  lw %892, 0(%891)
+  mv a0, %887
+  mv a1, %892
+  call string_add
+  mv %893, a0
+  lui %895, %hi(c)
+  addi %895, %895, %lo(c)
+  lw %894, 0(%895)
+  slli %896, 80, 2
+  add %897, %894, %896
+  lw %898, 0(%897)
+  mv a0, %893
+  mv a1, %898
+  call string_add
+  mv %899, a0
+  lui %901, %hi(c)
+  addi %901, %901, %lo(c)
+  lw %900, 0(%901)
+  slli %902, 67, 2
+  add %903, %900, %902
+  lw %904, 0(%903)
+  mv a0, %899
+  mv a1, %904
+  call string_add
+  mv %905, a0
+  lui %907, %hi(c)
+  addi %907, %907, %lo(c)
+  lw %906, 0(%907)
+  slli %908, 82, 2
+  add %909, %906, %908
+  lw %910, 0(%909)
+  mv a0, %905
+  mv a1, %910
+  call string_add
+  mv %911, a0
+  lui %913, %hi(c)
+  addi %913, %913, %lo(c)
+  lw %912, 0(%913)
+  slli %914, 83, 2
+  add %915, %912, %914
+  lw %916, 0(%915)
+  mv a0, %911
+  mv a1, %916
+  call string_add
+  mv %917, a0
+  lui %919, %hi(c)
+  addi %919, %919, %lo(c)
+  lw %918, 0(%919)
+  slli %920, 80, 2
+  add %921, %918, %920
+  lw %922, 0(%921)
+  mv a0, %917
+  mv a1, %922
+  call string_add
+  mv %923, a0
+  lui %925, %hi(c)
+  addi %925, %925, %lo(c)
+  lw %924, 0(%925)
+  slli %926, 76, 2
+  add %927, %924, %926
+  lw %928, 0(%927)
+  mv a0, %923
+  mv a1, %928
+  call string_add
+  mv %929, a0
+  lui %931, %hi(c)
+  addi %931, %931, %lo(c)
+  lw %930, 0(%931)
+  slli %932, 0, 2
+  add %933, %930, %932
+  lw %934, 0(%933)
+  mv a0, %929
+  mv a1, %934
+  call string_add
+  mv %935, a0
+  lui %937, %hi(a2q)
+  addi %937, %937, %lo(a2q)
+  lw %936, 0(%937)
+  mv a0, %935
+  mv a1, %936
+  call string_add
+  mv %938, a0
+  lui %940, %hi(c)
+  addi %940, %940, %lo(c)
+  lw %939, 0(%940)
+  slli %941, 16, 2
+  add %942, %939, %941
+  lw %943, 0(%942)
+  mv a0, %938
+  mv a1, %943
+  call string_add
+  mv %944, a0
+  lui %946, %hi(a2q)
+  addi %946, %946, %lo(a2q)
+  lw %945, 0(%946)
+  mv a0, %944
+  mv a1, %945
+  call string_add
+  mv %947, a0
+  lui %949, %hi(c)
+  addi %949, %949, %lo(c)
+  lw %948, 0(%949)
+  slli %950, 26, 2
+  add %951, %948, %950
+  lw %952, 0(%951)
+  mv a0, %947
+  mv a1, %952
+  call string_add
+  mv %953, a0
+  mv a0, %953
+  call println
+  lui %955, %hi(c)
+  addi %955, %955, %lo(c)
+  lw %954, 0(%955)
+  slli %956, 71, 2
+  add %957, %954, %956
+  lui %959, %hi(c)
+  addi %959, %959, %lo(c)
+  lw %958, 0(%959)
+  slli %960, 68, 2
+  add %961, %958, %960
+  lw %962, 0(%957)
+  lw %963, 0(%961)
+  mv a0, %962
+  mv a1, %963
+  call string_add
+  mv %964, a0
+  lui %966, %hi(c)
+  addi %966, %966, %lo(c)
+  lw %965, 0(%966)
+  slli %967, 7, 2
+  add %968, %965, %967
+  lw %969, 0(%968)
+  mv a0, %964
+  mv a1, %969
+  call string_add
+  mv %970, a0
+  lui %972, %hi(c)
+  addi %972, %972, %lo(c)
+  lw %971, 0(%972)
+  slli %973, 86, 2
+  add %974, %971, %973
+  lw %975, 0(%974)
+  mv a0, %970
+  mv a1, %975
+  call string_add
+  mv %976, a0
+  lui %978, %hi(c)
+  addi %978, %978, %lo(c)
+  lw %977, 0(%978)
+  slli %979, 28, 2
+  add %980, %977, %979
+  lw %981, 0(%980)
+  mv a0, %976
+  mv a1, %981
+  call string_add
+  mv %982, a0
+  lui %984, %hi(c)
+  addi %984, %984, %lo(c)
+  lw %983, 0(%984)
+  slli %985, 28, 2
+  add %986, %983, %985
+  lw %987, 0(%986)
+  mv a0, %982
+  mv a1, %987
+  call string_add
+  mv %988, a0
+  lui %990, %hi(c)
+  addi %990, %990, %lo(c)
+  lw %989, 0(%990)
+  slli %991, 17, 2
+  add %992, %989, %991
+  lw %993, 0(%992)
+  mv a0, %988
+  mv a1, %993
+  call string_add
+  mv %994, a0
+  lui %996, %hi(c)
+  addi %996, %996, %lo(c)
+  lw %995, 0(%996)
+  slli %997, 8, 2
+  add %998, %995, %997
+  lw %999, 0(%998)
+  mv a0, %994
+  mv a1, %999
+  call string_add
+  mv %1000, a0
+  lui %1002, %hi(c)
+  addi %1002, %1002, %lo(c)
+  lw %1001, 0(%1002)
+  slli %1003, 80, 2
+  add %1004, %1001, %1003
+  lw %1005, 0(%1004)
+  mv a0, %1000
+  mv a1, %1005
+  call string_add
+  mv %1006, a0
+  lui %1008, %hi(c)
+  addi %1008, %1008, %lo(c)
+  lw %1007, 0(%1008)
+  slli %1009, 67, 2
+  add %1010, %1007, %1009
+  lw %1011, 0(%1010)
+  mv a0, %1006
+  mv a1, %1011
+  call string_add
+  mv %1012, a0
+  lui %1014, %hi(c)
+  addi %1014, %1014, %lo(c)
+  lw %1013, 0(%1014)
+  slli %1015, 82, 2
+  add %1016, %1013, %1015
+  lw %1017, 0(%1016)
+  mv a0, %1012
+  mv a1, %1017
+  call string_add
+  mv %1018, a0
+  lui %1020, %hi(c)
+  addi %1020, %1020, %lo(c)
+  lw %1019, 0(%1020)
+  slli %1021, 83, 2
+  add %1022, %1019, %1021
+  lw %1023, 0(%1022)
+  mv a0, %1018
+  mv a1, %1023
+  call string_add
+  mv %1024, a0
+  lui %1026, %hi(c)
+  addi %1026, %1026, %lo(c)
+  lw %1025, 0(%1026)
+  slli %1027, 80, 2
+  add %1028, %1025, %1027
+  lw %1029, 0(%1028)
+  mv a0, %1024
+  mv a1, %1029
+  call string_add
+  mv %1030, a0
+  lui %1032, %hi(c)
+  addi %1032, %1032, %lo(c)
+  lw %1031, 0(%1032)
+  slli %1033, 76, 2
+  add %1034, %1031, %1033
+  lw %1035, 0(%1034)
+  mv a0, %1030
+  mv a1, %1035
+  call string_add
+  mv %1036, a0
+  lui %1038, %hi(c)
+  addi %1038, %1038, %lo(c)
+  lw %1037, 0(%1038)
+  slli %1039, 0, 2
+  add %1040, %1037, %1039
+  lw %1041, 0(%1040)
+  mv a0, %1036
+  mv a1, %1041
+  call string_add
+  mv %1042, a0
+  lui %1044, %hi(a2q)
+  addi %1044, %1044, %lo(a2q)
+  lw %1043, 0(%1044)
+  mv a0, %1042
+  mv a1, %1043
+  call string_add
+  mv %1045, a0
+  lui %1047, %hi(c)
+  addi %1047, %1047, %lo(c)
+  lw %1046, 0(%1047)
+  slli %1048, 17, 2
+  add %1049, %1046, %1048
+  lw %1050, 0(%1049)
+  mv a0, %1045
+  mv a1, %1050
+  call string_add
+  mv %1051, a0
+  lui %1053, %hi(a2q)
+  addi %1053, %1053, %lo(a2q)
+  lw %1052, 0(%1053)
+  mv a0, %1051
+  mv a1, %1052
+  call string_add
+  mv %1054, a0
+  lui %1056, %hi(c)
+  addi %1056, %1056, %lo(c)
+  lw %1055, 0(%1056)
+  slli %1057, 26, 2
+  add %1058, %1055, %1057
+  lw %1059, 0(%1058)
+  mv a0, %1054
+  mv a1, %1059
+  call string_add
+  mv %1060, a0
+  mv a0, %1060
+  call println
+  lui %1062, %hi(c)
+  addi %1062, %1062, %lo(c)
+  lw %1061, 0(%1062)
+  slli %1063, 71, 2
+  add %1064, %1061, %1063
+  lui %1066, %hi(c)
+  addi %1066, %1066, %lo(c)
+  lw %1065, 0(%1066)
+  slli %1067, 68, 2
+  add %1068, %1065, %1067
+  lw %1069, 0(%1064)
+  lw %1070, 0(%1068)
+  mv a0, %1069
+  mv a1, %1070
+  call string_add
+  mv %1071, a0
+  lui %1073, %hi(c)
+  addi %1073, %1073, %lo(c)
+  lw %1072, 0(%1073)
+  slli %1074, 7, 2
+  add %1075, %1072, %1074
+  lw %1076, 0(%1075)
+  mv a0, %1071
+  mv a1, %1076
+  call string_add
+  mv %1077, a0
+  lui %1079, %hi(c)
+  addi %1079, %1079, %lo(c)
+  lw %1078, 0(%1079)
+  slli %1080, 86, 2
+  add %1081, %1078, %1080
+  lw %1082, 0(%1081)
+  mv a0, %1077
+  mv a1, %1082
+  call string_add
+  mv %1083, a0
+  lui %1085, %hi(c)
+  addi %1085, %1085, %lo(c)
+  lw %1084, 0(%1085)
+  slli %1086, 28, 2
+  add %1087, %1084, %1086
+  lw %1088, 0(%1087)
+  mv a0, %1083
+  mv a1, %1088
+  call string_add
+  mv %1089, a0
+  lui %1091, %hi(c)
+  addi %1091, %1091, %lo(c)
+  lw %1090, 0(%1091)
+  slli %1092, 28, 2
+  add %1093, %1090, %1092
+  lw %1094, 0(%1093)
+  mv a0, %1089
+  mv a1, %1094
+  call string_add
+  mv %1095, a0
+  lui %1097, %hi(c)
+  addi %1097, %1097, %lo(c)
+  lw %1096, 0(%1097)
+  slli %1098, 18, 2
+  add %1099, %1096, %1098
+  lw %1100, 0(%1099)
+  mv a0, %1095
+  mv a1, %1100
+  call string_add
+  mv %1101, a0
+  lui %1103, %hi(c)
+  addi %1103, %1103, %lo(c)
+  lw %1102, 0(%1103)
+  slli %1104, 8, 2
+  add %1105, %1102, %1104
+  lw %1106, 0(%1105)
+  mv a0, %1101
+  mv a1, %1106
+  call string_add
+  mv %1107, a0
+  lui %1109, %hi(c)
+  addi %1109, %1109, %lo(c)
+  lw %1108, 0(%1109)
+  slli %1110, 80, 2
+  add %1111, %1108, %1110
+  lw %1112, 0(%1111)
+  mv a0, %1107
+  mv a1, %1112
+  call string_add
+  mv %1113, a0
+  lui %1115, %hi(c)
+  addi %1115, %1115, %lo(c)
+  lw %1114, 0(%1115)
+  slli %1116, 67, 2
+  add %1117, %1114, %1116
+  lw %1118, 0(%1117)
+  mv a0, %1113
+  mv a1, %1118
+  call string_add
+  mv %1119, a0
+  lui %1121, %hi(c)
+  addi %1121, %1121, %lo(c)
+  lw %1120, 0(%1121)
+  slli %1122, 82, 2
+  add %1123, %1120, %1122
+  lw %1124, 0(%1123)
+  mv a0, %1119
+  mv a1, %1124
+  call string_add
+  mv %1125, a0
+  lui %1127, %hi(c)
+  addi %1127, %1127, %lo(c)
+  lw %1126, 0(%1127)
+  slli %1128, 83, 2
+  add %1129, %1126, %1128
+  lw %1130, 0(%1129)
+  mv a0, %1125
+  mv a1, %1130
+  call string_add
+  mv %1131, a0
+  lui %1133, %hi(c)
+  addi %1133, %1133, %lo(c)
+  lw %1132, 0(%1133)
+  slli %1134, 80, 2
+  add %1135, %1132, %1134
+  lw %1136, 0(%1135)
+  mv a0, %1131
+  mv a1, %1136
+  call string_add
+  mv %1137, a0
+  lui %1139, %hi(c)
+  addi %1139, %1139, %lo(c)
+  lw %1138, 0(%1139)
+  slli %1140, 76, 2
+  add %1141, %1138, %1140
+  lw %1142, 0(%1141)
+  mv a0, %1137
+  mv a1, %1142
+  call string_add
+  mv %1143, a0
+  lui %1145, %hi(c)
+  addi %1145, %1145, %lo(c)
+  lw %1144, 0(%1145)
+  slli %1146, 0, 2
+  add %1147, %1144, %1146
+  lw %1148, 0(%1147)
+  mv a0, %1143
+  mv a1, %1148
+  call string_add
+  mv %1149, a0
+  lui %1151, %hi(a2q)
+  addi %1151, %1151, %lo(a2q)
+  lw %1150, 0(%1151)
+  mv a0, %1149
+  mv a1, %1150
+  call string_add
+  mv %1152, a0
+  lui %1154, %hi(c)
+  addi %1154, %1154, %lo(c)
+  lw %1153, 0(%1154)
+  slli %1155, 18, 2
+  add %1156, %1153, %1155
+  lw %1157, 0(%1156)
+  mv a0, %1152
+  mv a1, %1157
+  call string_add
+  mv %1158, a0
+  lui %1160, %hi(a2q)
+  addi %1160, %1160, %lo(a2q)
+  lw %1159, 0(%1160)
+  mv a0, %1158
+  mv a1, %1159
+  call string_add
+  mv %1161, a0
+  lui %1163, %hi(c)
+  addi %1163, %1163, %lo(c)
+  lw %1162, 0(%1163)
+  slli %1164, 26, 2
+  add %1165, %1162, %1164
+  lw %1166, 0(%1165)
+  mv a0, %1161
+  mv a1, %1166
+  call string_add
+  mv %1167, a0
+  mv a0, %1167
+  call println
+  lui %1169, %hi(c)
+  addi %1169, %1169, %lo(c)
+  lw %1168, 0(%1169)
+  slli %1170, 71, 2
+  add %1171, %1168, %1170
+  lui %1173, %hi(c)
+  addi %1173, %1173, %lo(c)
+  lw %1172, 0(%1173)
+  slli %1174, 68, 2
+  add %1175, %1172, %1174
+  lw %1176, 0(%1171)
+  lw %1177, 0(%1175)
+  mv a0, %1176
+  mv a1, %1177
+  call string_add
+  mv %1178, a0
+  lui %1180, %hi(c)
+  addi %1180, %1180, %lo(c)
+  lw %1179, 0(%1180)
+  slli %1181, 7, 2
+  add %1182, %1179, %1181
+  lw %1183, 0(%1182)
+  mv a0, %1178
+  mv a1, %1183
+  call string_add
+  mv %1184, a0
+  lui %1186, %hi(c)
+  addi %1186, %1186, %lo(c)
+  lw %1185, 0(%1186)
+  slli %1187, 86, 2
+  add %1188, %1185, %1187
+  lw %1189, 0(%1188)
+  mv a0, %1184
+  mv a1, %1189
+  call string_add
+  mv %1190, a0
+  lui %1192, %hi(c)
+  addi %1192, %1192, %lo(c)
+  lw %1191, 0(%1192)
+  slli %1193, 28, 2
+  add %1194, %1191, %1193
+  lw %1195, 0(%1194)
+  mv a0, %1190
+  mv a1, %1195
+  call string_add
+  mv %1196, a0
+  lui %1198, %hi(c)
+  addi %1198, %1198, %lo(c)
+  lw %1197, 0(%1198)
+  slli %1199, 28, 2
+  add %1200, %1197, %1199
+  lw %1201, 0(%1200)
+  mv a0, %1196
+  mv a1, %1201
+  call string_add
+  mv %1202, a0
+  lui %1204, %hi(c)
+  addi %1204, %1204, %lo(c)
+  lw %1203, 0(%1204)
+  slli %1205, 19, 2
+  add %1206, %1203, %1205
+  lw %1207, 0(%1206)
+  mv a0, %1202
+  mv a1, %1207
+  call string_add
+  mv %1208, a0
+  lui %1210, %hi(c)
+  addi %1210, %1210, %lo(c)
+  lw %1209, 0(%1210)
+  slli %1211, 8, 2
+  add %1212, %1209, %1211
+  lw %1213, 0(%1212)
+  mv a0, %1208
+  mv a1, %1213
+  call string_add
+  mv %1214, a0
+  lui %1216, %hi(c)
+  addi %1216, %1216, %lo(c)
+  lw %1215, 0(%1216)
+  slli %1217, 80, 2
+  add %1218, %1215, %1217
+  lw %1219, 0(%1218)
+  mv a0, %1214
+  mv a1, %1219
+  call string_add
+  mv %1220, a0
+  lui %1222, %hi(c)
+  addi %1222, %1222, %lo(c)
+  lw %1221, 0(%1222)
+  slli %1223, 67, 2
+  add %1224, %1221, %1223
+  lw %1225, 0(%1224)
+  mv a0, %1220
+  mv a1, %1225
+  call string_add
+  mv %1226, a0
+  lui %1228, %hi(c)
+  addi %1228, %1228, %lo(c)
+  lw %1227, 0(%1228)
+  slli %1229, 82, 2
+  add %1230, %1227, %1229
+  lw %1231, 0(%1230)
+  mv a0, %1226
+  mv a1, %1231
+  call string_add
+  mv %1232, a0
+  lui %1234, %hi(c)
+  addi %1234, %1234, %lo(c)
+  lw %1233, 0(%1234)
+  slli %1235, 83, 2
+  add %1236, %1233, %1235
+  lw %1237, 0(%1236)
+  mv a0, %1232
+  mv a1, %1237
+  call string_add
+  mv %1238, a0
+  lui %1240, %hi(c)
+  addi %1240, %1240, %lo(c)
+  lw %1239, 0(%1240)
+  slli %1241, 80, 2
+  add %1242, %1239, %1241
+  lw %1243, 0(%1242)
+  mv a0, %1238
+  mv a1, %1243
+  call string_add
+  mv %1244, a0
+  lui %1246, %hi(c)
+  addi %1246, %1246, %lo(c)
+  lw %1245, 0(%1246)
+  slli %1247, 76, 2
+  add %1248, %1245, %1247
+  lw %1249, 0(%1248)
+  mv a0, %1244
+  mv a1, %1249
+  call string_add
+  mv %1250, a0
+  lui %1252, %hi(c)
+  addi %1252, %1252, %lo(c)
+  lw %1251, 0(%1252)
+  slli %1253, 0, 2
+  add %1254, %1251, %1253
+  lw %1255, 0(%1254)
+  mv a0, %1250
+  mv a1, %1255
+  call string_add
+  mv %1256, a0
+  lui %1258, %hi(a2q)
+  addi %1258, %1258, %lo(a2q)
+  lw %1257, 0(%1258)
+  mv a0, %1256
+  mv a1, %1257
+  call string_add
+  mv %1259, a0
+  lui %1261, %hi(c)
+  addi %1261, %1261, %lo(c)
+  lw %1260, 0(%1261)
+  slli %1262, 19, 2
+  add %1263, %1260, %1262
+  lw %1264, 0(%1263)
+  mv a0, %1259
+  mv a1, %1264
+  call string_add
+  mv %1265, a0
+  lui %1267, %hi(a2q)
+  addi %1267, %1267, %lo(a2q)
+  lw %1266, 0(%1267)
+  mv a0, %1265
+  mv a1, %1266
+  call string_add
+  mv %1268, a0
+  lui %1270, %hi(c)
+  addi %1270, %1270, %lo(c)
+  lw %1269, 0(%1270)
+  slli %1271, 26, 2
+  add %1272, %1269, %1271
+  lw %1273, 0(%1272)
+  mv a0, %1268
+  mv a1, %1273
+  call string_add
+  mv %1274, a0
+  mv a0, %1274
+  call println
+  lui %1276, %hi(c)
+  addi %1276, %1276, %lo(c)
+  lw %1275, 0(%1276)
+  slli %1277, 71, 2
+  add %1278, %1275, %1277
+  lui %1280, %hi(c)
+  addi %1280, %1280, %lo(c)
+  lw %1279, 0(%1280)
+  slli %1281, 68, 2
+  add %1282, %1279, %1281
+  lw %1283, 0(%1278)
+  lw %1284, 0(%1282)
+  mv a0, %1283
+  mv a1, %1284
+  call string_add
+  mv %1285, a0
+  lui %1287, %hi(c)
+  addi %1287, %1287, %lo(c)
+  lw %1286, 0(%1287)
+  slli %1288, 7, 2
+  add %1289, %1286, %1288
+  lw %1290, 0(%1289)
+  mv a0, %1285
+  mv a1, %1290
+  call string_add
+  mv %1291, a0
+  lui %1293, %hi(c)
+  addi %1293, %1293, %lo(c)
+  lw %1292, 0(%1293)
+  slli %1294, 86, 2
+  add %1295, %1292, %1294
+  lw %1296, 0(%1295)
+  mv a0, %1291
+  mv a1, %1296
+  call string_add
+  mv %1297, a0
+  lui %1299, %hi(c)
+  addi %1299, %1299, %lo(c)
+  lw %1298, 0(%1299)
+  slli %1300, 28, 2
+  add %1301, %1298, %1300
+  lw %1302, 0(%1301)
+  mv a0, %1297
+  mv a1, %1302
+  call string_add
+  mv %1303, a0
+  lui %1305, %hi(c)
+  addi %1305, %1305, %lo(c)
+  lw %1304, 0(%1305)
+  slli %1306, 28, 2
+  add %1307, %1304, %1306
+  lw %1308, 0(%1307)
+  mv a0, %1303
+  mv a1, %1308
+  call string_add
+  mv %1309, a0
+  lui %1311, %hi(c)
+  addi %1311, %1311, %lo(c)
+  lw %1310, 0(%1311)
+  slli %1312, 20, 2
+  add %1313, %1310, %1312
+  lw %1314, 0(%1313)
+  mv a0, %1309
+  mv a1, %1314
+  call string_add
+  mv %1315, a0
+  lui %1317, %hi(c)
+  addi %1317, %1317, %lo(c)
+  lw %1316, 0(%1317)
+  slli %1318, 8, 2
+  add %1319, %1316, %1318
+  lw %1320, 0(%1319)
+  mv a0, %1315
+  mv a1, %1320
+  call string_add
+  mv %1321, a0
+  lui %1323, %hi(c)
+  addi %1323, %1323, %lo(c)
+  lw %1322, 0(%1323)
+  slli %1324, 80, 2
+  add %1325, %1322, %1324
+  lw %1326, 0(%1325)
+  mv a0, %1321
+  mv a1, %1326
+  call string_add
+  mv %1327, a0
+  lui %1329, %hi(c)
+  addi %1329, %1329, %lo(c)
+  lw %1328, 0(%1329)
+  slli %1330, 67, 2
+  add %1331, %1328, %1330
+  lw %1332, 0(%1331)
+  mv a0, %1327
+  mv a1, %1332
+  call string_add
+  mv %1333, a0
+  lui %1335, %hi(c)
+  addi %1335, %1335, %lo(c)
+  lw %1334, 0(%1335)
+  slli %1336, 82, 2
+  add %1337, %1334, %1336
+  lw %1338, 0(%1337)
+  mv a0, %1333
+  mv a1, %1338
+  call string_add
+  mv %1339, a0
+  lui %1341, %hi(c)
+  addi %1341, %1341, %lo(c)
+  lw %1340, 0(%1341)
+  slli %1342, 83, 2
+  add %1343, %1340, %1342
+  lw %1344, 0(%1343)
+  mv a0, %1339
+  mv a1, %1344
+  call string_add
+  mv %1345, a0
+  lui %1347, %hi(c)
+  addi %1347, %1347, %lo(c)
+  lw %1346, 0(%1347)
+  slli %1348, 80, 2
+  add %1349, %1346, %1348
+  lw %1350, 0(%1349)
+  mv a0, %1345
+  mv a1, %1350
+  call string_add
+  mv %1351, a0
+  lui %1353, %hi(c)
+  addi %1353, %1353, %lo(c)
+  lw %1352, 0(%1353)
+  slli %1354, 76, 2
+  add %1355, %1352, %1354
+  lw %1356, 0(%1355)
+  mv a0, %1351
+  mv a1, %1356
+  call string_add
+  mv %1357, a0
+  lui %1359, %hi(c)
+  addi %1359, %1359, %lo(c)
+  lw %1358, 0(%1359)
+  slli %1360, 0, 2
+  add %1361, %1358, %1360
+  lw %1362, 0(%1361)
+  mv a0, %1357
+  mv a1, %1362
+  call string_add
+  mv %1363, a0
+  lui %1365, %hi(a2q)
+  addi %1365, %1365, %lo(a2q)
+  lw %1364, 0(%1365)
+  mv a0, %1363
+  mv a1, %1364
+  call string_add
+  mv %1366, a0
+  lui %1368, %hi(c)
+  addi %1368, %1368, %lo(c)
+  lw %1367, 0(%1368)
+  slli %1369, 20, 2
+  add %1370, %1367, %1369
+  lw %1371, 0(%1370)
+  mv a0, %1366
+  mv a1, %1371
+  call string_add
+  mv %1372, a0
+  lui %1374, %hi(a2q)
+  addi %1374, %1374, %lo(a2q)
+  lw %1373, 0(%1374)
+  mv a0, %1372
+  mv a1, %1373
+  call string_add
+  mv %1375, a0
+  lui %1377, %hi(c)
+  addi %1377, %1377, %lo(c)
+  lw %1376, 0(%1377)
+  slli %1378, 26, 2
+  add %1379, %1376, %1378
+  lw %1380, 0(%1379)
+  mv a0, %1375
+  mv a1, %1380
+  call string_add
+  mv %1381, a0
+  mv a0, %1381
+  call println
+  lui %1383, %hi(c)
+  addi %1383, %1383, %lo(c)
+  lw %1382, 0(%1383)
+  slli %1384, 71, 2
+  add %1385, %1382, %1384
+  lui %1387, %hi(c)
+  addi %1387, %1387, %lo(c)
+  lw %1386, 0(%1387)
+  slli %1388, 68, 2
+  add %1389, %1386, %1388
+  lw %1390, 0(%1385)
+  lw %1391, 0(%1389)
+  mv a0, %1390
+  mv a1, %1391
+  call string_add
+  mv %1392, a0
+  lui %1394, %hi(c)
+  addi %1394, %1394, %lo(c)
+  lw %1393, 0(%1394)
+  slli %1395, 7, 2
+  add %1396, %1393, %1395
+  lw %1397, 0(%1396)
+  mv a0, %1392
+  mv a1, %1397
+  call string_add
+  mv %1398, a0
+  lui %1400, %hi(c)
+  addi %1400, %1400, %lo(c)
+  lw %1399, 0(%1400)
+  slli %1401, 86, 2
+  add %1402, %1399, %1401
+  lw %1403, 0(%1402)
+  mv a0, %1398
+  mv a1, %1403
+  call string_add
+  mv %1404, a0
+  lui %1406, %hi(c)
+  addi %1406, %1406, %lo(c)
+  lw %1405, 0(%1406)
+  slli %1407, 28, 2
+  add %1408, %1405, %1407
+  lw %1409, 0(%1408)
+  mv a0, %1404
+  mv a1, %1409
+  call string_add
+  mv %1410, a0
+  lui %1412, %hi(c)
+  addi %1412, %1412, %lo(c)
+  lw %1411, 0(%1412)
+  slli %1413, 28, 2
+  add %1414, %1411, %1413
+  lw %1415, 0(%1414)
+  mv a0, %1410
+  mv a1, %1415
+  call string_add
+  mv %1416, a0
+  lui %1418, %hi(c)
+  addi %1418, %1418, %lo(c)
+  lw %1417, 0(%1418)
+  slli %1419, 21, 2
+  add %1420, %1417, %1419
+  lw %1421, 0(%1420)
+  mv a0, %1416
+  mv a1, %1421
+  call string_add
+  mv %1422, a0
+  lui %1424, %hi(c)
+  addi %1424, %1424, %lo(c)
+  lw %1423, 0(%1424)
+  slli %1425, 8, 2
+  add %1426, %1423, %1425
+  lw %1427, 0(%1426)
+  mv a0, %1422
+  mv a1, %1427
+  call string_add
+  mv %1428, a0
+  lui %1430, %hi(c)
+  addi %1430, %1430, %lo(c)
+  lw %1429, 0(%1430)
+  slli %1431, 80, 2
+  add %1432, %1429, %1431
+  lw %1433, 0(%1432)
+  mv a0, %1428
+  mv a1, %1433
+  call string_add
+  mv %1434, a0
+  lui %1436, %hi(c)
+  addi %1436, %1436, %lo(c)
+  lw %1435, 0(%1436)
+  slli %1437, 67, 2
+  add %1438, %1435, %1437
+  lw %1439, 0(%1438)
+  mv a0, %1434
+  mv a1, %1439
+  call string_add
+  mv %1440, a0
+  lui %1442, %hi(c)
+  addi %1442, %1442, %lo(c)
+  lw %1441, 0(%1442)
+  slli %1443, 82, 2
+  add %1444, %1441, %1443
+  lw %1445, 0(%1444)
+  mv a0, %1440
+  mv a1, %1445
+  call string_add
+  mv %1446, a0
+  lui %1448, %hi(c)
+  addi %1448, %1448, %lo(c)
+  lw %1447, 0(%1448)
+  slli %1449, 83, 2
+  add %1450, %1447, %1449
+  lw %1451, 0(%1450)
+  mv a0, %1446
+  mv a1, %1451
+  call string_add
+  mv %1452, a0
+  lui %1454, %hi(c)
+  addi %1454, %1454, %lo(c)
+  lw %1453, 0(%1454)
+  slli %1455, 80, 2
+  add %1456, %1453, %1455
+  lw %1457, 0(%1456)
+  mv a0, %1452
+  mv a1, %1457
+  call string_add
+  mv %1458, a0
+  lui %1460, %hi(c)
+  addi %1460, %1460, %lo(c)
+  lw %1459, 0(%1460)
+  slli %1461, 76, 2
+  add %1462, %1459, %1461
+  lw %1463, 0(%1462)
+  mv a0, %1458
+  mv a1, %1463
+  call string_add
+  mv %1464, a0
+  lui %1466, %hi(c)
+  addi %1466, %1466, %lo(c)
+  lw %1465, 0(%1466)
+  slli %1467, 0, 2
+  add %1468, %1465, %1467
+  lw %1469, 0(%1468)
+  mv a0, %1464
+  mv a1, %1469
+  call string_add
+  mv %1470, a0
+  lui %1472, %hi(a2q)
+  addi %1472, %1472, %lo(a2q)
+  lw %1471, 0(%1472)
+  mv a0, %1470
+  mv a1, %1471
+  call string_add
+  mv %1473, a0
+  lui %1475, %hi(c)
+  addi %1475, %1475, %lo(c)
+  lw %1474, 0(%1475)
+  slli %1476, 21, 2
+  add %1477, %1474, %1476
+  lw %1478, 0(%1477)
+  mv a0, %1473
+  mv a1, %1478
+  call string_add
+  mv %1479, a0
+  lui %1481, %hi(a2q)
+  addi %1481, %1481, %lo(a2q)
+  lw %1480, 0(%1481)
+  mv a0, %1479
+  mv a1, %1480
+  call string_add
+  mv %1482, a0
+  lui %1484, %hi(c)
+  addi %1484, %1484, %lo(c)
+  lw %1483, 0(%1484)
+  slli %1485, 26, 2
+  add %1486, %1483, %1485
+  lw %1487, 0(%1486)
+  mv a0, %1482
+  mv a1, %1487
+  call string_add
+  mv %1488, a0
+  mv a0, %1488
+  call println
+  lui %1490, %hi(c)
+  addi %1490, %1490, %lo(c)
+  lw %1489, 0(%1490)
+  slli %1491, 71, 2
+  add %1492, %1489, %1491
+  lui %1494, %hi(c)
+  addi %1494, %1494, %lo(c)
+  lw %1493, 0(%1494)
+  slli %1495, 68, 2
+  add %1496, %1493, %1495
+  lw %1497, 0(%1492)
+  lw %1498, 0(%1496)
+  mv a0, %1497
+  mv a1, %1498
+  call string_add
+  mv %1499, a0
+  lui %1501, %hi(c)
+  addi %1501, %1501, %lo(c)
+  lw %1500, 0(%1501)
+  slli %1502, 7, 2
+  add %1503, %1500, %1502
+  lw %1504, 0(%1503)
+  mv a0, %1499
+  mv a1, %1504
+  call string_add
+  mv %1505, a0
+  lui %1507, %hi(c)
+  addi %1507, %1507, %lo(c)
+  lw %1506, 0(%1507)
+  slli %1508, 86, 2
+  add %1509, %1506, %1508
+  lw %1510, 0(%1509)
+  mv a0, %1505
+  mv a1, %1510
+  call string_add
+  mv %1511, a0
+  lui %1513, %hi(c)
+  addi %1513, %1513, %lo(c)
+  lw %1512, 0(%1513)
+  slli %1514, 28, 2
+  add %1515, %1512, %1514
+  lw %1516, 0(%1515)
+  mv a0, %1511
+  mv a1, %1516
+  call string_add
+  mv %1517, a0
+  lui %1519, %hi(c)
+  addi %1519, %1519, %lo(c)
+  lw %1518, 0(%1519)
+  slli %1520, 28, 2
+  add %1521, %1518, %1520
+  lw %1522, 0(%1521)
+  mv a0, %1517
+  mv a1, %1522
+  call string_add
+  mv %1523, a0
+  lui %1525, %hi(c)
+  addi %1525, %1525, %lo(c)
+  lw %1524, 0(%1525)
+  slli %1526, 22, 2
+  add %1527, %1524, %1526
+  lw %1528, 0(%1527)
+  mv a0, %1523
+  mv a1, %1528
+  call string_add
+  mv %1529, a0
+  lui %1531, %hi(c)
+  addi %1531, %1531, %lo(c)
+  lw %1530, 0(%1531)
+  slli %1532, 8, 2
+  add %1533, %1530, %1532
+  lw %1534, 0(%1533)
+  mv a0, %1529
+  mv a1, %1534
+  call string_add
+  mv %1535, a0
+  lui %1537, %hi(c)
+  addi %1537, %1537, %lo(c)
+  lw %1536, 0(%1537)
+  slli %1538, 80, 2
+  add %1539, %1536, %1538
+  lw %1540, 0(%1539)
+  mv a0, %1535
+  mv a1, %1540
+  call string_add
+  mv %1541, a0
+  lui %1543, %hi(c)
+  addi %1543, %1543, %lo(c)
+  lw %1542, 0(%1543)
+  slli %1544, 67, 2
+  add %1545, %1542, %1544
+  lw %1546, 0(%1545)
+  mv a0, %1541
+  mv a1, %1546
+  call string_add
+  mv %1547, a0
+  lui %1549, %hi(c)
+  addi %1549, %1549, %lo(c)
+  lw %1548, 0(%1549)
+  slli %1550, 82, 2
+  add %1551, %1548, %1550
+  lw %1552, 0(%1551)
+  mv a0, %1547
+  mv a1, %1552
+  call string_add
+  mv %1553, a0
+  lui %1555, %hi(c)
+  addi %1555, %1555, %lo(c)
+  lw %1554, 0(%1555)
+  slli %1556, 83, 2
+  add %1557, %1554, %1556
+  lw %1558, 0(%1557)
+  mv a0, %1553
+  mv a1, %1558
+  call string_add
+  mv %1559, a0
+  lui %1561, %hi(c)
+  addi %1561, %1561, %lo(c)
+  lw %1560, 0(%1561)
+  slli %1562, 80, 2
+  add %1563, %1560, %1562
+  lw %1564, 0(%1563)
+  mv a0, %1559
+  mv a1, %1564
+  call string_add
+  mv %1565, a0
+  lui %1567, %hi(c)
+  addi %1567, %1567, %lo(c)
+  lw %1566, 0(%1567)
+  slli %1568, 76, 2
+  add %1569, %1566, %1568
+  lw %1570, 0(%1569)
+  mv a0, %1565
+  mv a1, %1570
+  call string_add
+  mv %1571, a0
+  lui %1573, %hi(c)
+  addi %1573, %1573, %lo(c)
+  lw %1572, 0(%1573)
+  slli %1574, 0, 2
+  add %1575, %1572, %1574
+  lw %1576, 0(%1575)
+  mv a0, %1571
+  mv a1, %1576
+  call string_add
+  mv %1577, a0
+  lui %1579, %hi(a2q)
+  addi %1579, %1579, %lo(a2q)
+  lw %1578, 0(%1579)
+  mv a0, %1577
+  mv a1, %1578
+  call string_add
+  mv %1580, a0
+  lui %1582, %hi(c)
+  addi %1582, %1582, %lo(c)
+  lw %1581, 0(%1582)
+  slli %1583, 22, 2
+  add %1584, %1581, %1583
+  lw %1585, 0(%1584)
+  mv a0, %1580
+  mv a1, %1585
+  call string_add
+  mv %1586, a0
+  lui %1588, %hi(a2q)
+  addi %1588, %1588, %lo(a2q)
+  lw %1587, 0(%1588)
+  mv a0, %1586
+  mv a1, %1587
+  call string_add
+  mv %1589, a0
+  lui %1591, %hi(c)
+  addi %1591, %1591, %lo(c)
+  lw %1590, 0(%1591)
+  slli %1592, 26, 2
+  add %1593, %1590, %1592
+  lw %1594, 0(%1593)
+  mv a0, %1589
+  mv a1, %1594
+  call string_add
+  mv %1595, a0
+  mv a0, %1595
+  call println
+  lui %1597, %hi(c)
+  addi %1597, %1597, %lo(c)
+  lw %1596, 0(%1597)
+  slli %1598, 71, 2
+  add %1599, %1596, %1598
+  lui %1601, %hi(c)
+  addi %1601, %1601, %lo(c)
+  lw %1600, 0(%1601)
+  slli %1602, 68, 2
+  add %1603, %1600, %1602
+  lw %1604, 0(%1599)
+  lw %1605, 0(%1603)
+  mv a0, %1604
+  mv a1, %1605
+  call string_add
+  mv %1606, a0
+  lui %1608, %hi(c)
+  addi %1608, %1608, %lo(c)
+  lw %1607, 0(%1608)
+  slli %1609, 7, 2
+  add %1610, %1607, %1609
+  lw %1611, 0(%1610)
+  mv a0, %1606
+  mv a1, %1611
+  call string_add
+  mv %1612, a0
+  lui %1614, %hi(c)
+  addi %1614, %1614, %lo(c)
+  lw %1613, 0(%1614)
+  slli %1615, 86, 2
+  add %1616, %1613, %1615
+  lw %1617, 0(%1616)
+  mv a0, %1612
+  mv a1, %1617
+  call string_add
+  mv %1618, a0
+  lui %1620, %hi(c)
+  addi %1620, %1620, %lo(c)
+  lw %1619, 0(%1620)
+  slli %1621, 28, 2
+  add %1622, %1619, %1621
+  lw %1623, 0(%1622)
+  mv a0, %1618
+  mv a1, %1623
+  call string_add
+  mv %1624, a0
+  lui %1626, %hi(c)
+  addi %1626, %1626, %lo(c)
+  lw %1625, 0(%1626)
+  slli %1627, 28, 2
+  add %1628, %1625, %1627
+  lw %1629, 0(%1628)
+  mv a0, %1624
+  mv a1, %1629
+  call string_add
+  mv %1630, a0
+  lui %1632, %hi(c)
+  addi %1632, %1632, %lo(c)
+  lw %1631, 0(%1632)
+  slli %1633, 23, 2
+  add %1634, %1631, %1633
+  lw %1635, 0(%1634)
+  mv a0, %1630
+  mv a1, %1635
+  call string_add
+  mv %1636, a0
+  lui %1638, %hi(c)
+  addi %1638, %1638, %lo(c)
+  lw %1637, 0(%1638)
+  slli %1639, 8, 2
+  add %1640, %1637, %1639
+  lw %1641, 0(%1640)
+  mv a0, %1636
+  mv a1, %1641
+  call string_add
+  mv %1642, a0
+  lui %1644, %hi(c)
+  addi %1644, %1644, %lo(c)
+  lw %1643, 0(%1644)
+  slli %1645, 80, 2
+  add %1646, %1643, %1645
+  lw %1647, 0(%1646)
+  mv a0, %1642
+  mv a1, %1647
+  call string_add
+  mv %1648, a0
+  lui %1650, %hi(c)
+  addi %1650, %1650, %lo(c)
+  lw %1649, 0(%1650)
+  slli %1651, 67, 2
+  add %1652, %1649, %1651
+  lw %1653, 0(%1652)
+  mv a0, %1648
+  mv a1, %1653
+  call string_add
+  mv %1654, a0
+  lui %1656, %hi(c)
+  addi %1656, %1656, %lo(c)
+  lw %1655, 0(%1656)
+  slli %1657, 82, 2
+  add %1658, %1655, %1657
+  lw %1659, 0(%1658)
+  mv a0, %1654
+  mv a1, %1659
+  call string_add
+  mv %1660, a0
+  lui %1662, %hi(c)
+  addi %1662, %1662, %lo(c)
+  lw %1661, 0(%1662)
+  slli %1663, 83, 2
+  add %1664, %1661, %1663
+  lw %1665, 0(%1664)
+  mv a0, %1660
+  mv a1, %1665
+  call string_add
+  mv %1666, a0
+  lui %1668, %hi(c)
+  addi %1668, %1668, %lo(c)
+  lw %1667, 0(%1668)
+  slli %1669, 80, 2
+  add %1670, %1667, %1669
+  lw %1671, 0(%1670)
+  mv a0, %1666
+  mv a1, %1671
+  call string_add
+  mv %1672, a0
+  lui %1674, %hi(c)
+  addi %1674, %1674, %lo(c)
+  lw %1673, 0(%1674)
+  slli %1675, 76, 2
+  add %1676, %1673, %1675
+  lw %1677, 0(%1676)
+  mv a0, %1672
+  mv a1, %1677
+  call string_add
+  mv %1678, a0
+  lui %1680, %hi(c)
+  addi %1680, %1680, %lo(c)
+  lw %1679, 0(%1680)
+  slli %1681, 0, 2
+  add %1682, %1679, %1681
+  lw %1683, 0(%1682)
+  mv a0, %1678
+  mv a1, %1683
+  call string_add
+  mv %1684, a0
+  lui %1686, %hi(a2q)
+  addi %1686, %1686, %lo(a2q)
+  lw %1685, 0(%1686)
+  mv a0, %1684
+  mv a1, %1685
+  call string_add
+  mv %1687, a0
+  lui %1689, %hi(c)
+  addi %1689, %1689, %lo(c)
+  lw %1688, 0(%1689)
+  slli %1690, 23, 2
+  add %1691, %1688, %1690
+  lw %1692, 0(%1691)
+  mv a0, %1687
+  mv a1, %1692
+  call string_add
+  mv %1693, a0
+  lui %1695, %hi(a2q)
+  addi %1695, %1695, %lo(a2q)
+  lw %1694, 0(%1695)
+  mv a0, %1693
+  mv a1, %1694
+  call string_add
+  mv %1696, a0
+  lui %1698, %hi(c)
+  addi %1698, %1698, %lo(c)
+  lw %1697, 0(%1698)
+  slli %1699, 26, 2
+  add %1700, %1697, %1699
+  lw %1701, 0(%1700)
+  mv a0, %1696
+  mv a1, %1701
+  call string_add
+  mv %1702, a0
+  mv a0, %1702
+  call println
+  lui %1704, %hi(c)
+  addi %1704, %1704, %lo(c)
+  lw %1703, 0(%1704)
+  slli %1705, 71, 2
+  add %1706, %1703, %1705
+  lui %1708, %hi(c)
+  addi %1708, %1708, %lo(c)
+  lw %1707, 0(%1708)
+  slli %1709, 68, 2
+  add %1710, %1707, %1709
+  lw %1711, 0(%1706)
+  lw %1712, 0(%1710)
+  mv a0, %1711
+  mv a1, %1712
+  call string_add
+  mv %1713, a0
+  lui %1715, %hi(c)
+  addi %1715, %1715, %lo(c)
+  lw %1714, 0(%1715)
+  slli %1716, 7, 2
+  add %1717, %1714, %1716
+  lw %1718, 0(%1717)
+  mv a0, %1713
+  mv a1, %1718
+  call string_add
+  mv %1719, a0
+  lui %1721, %hi(c)
+  addi %1721, %1721, %lo(c)
+  lw %1720, 0(%1721)
+  slli %1722, 86, 2
+  add %1723, %1720, %1722
+  lw %1724, 0(%1723)
+  mv a0, %1719
+  mv a1, %1724
+  call string_add
+  mv %1725, a0
+  lui %1727, %hi(c)
+  addi %1727, %1727, %lo(c)
+  lw %1726, 0(%1727)
+  slli %1728, 28, 2
+  add %1729, %1726, %1728
+  lw %1730, 0(%1729)
+  mv a0, %1725
+  mv a1, %1730
+  call string_add
+  mv %1731, a0
+  lui %1733, %hi(c)
+  addi %1733, %1733, %lo(c)
+  lw %1732, 0(%1733)
+  slli %1734, 28, 2
+  add %1735, %1732, %1734
+  lw %1736, 0(%1735)
+  mv a0, %1731
+  mv a1, %1736
+  call string_add
+  mv %1737, a0
+  lui %1739, %hi(c)
+  addi %1739, %1739, %lo(c)
+  lw %1738, 0(%1739)
+  slli %1740, 24, 2
+  add %1741, %1738, %1740
+  lw %1742, 0(%1741)
+  mv a0, %1737
+  mv a1, %1742
+  call string_add
+  mv %1743, a0
+  lui %1745, %hi(c)
+  addi %1745, %1745, %lo(c)
+  lw %1744, 0(%1745)
+  slli %1746, 8, 2
+  add %1747, %1744, %1746
+  lw %1748, 0(%1747)
+  mv a0, %1743
+  mv a1, %1748
+  call string_add
+  mv %1749, a0
+  lui %1751, %hi(c)
+  addi %1751, %1751, %lo(c)
+  lw %1750, 0(%1751)
+  slli %1752, 80, 2
+  add %1753, %1750, %1752
+  lw %1754, 0(%1753)
+  mv a0, %1749
+  mv a1, %1754
+  call string_add
+  mv %1755, a0
+  lui %1757, %hi(c)
+  addi %1757, %1757, %lo(c)
+  lw %1756, 0(%1757)
+  slli %1758, 67, 2
+  add %1759, %1756, %1758
+  lw %1760, 0(%1759)
+  mv a0, %1755
+  mv a1, %1760
+  call string_add
+  mv %1761, a0
+  lui %1763, %hi(c)
+  addi %1763, %1763, %lo(c)
+  lw %1762, 0(%1763)
+  slli %1764, 82, 2
+  add %1765, %1762, %1764
+  lw %1766, 0(%1765)
+  mv a0, %1761
+  mv a1, %1766
+  call string_add
+  mv %1767, a0
+  lui %1769, %hi(c)
+  addi %1769, %1769, %lo(c)
+  lw %1768, 0(%1769)
+  slli %1770, 83, 2
+  add %1771, %1768, %1770
+  lw %1772, 0(%1771)
+  mv a0, %1767
+  mv a1, %1772
+  call string_add
+  mv %1773, a0
+  lui %1775, %hi(c)
+  addi %1775, %1775, %lo(c)
+  lw %1774, 0(%1775)
+  slli %1776, 80, 2
+  add %1777, %1774, %1776
+  lw %1778, 0(%1777)
+  mv a0, %1773
+  mv a1, %1778
+  call string_add
+  mv %1779, a0
+  lui %1781, %hi(c)
+  addi %1781, %1781, %lo(c)
+  lw %1780, 0(%1781)
+  slli %1782, 76, 2
+  add %1783, %1780, %1782
+  lw %1784, 0(%1783)
+  mv a0, %1779
+  mv a1, %1784
+  call string_add
+  mv %1785, a0
+  lui %1787, %hi(c)
+  addi %1787, %1787, %lo(c)
+  lw %1786, 0(%1787)
+  slli %1788, 0, 2
+  add %1789, %1786, %1788
+  lw %1790, 0(%1789)
+  mv a0, %1785
+  mv a1, %1790
+  call string_add
+  mv %1791, a0
+  lui %1793, %hi(a2q)
+  addi %1793, %1793, %lo(a2q)
+  lw %1792, 0(%1793)
+  mv a0, %1791
+  mv a1, %1792
+  call string_add
+  mv %1794, a0
+  lui %1796, %hi(c)
+  addi %1796, %1796, %lo(c)
+  lw %1795, 0(%1796)
+  slli %1797, 24, 2
+  add %1798, %1795, %1797
+  lw %1799, 0(%1798)
+  mv a0, %1794
+  mv a1, %1799
+  call string_add
+  mv %1800, a0
+  lui %1802, %hi(a2q)
+  addi %1802, %1802, %lo(a2q)
+  lw %1801, 0(%1802)
+  mv a0, %1800
+  mv a1, %1801
+  call string_add
+  mv %1803, a0
+  lui %1805, %hi(c)
+  addi %1805, %1805, %lo(c)
+  lw %1804, 0(%1805)
+  slli %1806, 26, 2
+  add %1807, %1804, %1806
+  lw %1808, 0(%1807)
+  mv a0, %1803
+  mv a1, %1808
+  call string_add
+  mv %1809, a0
+  mv a0, %1809
+  call println
+  lui %1811, %hi(c)
+  addi %1811, %1811, %lo(c)
+  lw %1810, 0(%1811)
+  slli %1812, 91, 2
+  add %1813, %1810, %1812
+  lw %1814, 0(%1813)
+  mv a0, %1814
+  call println
+  lui %1816, %hi(c)
+  addi %1816, %1816, %lo(c)
+  lw %1815, 0(%1816)
+  slli %1817, 81, 2
+  add %1818, %1815, %1817
+  lui %1820, %hi(c)
+  addi %1820, %1820, %lo(c)
+  lw %1819, 0(%1820)
+  slli %1821, 82, 2
+  add %1822, %1819, %1821
+  lw %1823, 0(%1818)
+  lw %1824, 0(%1822)
+  mv a0, %1823
+  mv a1, %1824
+  call string_add
+  mv %1825, a0
+  lui %1827, %hi(c)
+  addi %1827, %1827, %lo(c)
+  lw %1826, 0(%1827)
+  slli %1828, 80, 2
+  add %1829, %1826, %1828
+  lw %1830, 0(%1829)
+  mv a0, %1825
+  mv a1, %1830
+  call string_add
+  mv %1831, a0
+  lui %1833, %hi(c)
+  addi %1833, %1833, %lo(c)
+  lw %1832, 0(%1833)
+  slli %1834, 71, 2
+  add %1835, %1832, %1834
+  lw %1836, 0(%1835)
+  mv a0, %1831
+  mv a1, %1836
+  call string_add
+  mv %1837, a0
+  lui %1839, %hi(c)
+  addi %1839, %1839, %lo(c)
+  lw %1838, 0(%1839)
+  slli %1840, 76, 2
+  add %1841, %1838, %1840
+  lw %1842, 0(%1841)
+  mv a0, %1837
+  mv a1, %1842
+  call string_add
+  mv %1843, a0
+  lui %1845, %hi(c)
+  addi %1845, %1845, %lo(c)
+  lw %1844, 0(%1845)
+  slli %1846, 69, 2
+  add %1847, %1844, %1846
+  lw %1848, 0(%1847)
+  mv a0, %1843
+  mv a1, %1848
+  call string_add
+  mv %1849, a0
+  lui %1851, %hi(c)
+  addi %1851, %1851, %lo(c)
+  lw %1850, 0(%1851)
+  slli %1852, 58, 2
+  add %1853, %1850, %1852
+  lw %1854, 0(%1853)
+  mv a0, %1849
+  mv a1, %1854
+  call string_add
+  mv %1855, a0
+  lui %1857, %hi(c)
+  addi %1857, %1857, %lo(c)
+  lw %1856, 0(%1857)
+  slli %1858, 59, 2
+  add %1859, %1856, %1858
+  lw %1860, 0(%1859)
+  mv a0, %1855
+  mv a1, %1860
+  call string_add
+  mv %1861, a0
+  lui %1863, %hi(c)
+  addi %1863, %1863, %lo(c)
+  lw %1862, 0(%1863)
+  slli %1864, 0, 2
+  add %1865, %1862, %1864
+  lw %1866, 0(%1865)
+  mv a0, %1861
+  mv a1, %1866
+  call string_add
+  mv %1867, a0
+  lui %1869, %hi(c)
+  addi %1869, %1869, %lo(c)
+  lw %1868, 0(%1869)
+  slli %1870, 81, 2
+  add %1871, %1868, %1870
+  lw %1872, 0(%1871)
+  mv a0, %1867
+  mv a1, %1872
+  call string_add
+  mv %1873, a0
+  lui %1875, %hi(c)
+  addi %1875, %1875, %lo(c)
+  lw %1874, 0(%1875)
+  slli %1876, 28, 2
+  add %1877, %1874, %1876
+  lw %1878, 0(%1877)
+  mv a0, %1873
+  mv a1, %1878
+  call string_add
+  mv %1879, a0
+  lui %1881, %hi(c)
+  addi %1881, %1881, %lo(c)
+  lw %1880, 0(%1881)
+  slli %1882, 76, 2
+  add %1883, %1880, %1882
+  lw %1884, 0(%1883)
+  mv a0, %1879
+  mv a1, %1884
+  call string_add
+  mv %1885, a0
+  lui %1887, %hi(c)
+  addi %1887, %1887, %lo(c)
+  lw %1886, 0(%1887)
+  slli %1888, 67, 2
+  add %1889, %1886, %1888
+  lw %1890, 0(%1889)
+  mv a0, %1885
+  mv a1, %1890
+  call string_add
+  mv %1891, a0
+  lui %1893, %hi(c)
+  addi %1893, %1893, %lo(c)
+  lw %1892, 0(%1893)
+  slli %1894, 85, 2
+  add %1895, %1892, %1894
+  lw %1896, 0(%1895)
+  mv a0, %1891
+  mv a1, %1896
+  call string_add
+  mv %1897, a0
+  lui %1899, %hi(c)
+  addi %1899, %1899, %lo(c)
+  lw %1898, 0(%1899)
+  slli %1900, 0, 2
+  add %1901, %1898, %1900
+  lw %1902, 0(%1901)
+  mv a0, %1897
+  mv a1, %1902
+  call string_add
+  mv %1903, a0
+  lui %1905, %hi(c)
+  addi %1905, %1905, %lo(c)
+  lw %1904, 0(%1905)
+  slli %1906, 81, 2
+  add %1907, %1904, %1906
+  lw %1908, 0(%1907)
+  mv a0, %1903
+  mv a1, %1908
+  call string_add
+  mv %1909, a0
+  lui %1911, %hi(c)
+  addi %1911, %1911, %lo(c)
+  lw %1910, 0(%1911)
+  slli %1912, 82, 2
+  add %1913, %1910, %1912
+  lw %1914, 0(%1913)
+  mv a0, %1909
+  mv a1, %1914
+  call string_add
+  mv %1915, a0
+  lui %1917, %hi(c)
+  addi %1917, %1917, %lo(c)
+  lw %1916, 0(%1917)
+  slli %1918, 80, 2
+  add %1919, %1916, %1918
+  lw %1920, 0(%1919)
+  mv a0, %1915
+  mv a1, %1920
+  call string_add
+  mv %1921, a0
+  lui %1923, %hi(c)
+  addi %1923, %1923, %lo(c)
+  lw %1922, 0(%1923)
+  slli %1924, 71, 2
+  add %1925, %1922, %1924
+  lw %1926, 0(%1925)
+  mv a0, %1921
+  mv a1, %1926
+  call string_add
+  mv %1927, a0
+  lui %1929, %hi(c)
+  addi %1929, %1929, %lo(c)
+  lw %1928, 0(%1929)
+  slli %1930, 76, 2
+  add %1931, %1928, %1930
+  lw %1932, 0(%1931)
+  mv a0, %1927
+  mv a1, %1932
+  call string_add
+  mv %1933, a0
+  lui %1935, %hi(c)
+  addi %1935, %1935, %lo(c)
+  lw %1934, 0(%1935)
+  slli %1936, 69, 2
+  add %1937, %1934, %1936
+  lw %1938, 0(%1937)
+  mv a0, %1933
+  mv a1, %1938
+  call string_add
+  mv %1939, a0
+  lui %1941, %hi(c)
+  addi %1941, %1941, %lo(c)
+  lw %1940, 0(%1941)
+  slli %1942, 58, 2
+  add %1943, %1940, %1942
+  lw %1944, 0(%1943)
+  mv a0, %1939
+  mv a1, %1944
+  call string_add
+  mv %1945, a0
+  lui %1947, %hi(c)
+  addi %1947, %1947, %lo(c)
+  lw %1946, 0(%1947)
+  slli %1948, 17, 2
+  add %1949, %1946, %1948
+  lw %1950, 0(%1949)
+  mv a0, %1945
+  mv a1, %1950
+  call string_add
+  mv %1951, a0
+  lui %1953, %hi(c)
+  addi %1953, %1953, %lo(c)
+  lw %1952, 0(%1953)
+  slli %1954, 20, 2
+  add %1955, %1952, %1954
+  lw %1956, 0(%1955)
+  mv a0, %1951
+  mv a1, %1956
+  call string_add
+  mv %1957, a0
+  lui %1959, %hi(c)
+  addi %1959, %1959, %lo(c)
+  lw %1958, 0(%1959)
+  slli %1960, 21, 2
+  add %1961, %1958, %1960
+  lw %1962, 0(%1961)
+  mv a0, %1957
+  mv a1, %1962
+  call string_add
+  mv %1963, a0
+  lui %1965, %hi(c)
+  addi %1965, %1965, %lo(c)
+  lw %1964, 0(%1965)
+  slli %1966, 59, 2
+  add %1967, %1964, %1966
+  lw %1968, 0(%1967)
+  mv a0, %1963
+  mv a1, %1968
+  call string_add
+  mv %1969, a0
+  lui %1971, %hi(c)
+  addi %1971, %1971, %lo(c)
+  lw %1970, 0(%1971)
+  slli %1972, 26, 2
+  add %1973, %1970, %1972
+  lw %1974, 0(%1973)
+  mv a0, %1969
+  mv a1, %1974
+  call string_add
+  mv %1975, a0
+  mv a0, %1975
+  call println
+  lui %1977, %hi(c)
+  addi %1977, %1977, %lo(c)
+  lw %1976, 0(%1977)
+  slli %1978, 81, 2
+  add %1979, %1976, %1978
+  lui %1981, %hi(c)
+  addi %1981, %1981, %lo(c)
+  lw %1980, 0(%1981)
+  slli %1982, 82, 2
+  add %1983, %1980, %1982
+  lw %1984, 0(%1979)
+  lw %1985, 0(%1983)
+  mv a0, %1984
+  mv a1, %1985
+  call string_add
+  mv %1986, a0
+  lui %1988, %hi(c)
+  addi %1988, %1988, %lo(c)
+  lw %1987, 0(%1988)
+  slli %1989, 80, 2
+  add %1990, %1987, %1989
+  lw %1991, 0(%1990)
+  mv a0, %1986
+  mv a1, %1991
+  call string_add
+  mv %1992, a0
+  lui %1994, %hi(c)
+  addi %1994, %1994, %lo(c)
+  lw %1993, 0(%1994)
+  slli %1995, 71, 2
+  add %1996, %1993, %1995
+  lw %1997, 0(%1996)
+  mv a0, %1992
+  mv a1, %1997
+  call string_add
+  mv %1998, a0
+  lui %2000, %hi(c)
+  addi %2000, %2000, %lo(c)
+  lw %1999, 0(%2000)
+  slli %2001, 76, 2
+  add %2002, %1999, %2001
+  lw %2003, 0(%2002)
+  mv a0, %1998
+  mv a1, %2003
+  call string_add
+  mv %2004, a0
+  lui %2006, %hi(c)
+  addi %2006, %2006, %lo(c)
+  lw %2005, 0(%2006)
+  slli %2007, 69, 2
+  add %2008, %2005, %2007
+  lw %2009, 0(%2008)
+  mv a0, %2004
+  mv a1, %2009
+  call string_add
+  mv %2010, a0
+  lui %2012, %hi(c)
+  addi %2012, %2012, %lo(c)
+  lw %2011, 0(%2012)
+  slli %2013, 58, 2
+  add %2014, %2011, %2013
+  lw %2015, 0(%2014)
+  mv a0, %2010
+  mv a1, %2015
+  call string_add
+  mv %2016, a0
+  lui %2018, %hi(c)
+  addi %2018, %2018, %lo(c)
+  lw %2017, 0(%2018)
+  slli %2019, 59, 2
+  add %2020, %2017, %2019
+  lw %2021, 0(%2020)
+  mv a0, %2016
+  mv a1, %2021
+  call string_add
+  mv %2022, a0
+  lui %2024, %hi(c)
+  addi %2024, %2024, %lo(c)
+  lw %2023, 0(%2024)
+  slli %2025, 0, 2
+  add %2026, %2023, %2025
+  lw %2027, 0(%2026)
+  mv a0, %2022
+  mv a1, %2027
+  call string_add
+  mv %2028, a0
+  lui %2030, %hi(c)
+  addi %2030, %2030, %lo(c)
+  lw %2029, 0(%2030)
+  slli %2031, 65, 2
+  add %2032, %2029, %2031
+  lw %2033, 0(%2032)
+  mv a0, %2028
+  mv a1, %2033
+  call string_add
+  mv %2034, a0
+  lui %2036, %hi(c)
+  addi %2036, %2036, %lo(c)
+  lw %2035, 0(%2036)
+  slli %2037, 28, 2
+  add %2038, %2035, %2037
+  lw %2039, 0(%2038)
+  mv a0, %2034
+  mv a1, %2039
+  call string_add
+  mv %2040, a0
+  lui %2042, %hi(c)
+  addi %2042, %2042, %lo(c)
+  lw %2041, 0(%2042)
+  slli %2043, 76, 2
+  add %2044, %2041, %2043
+  lw %2045, 0(%2044)
+  mv a0, %2040
+  mv a1, %2045
+  call string_add
+  mv %2046, a0
+  lui %2048, %hi(c)
+  addi %2048, %2048, %lo(c)
+  lw %2047, 0(%2048)
+  slli %2049, 67, 2
+  add %2050, %2047, %2049
+  lw %2051, 0(%2050)
+  mv a0, %2046
+  mv a1, %2051
+  call string_add
+  mv %2052, a0
+  lui %2054, %hi(c)
+  addi %2054, %2054, %lo(c)
+  lw %2053, 0(%2054)
+  slli %2055, 85, 2
+  add %2056, %2053, %2055
+  lw %2057, 0(%2056)
+  mv a0, %2052
+  mv a1, %2057
+  call string_add
+  mv %2058, a0
+  lui %2060, %hi(c)
+  addi %2060, %2060, %lo(c)
+  lw %2059, 0(%2060)
+  slli %2061, 0, 2
+  add %2062, %2059, %2061
+  lw %2063, 0(%2062)
+  mv a0, %2058
+  mv a1, %2063
+  call string_add
+  mv %2064, a0
+  lui %2066, %hi(c)
+  addi %2066, %2066, %lo(c)
+  lw %2065, 0(%2066)
+  slli %2067, 81, 2
+  add %2068, %2065, %2067
+  lw %2069, 0(%2068)
+  mv a0, %2064
+  mv a1, %2069
+  call string_add
+  mv %2070, a0
+  lui %2072, %hi(c)
+  addi %2072, %2072, %lo(c)
+  lw %2071, 0(%2072)
+  slli %2073, 82, 2
+  add %2074, %2071, %2073
+  lw %2075, 0(%2074)
+  mv a0, %2070
+  mv a1, %2075
+  call string_add
+  mv %2076, a0
+  lui %2078, %hi(c)
+  addi %2078, %2078, %lo(c)
+  lw %2077, 0(%2078)
+  slli %2079, 80, 2
+  add %2080, %2077, %2079
+  lw %2081, 0(%2080)
+  mv a0, %2076
+  mv a1, %2081
+  call string_add
+  mv %2082, a0
+  lui %2084, %hi(c)
+  addi %2084, %2084, %lo(c)
+  lw %2083, 0(%2084)
+  slli %2085, 71, 2
+  add %2086, %2083, %2085
+  lw %2087, 0(%2086)
+  mv a0, %2082
+  mv a1, %2087
+  call string_add
+  mv %2088, a0
+  lui %2090, %hi(c)
+  addi %2090, %2090, %lo(c)
+  lw %2089, 0(%2090)
+  slli %2091, 76, 2
+  add %2092, %2089, %2091
+  lw %2093, 0(%2092)
+  mv a0, %2088
+  mv a1, %2093
+  call string_add
+  mv %2094, a0
+  lui %2096, %hi(c)
+  addi %2096, %2096, %lo(c)
+  lw %2095, 0(%2096)
+  slli %2097, 69, 2
+  add %2098, %2095, %2097
+  lw %2099, 0(%2098)
+  mv a0, %2094
+  mv a1, %2099
+  call string_add
+  mv %2100, a0
+  lui %2102, %hi(c)
+  addi %2102, %2102, %lo(c)
+  lw %2101, 0(%2102)
+  slli %2103, 58, 2
+  add %2104, %2101, %2103
+  lw %2105, 0(%2104)
+  mv a0, %2100
+  mv a1, %2105
+  call string_add
+  mv %2106, a0
+  lui %2108, %hi(c)
+  addi %2108, %2108, %lo(c)
+  lw %2107, 0(%2108)
+  slli %2109, 17, 2
+  add %2110, %2107, %2109
+  lw %2111, 0(%2110)
+  mv a0, %2106
+  mv a1, %2111
+  call string_add
+  mv %2112, a0
+  lui %2114, %hi(c)
+  addi %2114, %2114, %lo(c)
+  lw %2113, 0(%2114)
+  slli %2115, 20, 2
+  add %2116, %2113, %2115
+  lw %2117, 0(%2116)
+  mv a0, %2112
+  mv a1, %2117
+  call string_add
+  mv %2118, a0
+  lui %2120, %hi(c)
+  addi %2120, %2120, %lo(c)
+  lw %2119, 0(%2120)
+  slli %2121, 21, 2
+  add %2122, %2119, %2121
+  lw %2123, 0(%2122)
+  mv a0, %2118
+  mv a1, %2123
+  call string_add
+  mv %2124, a0
+  lui %2126, %hi(c)
+  addi %2126, %2126, %lo(c)
+  lw %2125, 0(%2126)
+  slli %2127, 59, 2
+  add %2128, %2125, %2127
+  lw %2129, 0(%2128)
+  mv a0, %2124
+  mv a1, %2129
+  call string_add
+  mv %2130, a0
+  lui %2132, %hi(c)
+  addi %2132, %2132, %lo(c)
+  lw %2131, 0(%2132)
+  slli %2133, 26, 2
+  add %2134, %2131, %2133
+  lw %2135, 0(%2134)
+  mv a0, %2130
+  mv a1, %2135
+  call string_add
+  mv %2136, a0
+  mv a0, %2136
+  call println
+  lui %2138, %hi(c)
+  addi %2138, %2138, %lo(c)
+  lw %2137, 0(%2138)
+  slli %2139, 81, 2
+  add %2140, %2137, %2139
+  lui %2142, %hi(c)
+  addi %2142, %2142, %lo(c)
+  lw %2141, 0(%2142)
+  slli %2143, 82, 2
+  add %2144, %2141, %2143
+  lw %2145, 0(%2140)
+  lw %2146, 0(%2144)
+  mv a0, %2145
+  mv a1, %2146
+  call string_add
+  mv %2147, a0
+  lui %2149, %hi(c)
+  addi %2149, %2149, %lo(c)
+  lw %2148, 0(%2149)
+  slli %2150, 80, 2
+  add %2151, %2148, %2150
+  lw %2152, 0(%2151)
+  mv a0, %2147
+  mv a1, %2152
+  call string_add
+  mv %2153, a0
+  lui %2155, %hi(c)
+  addi %2155, %2155, %lo(c)
+  lw %2154, 0(%2155)
+  slli %2156, 71, 2
+  add %2157, %2154, %2156
+  lw %2158, 0(%2157)
+  mv a0, %2153
+  mv a1, %2158
+  call string_add
+  mv %2159, a0
+  lui %2161, %hi(c)
+  addi %2161, %2161, %lo(c)
+  lw %2160, 0(%2161)
+  slli %2162, 76, 2
+  add %2163, %2160, %2162
+  lw %2164, 0(%2163)
+  mv a0, %2159
+  mv a1, %2164
+  call string_add
+  mv %2165, a0
+  lui %2167, %hi(c)
+  addi %2167, %2167, %lo(c)
+  lw %2166, 0(%2167)
+  slli %2168, 69, 2
+  add %2169, %2166, %2168
+  lw %2170, 0(%2169)
+  mv a0, %2165
+  mv a1, %2170
+  call string_add
+  mv %2171, a0
+  lui %2173, %hi(c)
+  addi %2173, %2173, %lo(c)
+  lw %2172, 0(%2173)
+  slli %2174, 0, 2
+  add %2175, %2172, %2174
+  lw %2176, 0(%2175)
+  mv a0, %2171
+  mv a1, %2176
+  call string_add
+  mv %2177, a0
+  lui %2179, %hi(c)
+  addi %2179, %2179, %lo(c)
+  lw %2178, 0(%2179)
+  slli %2180, 81, 2
+  add %2181, %2178, %2180
+  lw %2182, 0(%2181)
+  mv a0, %2177
+  mv a1, %2182
+  call string_add
+  mv %2183, a0
+  lui %2185, %hi(c)
+  addi %2185, %2185, %lo(c)
+  lw %2184, 0(%2185)
+  slli %2186, 17, 2
+  add %2187, %2184, %2186
+  lw %2188, 0(%2187)
+  mv a0, %2183
+  mv a1, %2188
+  call string_add
+  mv %2189, a0
+  lui %2191, %hi(c)
+  addi %2191, %2191, %lo(c)
+  lw %2190, 0(%2191)
+  slli %2192, 7, 2
+  add %2193, %2190, %2192
+  lw %2194, 0(%2193)
+  mv a0, %2189
+  mv a1, %2194
+  call string_add
+  mv %2195, a0
+  lui %2197, %hi(c)
+  addi %2197, %2197, %lo(c)
+  lw %2196, 0(%2197)
+  slli %2198, 71, 2
+  add %2199, %2196, %2198
+  lw %2200, 0(%2199)
+  mv a0, %2195
+  mv a1, %2200
+  call string_add
+  mv %2201, a0
+  lui %2203, %hi(c)
+  addi %2203, %2203, %lo(c)
+  lw %2202, 0(%2203)
+  slli %2204, 76, 2
+  add %2205, %2202, %2204
+  lw %2206, 0(%2205)
+  mv a0, %2201
+  mv a1, %2206
+  call string_add
+  mv %2207, a0
+  lui %2209, %hi(c)
+  addi %2209, %2209, %lo(c)
+  lw %2208, 0(%2209)
+  slli %2210, 82, 2
+  add %2211, %2208, %2210
+  lw %2212, 0(%2211)
+  mv a0, %2207
+  mv a1, %2212
+  call string_add
+  mv %2213, a0
+  lui %2215, %hi(c)
+  addi %2215, %2215, %lo(c)
+  lw %2214, 0(%2215)
+  slli %2216, 0, 2
+  add %2217, %2214, %2216
+  lw %2218, 0(%2217)
+  mv a0, %2213
+  mv a1, %2218
+  call string_add
+  mv %2219, a0
+  lui %2221, %hi(c)
+  addi %2221, %2221, %lo(c)
+  lw %2220, 0(%2221)
+  slli %2222, 81, 2
+  add %2223, %2220, %2222
+  lw %2224, 0(%2223)
+  mv a0, %2219
+  mv a1, %2224
+  call string_add
+  mv %2225, a0
+  lui %2227, %hi(c)
+  addi %2227, %2227, %lo(c)
+  lw %2226, 0(%2227)
+  slli %2228, 81, 2
+  add %2229, %2226, %2228
+  lw %2230, 0(%2229)
+  mv a0, %2225
+  mv a1, %2230
+  call string_add
+  mv %2231, a0
+  lui %2233, %hi(c)
+  addi %2233, %2233, %lo(c)
+  lw %2232, 0(%2233)
+  slli %2234, 8, 2
+  add %2235, %2232, %2234
+  lw %2236, 0(%2235)
+  mv a0, %2231
+  mv a1, %2236
+  call string_add
+  mv %2237, a0
+  lui %2239, %hi(c)
+  addi %2239, %2239, %lo(c)
+  lw %2238, 0(%2239)
+  slli %2240, 89, 2
+  add %2241, %2238, %2240
+  lw %2242, 0(%2241)
+  mv a0, %2237
+  mv a1, %2242
+  call string_add
+  mv %2243, a0
+  mv a0, %2243
+  call println
+  lui %2245, %hi(c)
+  addi %2245, %2245, %lo(c)
+  lw %2244, 0(%2245)
+  slli %2246, 71, 2
+  add %2247, %2244, %2246
+  lui %2249, %hi(c)
+  addi %2249, %2249, %lo(c)
+  lw %2248, 0(%2249)
+  slli %2250, 68, 2
+  add %2251, %2248, %2250
+  lw %2252, 0(%2247)
+  lw %2253, 0(%2251)
+  mv a0, %2252
+  mv a1, %2253
+  call string_add
+  mv %2254, a0
+  lui %2256, %hi(c)
+  addi %2256, %2256, %lo(c)
+  lw %2255, 0(%2256)
+  slli %2257, 7, 2
+  add %2258, %2255, %2257
+  lw %2259, 0(%2258)
+  mv a0, %2254
+  mv a1, %2259
+  call string_add
+  mv %2260, a0
+  lui %2262, %hi(c)
+  addi %2262, %2262, %lo(c)
+  lw %2261, 0(%2262)
+  slli %2263, 81, 2
+  add %2264, %2261, %2263
+  lw %2265, 0(%2264)
+  mv a0, %2260
+  mv a1, %2265
+  call string_add
+  mv %2266, a0
+  lui %2268, %hi(c)
+  addi %2268, %2268, %lo(c)
+  lw %2267, 0(%2268)
+  slli %2269, 81, 2
+  add %2270, %2267, %2269
+  lw %2271, 0(%2270)
+  mv a0, %2266
+  mv a1, %2271
+  call string_add
+  mv %2272, a0
+  lui %2274, %hi(c)
+  addi %2274, %2274, %lo(c)
+  lw %2273, 0(%2274)
+  slli %2275, 27, 2
+  add %2276, %2273, %2275
+  lw %2277, 0(%2276)
+  mv a0, %2272
+  mv a1, %2277
+  call string_add
+  mv %2278, a0
+  lui %2280, %hi(c)
+  addi %2280, %2280, %lo(c)
+  lw %2279, 0(%2280)
+  slli %2281, 28, 2
+  add %2282, %2279, %2281
+  lw %2283, 0(%2282)
+  mv a0, %2278
+  mv a1, %2283
+  call string_add
+  mv %2284, a0
+  lui %2286, %hi(c)
+  addi %2286, %2286, %lo(c)
+  lw %2285, 0(%2286)
+  slli %2287, 24, 2
+  add %2288, %2285, %2287
+  lw %2289, 0(%2288)
+  mv a0, %2284
+  mv a1, %2289
+  call string_add
+  mv %2290, a0
+  lui %2292, %hi(c)
+  addi %2292, %2292, %lo(c)
+  lw %2291, 0(%2292)
+  slli %2293, 8, 2
+  add %2294, %2291, %2293
+  lw %2295, 0(%2294)
+  mv a0, %2290
+  mv a1, %2295
+  call string_add
+  mv %2296, a0
+  lui %2298, %hi(c)
+  addi %2298, %2298, %lo(c)
+  lw %2297, 0(%2298)
+  slli %2299, 80, 2
+  add %2300, %2297, %2299
+  lw %2301, 0(%2300)
+  mv a0, %2296
+  mv a1, %2301
+  call string_add
+  mv %2302, a0
+  lui %2304, %hi(c)
+  addi %2304, %2304, %lo(c)
+  lw %2303, 0(%2304)
+  slli %2305, 67, 2
+  add %2306, %2303, %2305
+  lw %2307, 0(%2306)
+  mv a0, %2302
+  mv a1, %2307
+  call string_add
+  mv %2308, a0
+  lui %2310, %hi(c)
+  addi %2310, %2310, %lo(c)
+  lw %2309, 0(%2310)
+  slli %2311, 82, 2
+  add %2312, %2309, %2311
+  lw %2313, 0(%2312)
+  mv a0, %2308
+  mv a1, %2313
+  call string_add
+  mv %2314, a0
+  lui %2316, %hi(c)
+  addi %2316, %2316, %lo(c)
+  lw %2315, 0(%2316)
+  slli %2317, 83, 2
+  add %2318, %2315, %2317
+  lw %2319, 0(%2318)
+  mv a0, %2314
+  mv a1, %2319
+  call string_add
+  mv %2320, a0
+  lui %2322, %hi(c)
+  addi %2322, %2322, %lo(c)
+  lw %2321, 0(%2322)
+  slli %2323, 80, 2
+  add %2324, %2321, %2323
+  lw %2325, 0(%2324)
+  mv a0, %2320
+  mv a1, %2325
+  call string_add
+  mv %2326, a0
+  lui %2328, %hi(c)
+  addi %2328, %2328, %lo(c)
+  lw %2327, 0(%2328)
+  slli %2329, 76, 2
+  add %2330, %2327, %2329
+  lw %2331, 0(%2330)
+  mv a0, %2326
+  mv a1, %2331
+  call string_add
+  mv %2332, a0
+  lui %2334, %hi(c)
+  addi %2334, %2334, %lo(c)
+  lw %2333, 0(%2334)
+  slli %2335, 0, 2
+  add %2336, %2333, %2335
+  lw %2337, 0(%2336)
+  mv a0, %2332
+  mv a1, %2337
+  call string_add
+  mv %2338, a0
+  lui %2340, %hi(a2q)
+  addi %2340, %2340, %lo(a2q)
+  lw %2339, 0(%2340)
+  mv a0, %2338
+  mv a1, %2339
+  call string_add
+  mv %2341, a0
+  lui %2343, %hi(c)
+  addi %2343, %2343, %lo(c)
+  lw %2342, 0(%2343)
+  slli %2344, 81, 2
+  add %2345, %2342, %2344
+  lw %2346, 0(%2345)
+  mv a0, %2341
+  mv a1, %2346
+  call string_add
+  mv %2347, a0
+  lui %2349, %hi(c)
+  addi %2349, %2349, %lo(c)
+  lw %2348, 0(%2349)
+  slli %2350, 58, 2
+  add %2351, %2348, %2350
+  lw %2352, 0(%2351)
+  mv a0, %2347
+  mv a1, %2352
+  call string_add
+  mv %2353, a0
+  lui %2355, %hi(a2q)
+  addi %2355, %2355, %lo(a2q)
+  lw %2354, 0(%2355)
+  mv a0, %2353
+  mv a1, %2354
+  call string_add
+  mv %2356, a0
+  lui %2358, %hi(c)
+  addi %2358, %2358, %lo(c)
+  lw %2357, 0(%2358)
+  slli %2359, 10, 2
+  add %2360, %2357, %2359
+  lw %2361, 0(%2360)
+  mv a0, %2356
+  mv a1, %2361
+  call string_add
+  mv %2362, a0
+  lui %2364, %hi(c)
+  addi %2364, %2364, %lo(c)
+  lw %2363, 0(%2364)
+  slli %2365, 66, 2
+  add %2366, %2363, %2365
+  lw %2367, 0(%2366)
+  mv a0, %2362
+  mv a1, %2367
+  call string_add
+  mv %2368, a0
+  lui %2370, %hi(c)
+  addi %2370, %2370, %lo(c)
+  lw %2369, 0(%2370)
+  slli %2371, 71, 2
+  add %2372, %2369, %2371
+  lw %2373, 0(%2372)
+  mv a0, %2368
+  mv a1, %2373
+  call string_add
+  mv %2374, a0
+  lui %2376, %hi(c)
+  addi %2376, %2376, %lo(c)
+  lw %2375, 0(%2376)
+  slli %2377, 69, 2
+  add %2378, %2375, %2377
+  lw %2379, 0(%2378)
+  mv a0, %2374
+  mv a1, %2379
+  call string_add
+  mv %2380, a0
+  lui %2382, %hi(c)
+  addi %2382, %2382, %lo(c)
+  lw %2381, 0(%2382)
+  slli %2383, 82, 2
+  add %2384, %2381, %2383
+  lw %2385, 0(%2384)
+  mv a0, %2380
+  mv a1, %2385
+  call string_add
+  mv %2386, a0
+  lui %2388, %hi(c)
+  addi %2388, %2388, %lo(c)
+  lw %2387, 0(%2388)
+  slli %2389, 7, 2
+  add %2390, %2387, %2389
+  lw %2391, 0(%2390)
+  mv a0, %2386
+  mv a1, %2391
+  call string_add
+  mv %2392, a0
+  lui %2394, %hi(c)
+  addi %2394, %2394, %lo(c)
+  lw %2393, 0(%2394)
+  slli %2395, 81, 2
+  add %2396, %2393, %2395
+  lw %2397, 0(%2396)
+  mv a0, %2392
+  mv a1, %2397
+  call string_add
+  mv %2398, a0
+  lui %2400, %hi(c)
+  addi %2400, %2400, %lo(c)
+  lw %2399, 0(%2400)
+  slli %2401, 81, 2
+  add %2402, %2399, %2401
+  lw %2403, 0(%2402)
+  mv a0, %2398
+  mv a1, %2403
+  call string_add
+  mv %2404, a0
+  lui %2406, %hi(c)
+  addi %2406, %2406, %lo(c)
+  lw %2405, 0(%2406)
+  slli %2407, 8, 2
+  add %2408, %2405, %2407
+  lw %2409, 0(%2408)
+  mv a0, %2404
+  mv a1, %2409
+  call string_add
+  mv %2410, a0
+  lui %2412, %hi(c)
+  addi %2412, %2412, %lo(c)
+  lw %2411, 0(%2412)
+  slli %2413, 10, 2
+  add %2414, %2411, %2413
+  lw %2415, 0(%2414)
+  mv a0, %2410
+  mv a1, %2415
+  call string_add
+  mv %2416, a0
+  lui %2418, %hi(a2q)
+  addi %2418, %2418, %lo(a2q)
+  lw %2417, 0(%2418)
+  mv a0, %2416
+  mv a1, %2417
+  call string_add
+  mv %2419, a0
+  lui %2421, %hi(c)
+  addi %2421, %2421, %lo(c)
+  lw %2420, 0(%2421)
+  slli %2422, 59, 2
+  add %2423, %2420, %2422
+  lw %2424, 0(%2423)
+  mv a0, %2419
+  mv a1, %2424
+  call string_add
+  mv %2425, a0
+  lui %2427, %hi(c)
+  addi %2427, %2427, %lo(c)
+  lw %2426, 0(%2427)
+  slli %2428, 28, 2
+  add %2429, %2426, %2428
+  lw %2430, 0(%2429)
+  mv a0, %2425
+  mv a1, %2430
+  call string_add
+  mv %2431, a0
+  lui %2433, %hi(a2q)
+  addi %2433, %2433, %lo(a2q)
+  lw %2432, 0(%2433)
+  mv a0, %2431
+  mv a1, %2432
+  call string_add
+  mv %2434, a0
+  lui %2436, %hi(c)
+  addi %2436, %2436, %lo(c)
+  lw %2435, 0(%2436)
+  slli %2437, 26, 2
+  add %2438, %2435, %2437
+  lw %2439, 0(%2438)
+  mv a0, %2434
+  mv a1, %2439
+  call string_add
+  mv %2440, a0
+  mv a0, %2440
+  call println
+  lui %2442, %hi(c)
+  addi %2442, %2442, %lo(c)
+  lw %2441, 0(%2442)
+  slli %2443, 80, 2
+  add %2444, %2441, %2443
+  lui %2446, %hi(c)
+  addi %2446, %2446, %lo(c)
+  lw %2445, 0(%2446)
+  slli %2447, 67, 2
+  add %2448, %2445, %2447
+  lw %2449, 0(%2444)
+  lw %2450, 0(%2448)
+  mv a0, %2449
+  mv a1, %2450
+  call string_add
+  mv %2451, a0
+  lui %2453, %hi(c)
+  addi %2453, %2453, %lo(c)
+  lw %2452, 0(%2453)
+  slli %2454, 82, 2
+  add %2455, %2452, %2454
+  lw %2456, 0(%2455)
+  mv a0, %2451
+  mv a1, %2456
+  call string_add
+  mv %2457, a0
+  lui %2459, %hi(c)
+  addi %2459, %2459, %lo(c)
+  lw %2458, 0(%2459)
+  slli %2460, 83, 2
+  add %2461, %2458, %2460
+  lw %2462, 0(%2461)
+  mv a0, %2457
+  mv a1, %2462
+  call string_add
+  mv %2463, a0
+  lui %2465, %hi(c)
+  addi %2465, %2465, %lo(c)
+  lw %2464, 0(%2465)
+  slli %2466, 80, 2
+  add %2467, %2464, %2466
+  lw %2468, 0(%2467)
+  mv a0, %2463
+  mv a1, %2468
+  call string_add
+  mv %2469, a0
+  lui %2471, %hi(c)
+  addi %2471, %2471, %lo(c)
+  lw %2470, 0(%2471)
+  slli %2472, 76, 2
+  add %2473, %2470, %2472
+  lw %2474, 0(%2473)
+  mv a0, %2469
+  mv a1, %2474
+  call string_add
+  mv %2475, a0
+  lui %2477, %hi(c)
+  addi %2477, %2477, %lo(c)
+  lw %2476, 0(%2477)
+  slli %2478, 0, 2
+  add %2479, %2476, %2478
+  lw %2480, 0(%2479)
+  mv a0, %2475
+  mv a1, %2480
+  call string_add
+  mv %2481, a0
+  lui %2483, %hi(a2q)
+  addi %2483, %2483, %lo(a2q)
+  lw %2482, 0(%2483)
+  mv a0, %2481
+  mv a1, %2482
+  call string_add
+  mv %2484, a0
+  lui %2486, %hi(c)
+  addi %2486, %2486, %lo(c)
+  lw %2485, 0(%2486)
+  slli %2487, 81, 2
+  add %2488, %2485, %2487
+  lw %2489, 0(%2488)
+  mv a0, %2484
+  mv a1, %2489
+  call string_add
+  mv %2490, a0
+  lui %2492, %hi(c)
+  addi %2492, %2492, %lo(c)
+  lw %2491, 0(%2492)
+  slli %2493, 58, 2
+  add %2494, %2491, %2493
+  lw %2495, 0(%2494)
+  mv a0, %2490
+  mv a1, %2495
+  call string_add
+  mv %2496, a0
+  lui %2498, %hi(a2q)
+  addi %2498, %2498, %lo(a2q)
+  lw %2497, 0(%2498)
+  mv a0, %2496
+  mv a1, %2497
+  call string_add
+  mv %2499, a0
+  lui %2501, %hi(c)
+  addi %2501, %2501, %lo(c)
+  lw %2500, 0(%2501)
+  slli %2502, 10, 2
+  add %2503, %2500, %2502
+  lw %2504, 0(%2503)
+  mv a0, %2499
+  mv a1, %2504
+  call string_add
+  mv %2505, a0
+  lui %2507, %hi(c)
+  addi %2507, %2507, %lo(c)
+  lw %2506, 0(%2507)
+  slli %2508, 66, 2
+  add %2509, %2506, %2508
+  lw %2510, 0(%2509)
+  mv a0, %2505
+  mv a1, %2510
+  call string_add
+  mv %2511, a0
+  lui %2513, %hi(c)
+  addi %2513, %2513, %lo(c)
+  lw %2512, 0(%2513)
+  slli %2514, 71, 2
+  add %2515, %2512, %2514
+  lw %2516, 0(%2515)
+  mv a0, %2511
+  mv a1, %2516
+  call string_add
+  mv %2517, a0
+  lui %2519, %hi(c)
+  addi %2519, %2519, %lo(c)
+  lw %2518, 0(%2519)
+  slli %2520, 69, 2
+  add %2521, %2518, %2520
+  lw %2522, 0(%2521)
+  mv a0, %2517
+  mv a1, %2522
+  call string_add
+  mv %2523, a0
+  lui %2525, %hi(c)
+  addi %2525, %2525, %lo(c)
+  lw %2524, 0(%2525)
+  slli %2526, 82, 2
+  add %2527, %2524, %2526
+  lw %2528, 0(%2527)
+  mv a0, %2523
+  mv a1, %2528
+  call string_add
+  mv %2529, a0
+  lui %2531, %hi(c)
+  addi %2531, %2531, %lo(c)
+  lw %2530, 0(%2531)
+  slli %2532, 7, 2
+  add %2533, %2530, %2532
+  lw %2534, 0(%2533)
+  mv a0, %2529
+  mv a1, %2534
+  call string_add
+  mv %2535, a0
+  lui %2537, %hi(c)
+  addi %2537, %2537, %lo(c)
+  lw %2536, 0(%2537)
+  slli %2538, 81, 2
+  add %2539, %2536, %2538
+  lw %2540, 0(%2539)
+  mv a0, %2535
+  mv a1, %2540
+  call string_add
+  mv %2541, a0
+  lui %2543, %hi(c)
+  addi %2543, %2543, %lo(c)
+  lw %2542, 0(%2543)
+  slli %2544, 81, 2
+  add %2545, %2542, %2544
+  lw %2546, 0(%2545)
+  mv a0, %2541
+  mv a1, %2546
+  call string_add
+  mv %2547, a0
+  lui %2549, %hi(c)
+  addi %2549, %2549, %lo(c)
+  lw %2548, 0(%2549)
+  slli %2550, 14, 2
+  add %2551, %2548, %2550
+  lw %2552, 0(%2551)
+  mv a0, %2547
+  mv a1, %2552
+  call string_add
+  mv %2553, a0
+  lui %2555, %hi(c)
+  addi %2555, %2555, %lo(c)
+  lw %2554, 0(%2555)
+  slli %2556, 16, 2
+  add %2557, %2554, %2556
+  lw %2558, 0(%2557)
+  mv a0, %2553
+  mv a1, %2558
+  call string_add
+  mv %2559, a0
+  lui %2561, %hi(c)
+  addi %2561, %2561, %lo(c)
+  lw %2560, 0(%2561)
+  slli %2562, 15, 2
+  add %2563, %2560, %2562
+  lw %2564, 0(%2563)
+  mv a0, %2559
+  mv a1, %2564
+  call string_add
+  mv %2565, a0
+  lui %2567, %hi(c)
+  addi %2567, %2567, %lo(c)
+  lw %2566, 0(%2567)
+  slli %2568, 8, 2
+  add %2569, %2566, %2568
+  lw %2570, 0(%2569)
+  mv a0, %2565
+  mv a1, %2570
+  call string_add
+  mv %2571, a0
+  lui %2573, %hi(c)
+  addi %2573, %2573, %lo(c)
+  lw %2572, 0(%2573)
+  slli %2574, 10, 2
+  add %2575, %2572, %2574
+  lw %2576, 0(%2575)
+  mv a0, %2571
+  mv a1, %2576
+  call string_add
+  mv %2577, a0
+  lui %2579, %hi(c)
+  addi %2579, %2579, %lo(c)
+  lw %2578, 0(%2579)
+  slli %2580, 66, 2
+  add %2581, %2578, %2580
+  lw %2582, 0(%2581)
+  mv a0, %2577
+  mv a1, %2582
+  call string_add
+  mv %2583, a0
+  lui %2585, %hi(c)
+  addi %2585, %2585, %lo(c)
+  lw %2584, 0(%2585)
+  slli %2586, 71, 2
+  add %2587, %2584, %2586
+  lw %2588, 0(%2587)
+  mv a0, %2583
+  mv a1, %2588
+  call string_add
+  mv %2589, a0
+  lui %2591, %hi(c)
+  addi %2591, %2591, %lo(c)
+  lw %2590, 0(%2591)
+  slli %2592, 69, 2
+  add %2593, %2590, %2592
+  lw %2594, 0(%2593)
+  mv a0, %2589
+  mv a1, %2594
+  call string_add
+  mv %2595, a0
+  lui %2597, %hi(c)
+  addi %2597, %2597, %lo(c)
+  lw %2596, 0(%2597)
+  slli %2598, 82, 2
+  add %2599, %2596, %2598
+  lw %2600, 0(%2599)
+  mv a0, %2595
+  mv a1, %2600
+  call string_add
+  mv %2601, a0
+  lui %2603, %hi(c)
+  addi %2603, %2603, %lo(c)
+  lw %2602, 0(%2603)
+  slli %2604, 7, 2
+  add %2605, %2602, %2604
+  lw %2606, 0(%2605)
+  mv a0, %2601
+  mv a1, %2606
+  call string_add
+  mv %2607, a0
+  lui %2609, %hi(c)
+  addi %2609, %2609, %lo(c)
+  lw %2608, 0(%2609)
+  slli %2610, 81, 2
+  add %2611, %2608, %2610
+  lw %2612, 0(%2611)
+  mv a0, %2607
+  mv a1, %2612
+  call string_add
+  mv %2613, a0
+  lui %2615, %hi(c)
+  addi %2615, %2615, %lo(c)
+  lw %2614, 0(%2615)
+  slli %2616, 81, 2
+  add %2617, %2614, %2616
+  lw %2618, 0(%2617)
+  mv a0, %2613
+  mv a1, %2618
+  call string_add
+  mv %2619, a0
+  lui %2621, %hi(c)
+  addi %2621, %2621, %lo(c)
+  lw %2620, 0(%2621)
+  slli %2622, 4, 2
+  add %2623, %2620, %2622
+  lw %2624, 0(%2623)
+  mv a0, %2619
+  mv a1, %2624
+  call string_add
+  mv %2625, a0
+  lui %2627, %hi(c)
+  addi %2627, %2627, %lo(c)
+  lw %2626, 0(%2627)
+  slli %2628, 16, 2
+  add %2629, %2626, %2628
+  lw %2630, 0(%2629)
+  mv a0, %2625
+  mv a1, %2630
+  call string_add
+  mv %2631, a0
+  lui %2633, %hi(c)
+  addi %2633, %2633, %lo(c)
+  lw %2632, 0(%2633)
+  slli %2634, 15, 2
+  add %2635, %2632, %2634
+  lw %2636, 0(%2635)
+  mv a0, %2631
+  mv a1, %2636
+  call string_add
+  mv %2637, a0
+  lui %2639, %hi(c)
+  addi %2639, %2639, %lo(c)
+  lw %2638, 0(%2639)
+  slli %2640, 8, 2
+  add %2641, %2638, %2640
+  lw %2642, 0(%2641)
+  mv a0, %2637
+  mv a1, %2642
+  call string_add
+  mv %2643, a0
+  lui %2645, %hi(c)
+  addi %2645, %2645, %lo(c)
+  lw %2644, 0(%2645)
+  slli %2646, 10, 2
+  add %2647, %2644, %2646
+  lw %2648, 0(%2647)
+  mv a0, %2643
+  mv a1, %2648
+  call string_add
+  mv %2649, a0
+  lui %2651, %hi(a2q)
+  addi %2651, %2651, %lo(a2q)
+  lw %2650, 0(%2651)
+  mv a0, %2649
+  mv a1, %2650
+  call string_add
+  mv %2652, a0
+  lui %2654, %hi(c)
+  addi %2654, %2654, %lo(c)
+  lw %2653, 0(%2654)
+  slli %2655, 59, 2
+  add %2656, %2653, %2655
+  lw %2657, 0(%2656)
+  mv a0, %2652
+  mv a1, %2657
+  call string_add
+  mv %2658, a0
+  lui %2660, %hi(c)
+  addi %2660, %2660, %lo(c)
+  lw %2659, 0(%2660)
+  slli %2661, 28, 2
+  add %2662, %2659, %2661
+  lw %2663, 0(%2662)
+  mv a0, %2658
+  mv a1, %2663
+  call string_add
+  mv %2664, a0
+  lui %2666, %hi(a2q)
+  addi %2666, %2666, %lo(a2q)
+  lw %2665, 0(%2666)
+  mv a0, %2664
+  mv a1, %2665
+  call string_add
+  mv %2667, a0
+  lui %2669, %hi(c)
+  addi %2669, %2669, %lo(c)
+  lw %2668, 0(%2669)
+  slli %2670, 26, 2
+  add %2671, %2668, %2670
+  lw %2672, 0(%2671)
+  mv a0, %2667
+  mv a1, %2672
+  call string_add
+  mv %2673, a0
+  mv a0, %2673
+  call println
+  lui %2675, %hi(c)
+  addi %2675, %2675, %lo(c)
+  lw %2674, 0(%2675)
+  slli %2676, 91, 2
+  add %2677, %2674, %2676
+  lw %2678, 0(%2677)
+  mv a0, %2678
+  call println
+  lui %2680, %hi(c)
+  addi %2680, %2680, %lo(c)
+  lw %2679, 0(%2680)
+  slli %2681, 81, 2
+  add %2682, %2679, %2681
+  lui %2684, %hi(c)
+  addi %2684, %2684, %lo(c)
+  lw %2683, 0(%2684)
+  slli %2685, 82, 2
+  add %2686, %2683, %2685
+  lw %2687, 0(%2682)
+  lw %2688, 0(%2686)
+  mv a0, %2687
+  mv a1, %2688
+  call string_add
+  mv %2689, a0
+  lui %2691, %hi(c)
+  addi %2691, %2691, %lo(c)
+  lw %2690, 0(%2691)
+  slli %2692, 80, 2
+  add %2693, %2690, %2692
+  lw %2694, 0(%2693)
+  mv a0, %2689
+  mv a1, %2694
+  call string_add
+  mv %2695, a0
+  lui %2697, %hi(c)
+  addi %2697, %2697, %lo(c)
+  lw %2696, 0(%2697)
+  slli %2698, 71, 2
+  add %2699, %2696, %2698
+  lw %2700, 0(%2699)
+  mv a0, %2695
+  mv a1, %2700
+  call string_add
+  mv %2701, a0
+  lui %2703, %hi(c)
+  addi %2703, %2703, %lo(c)
+  lw %2702, 0(%2703)
+  slli %2704, 76, 2
+  add %2705, %2702, %2704
+  lw %2706, 0(%2705)
+  mv a0, %2701
+  mv a1, %2706
+  call string_add
+  mv %2707, a0
+  lui %2709, %hi(c)
+  addi %2709, %2709, %lo(c)
+  lw %2708, 0(%2709)
+  slli %2710, 69, 2
+  add %2711, %2708, %2710
+  lw %2712, 0(%2711)
+  mv a0, %2707
+  mv a1, %2712
+  call string_add
+  mv %2713, a0
+  lui %2715, %hi(c)
+  addi %2715, %2715, %lo(c)
+  lw %2714, 0(%2715)
+  slli %2716, 0, 2
+  add %2717, %2714, %2716
+  lw %2718, 0(%2717)
+  mv a0, %2713
+  mv a1, %2718
+  call string_add
+  mv %2719, a0
+  lui %2721, %hi(c)
+  addi %2721, %2721, %lo(c)
+  lw %2720, 0(%2721)
+  slli %2722, 65, 2
+  add %2723, %2720, %2722
+  lw %2724, 0(%2723)
+  mv a0, %2719
+  mv a1, %2724
+  call string_add
+  mv %2725, a0
+  lui %2727, %hi(c)
+  addi %2727, %2727, %lo(c)
+  lw %2726, 0(%2727)
+  slli %2728, 17, 2
+  add %2729, %2726, %2728
+  lw %2730, 0(%2729)
+  mv a0, %2725
+  mv a1, %2730
+  call string_add
+  mv %2731, a0
+  lui %2733, %hi(c)
+  addi %2733, %2733, %lo(c)
+  lw %2732, 0(%2733)
+  slli %2734, 7, 2
+  add %2735, %2732, %2734
+  lw %2736, 0(%2735)
+  mv a0, %2731
+  mv a1, %2736
+  call string_add
+  mv %2737, a0
+  lui %2739, %hi(c)
+  addi %2739, %2739, %lo(c)
+  lw %2738, 0(%2739)
+  slli %2740, 71, 2
+  add %2741, %2738, %2740
+  lw %2742, 0(%2741)
+  mv a0, %2737
+  mv a1, %2742
+  call string_add
+  mv %2743, a0
+  lui %2745, %hi(c)
+  addi %2745, %2745, %lo(c)
+  lw %2744, 0(%2745)
+  slli %2746, 76, 2
+  add %2747, %2744, %2746
+  lw %2748, 0(%2747)
+  mv a0, %2743
+  mv a1, %2748
+  call string_add
+  mv %2749, a0
+  lui %2751, %hi(c)
+  addi %2751, %2751, %lo(c)
+  lw %2750, 0(%2751)
+  slli %2752, 82, 2
+  add %2753, %2750, %2752
+  lw %2754, 0(%2753)
+  mv a0, %2749
+  mv a1, %2754
+  call string_add
+  mv %2755, a0
+  lui %2757, %hi(c)
+  addi %2757, %2757, %lo(c)
+  lw %2756, 0(%2757)
+  slli %2758, 0, 2
+  add %2759, %2756, %2758
+  lw %2760, 0(%2759)
+  mv a0, %2755
+  mv a1, %2760
+  call string_add
+  mv %2761, a0
+  lui %2763, %hi(c)
+  addi %2763, %2763, %lo(c)
+  lw %2762, 0(%2763)
+  slli %2764, 65, 2
+  add %2765, %2762, %2764
+  lw %2766, 0(%2765)
+  mv a0, %2761
+  mv a1, %2766
+  call string_add
+  mv %2767, a0
+  lui %2769, %hi(c)
+  addi %2769, %2769, %lo(c)
+  lw %2768, 0(%2769)
+  slli %2770, 65, 2
+  add %2771, %2768, %2770
+  lw %2772, 0(%2771)
+  mv a0, %2767
+  mv a1, %2772
+  call string_add
+  mv %2773, a0
+  lui %2775, %hi(c)
+  addi %2775, %2775, %lo(c)
+  lw %2774, 0(%2775)
+  slli %2776, 8, 2
+  add %2777, %2774, %2776
+  lw %2778, 0(%2777)
+  mv a0, %2773
+  mv a1, %2778
+  call string_add
+  mv %2779, a0
+  lui %2781, %hi(c)
+  addi %2781, %2781, %lo(c)
+  lw %2780, 0(%2781)
+  slli %2782, 89, 2
+  add %2783, %2780, %2782
+  lw %2784, 0(%2783)
+  mv a0, %2779
+  mv a1, %2784
+  call string_add
+  mv %2785, a0
+  mv a0, %2785
+  call println
+  lui %2787, %hi(c)
+  addi %2787, %2787, %lo(c)
+  lw %2786, 0(%2787)
+  slli %2788, 71, 2
+  add %2789, %2786, %2788
+  lui %2791, %hi(c)
+  addi %2791, %2791, %lo(c)
+  lw %2790, 0(%2791)
+  slli %2792, 68, 2
+  add %2793, %2790, %2792
+  lw %2794, 0(%2789)
+  lw %2795, 0(%2793)
+  mv a0, %2794
+  mv a1, %2795
+  call string_add
+  mv %2796, a0
+  lui %2798, %hi(c)
+  addi %2798, %2798, %lo(c)
+  lw %2797, 0(%2798)
+  slli %2799, 7, 2
+  add %2800, %2797, %2799
+  lw %2801, 0(%2800)
+  mv a0, %2796
+  mv a1, %2801
+  call string_add
+  mv %2802, a0
+  lui %2804, %hi(c)
+  addi %2804, %2804, %lo(c)
+  lw %2803, 0(%2804)
+  slli %2805, 65, 2
+  add %2806, %2803, %2805
+  lw %2807, 0(%2806)
+  mv a0, %2802
+  mv a1, %2807
+  call string_add
+  mv %2808, a0
+  lui %2810, %hi(c)
+  addi %2810, %2810, %lo(c)
+  lw %2809, 0(%2810)
+  slli %2811, 65, 2
+  add %2812, %2809, %2811
+  lw %2813, 0(%2812)
+  mv a0, %2808
+  mv a1, %2813
+  call string_add
+  mv %2814, a0
+  lui %2816, %hi(c)
+  addi %2816, %2816, %lo(c)
+  lw %2815, 0(%2816)
+  slli %2817, 27, 2
+  add %2818, %2815, %2817
+  lw %2819, 0(%2818)
+  mv a0, %2814
+  mv a1, %2819
+  call string_add
+  mv %2820, a0
+  lui %2822, %hi(c)
+  addi %2822, %2822, %lo(c)
+  lw %2821, 0(%2822)
+  slli %2823, 28, 2
+  add %2824, %2821, %2823
+  lw %2825, 0(%2824)
+  mv a0, %2820
+  mv a1, %2825
+  call string_add
+  mv %2826, a0
+  lui %2828, %hi(c)
+  addi %2828, %2828, %lo(c)
+  lw %2827, 0(%2828)
+  slli %2829, 24, 2
+  add %2830, %2827, %2829
+  lw %2831, 0(%2830)
+  mv a0, %2826
+  mv a1, %2831
+  call string_add
+  mv %2832, a0
+  lui %2834, %hi(c)
+  addi %2834, %2834, %lo(c)
+  lw %2833, 0(%2834)
+  slli %2835, 8, 2
+  add %2836, %2833, %2835
+  lw %2837, 0(%2836)
+  mv a0, %2832
+  mv a1, %2837
+  call string_add
+  mv %2838, a0
+  lui %2840, %hi(c)
+  addi %2840, %2840, %lo(c)
+  lw %2839, 0(%2840)
+  slli %2841, 80, 2
+  add %2842, %2839, %2841
+  lw %2843, 0(%2842)
+  mv a0, %2838
+  mv a1, %2843
+  call string_add
+  mv %2844, a0
+  lui %2846, %hi(c)
+  addi %2846, %2846, %lo(c)
+  lw %2845, 0(%2846)
+  slli %2847, 67, 2
+  add %2848, %2845, %2847
+  lw %2849, 0(%2848)
+  mv a0, %2844
+  mv a1, %2849
+  call string_add
+  mv %2850, a0
+  lui %2852, %hi(c)
+  addi %2852, %2852, %lo(c)
+  lw %2851, 0(%2852)
+  slli %2853, 82, 2
+  add %2854, %2851, %2853
+  lw %2855, 0(%2854)
+  mv a0, %2850
+  mv a1, %2855
+  call string_add
+  mv %2856, a0
+  lui %2858, %hi(c)
+  addi %2858, %2858, %lo(c)
+  lw %2857, 0(%2858)
+  slli %2859, 83, 2
+  add %2860, %2857, %2859
+  lw %2861, 0(%2860)
+  mv a0, %2856
+  mv a1, %2861
+  call string_add
+  mv %2862, a0
+  lui %2864, %hi(c)
+  addi %2864, %2864, %lo(c)
+  lw %2863, 0(%2864)
+  slli %2865, 80, 2
+  add %2866, %2863, %2865
+  lw %2867, 0(%2866)
+  mv a0, %2862
+  mv a1, %2867
+  call string_add
+  mv %2868, a0
+  lui %2870, %hi(c)
+  addi %2870, %2870, %lo(c)
+  lw %2869, 0(%2870)
+  slli %2871, 76, 2
+  add %2872, %2869, %2871
+  lw %2873, 0(%2872)
+  mv a0, %2868
+  mv a1, %2873
+  call string_add
+  mv %2874, a0
+  lui %2876, %hi(c)
+  addi %2876, %2876, %lo(c)
+  lw %2875, 0(%2876)
+  slli %2877, 0, 2
+  add %2878, %2875, %2877
+  lw %2879, 0(%2878)
+  mv a0, %2874
+  mv a1, %2879
+  call string_add
+  mv %2880, a0
+  lui %2882, %hi(a2q)
+  addi %2882, %2882, %lo(a2q)
+  lw %2881, 0(%2882)
+  mv a0, %2880
+  mv a1, %2881
+  call string_add
+  mv %2883, a0
+  lui %2885, %hi(c)
+  addi %2885, %2885, %lo(c)
+  lw %2884, 0(%2885)
+  slli %2886, 65, 2
+  add %2887, %2884, %2886
+  lw %2888, 0(%2887)
+  mv a0, %2883
+  mv a1, %2888
+  call string_add
+  mv %2889, a0
+  lui %2891, %hi(c)
+  addi %2891, %2891, %lo(c)
+  lw %2890, 0(%2891)
+  slli %2892, 58, 2
+  add %2893, %2890, %2892
+  lw %2894, 0(%2893)
+  mv a0, %2889
+  mv a1, %2894
+  call string_add
+  mv %2895, a0
+  lui %2897, %hi(a2q)
+  addi %2897, %2897, %lo(a2q)
+  lw %2896, 0(%2897)
+  mv a0, %2895
+  mv a1, %2896
+  call string_add
+  mv %2898, a0
+  lui %2900, %hi(c)
+  addi %2900, %2900, %lo(c)
+  lw %2899, 0(%2900)
+  slli %2901, 10, 2
+  add %2902, %2899, %2901
+  lw %2903, 0(%2902)
+  mv a0, %2898
+  mv a1, %2903
+  call string_add
+  mv %2904, a0
+  lui %2906, %hi(c)
+  addi %2906, %2906, %lo(c)
+  lw %2905, 0(%2906)
+  slli %2907, 66, 2
+  add %2908, %2905, %2907
+  lw %2909, 0(%2908)
+  mv a0, %2904
+  mv a1, %2909
+  call string_add
+  mv %2910, a0
+  lui %2912, %hi(c)
+  addi %2912, %2912, %lo(c)
+  lw %2911, 0(%2912)
+  slli %2913, 71, 2
+  add %2914, %2911, %2913
+  lw %2915, 0(%2914)
+  mv a0, %2910
+  mv a1, %2915
+  call string_add
+  mv %2916, a0
+  lui %2918, %hi(c)
+  addi %2918, %2918, %lo(c)
+  lw %2917, 0(%2918)
+  slli %2919, 69, 2
+  add %2920, %2917, %2919
+  lw %2921, 0(%2920)
+  mv a0, %2916
+  mv a1, %2921
+  call string_add
+  mv %2922, a0
+  lui %2924, %hi(c)
+  addi %2924, %2924, %lo(c)
+  lw %2923, 0(%2924)
+  slli %2925, 82, 2
+  add %2926, %2923, %2925
+  lw %2927, 0(%2926)
+  mv a0, %2922
+  mv a1, %2927
+  call string_add
+  mv %2928, a0
+  lui %2930, %hi(c)
+  addi %2930, %2930, %lo(c)
+  lw %2929, 0(%2930)
+  slli %2931, 7, 2
+  add %2932, %2929, %2931
+  lw %2933, 0(%2932)
+  mv a0, %2928
+  mv a1, %2933
+  call string_add
+  mv %2934, a0
+  lui %2936, %hi(c)
+  addi %2936, %2936, %lo(c)
+  lw %2935, 0(%2936)
+  slli %2937, 65, 2
+  add %2938, %2935, %2937
+  lw %2939, 0(%2938)
+  mv a0, %2934
+  mv a1, %2939
+  call string_add
+  mv %2940, a0
+  lui %2942, %hi(c)
+  addi %2942, %2942, %lo(c)
+  lw %2941, 0(%2942)
+  slli %2943, 65, 2
+  add %2944, %2941, %2943
+  lw %2945, 0(%2944)
+  mv a0, %2940
+  mv a1, %2945
+  call string_add
+  mv %2946, a0
+  lui %2948, %hi(c)
+  addi %2948, %2948, %lo(c)
+  lw %2947, 0(%2948)
+  slli %2949, 8, 2
+  add %2950, %2947, %2949
+  lw %2951, 0(%2950)
+  mv a0, %2946
+  mv a1, %2951
+  call string_add
+  mv %2952, a0
+  lui %2954, %hi(c)
+  addi %2954, %2954, %lo(c)
+  lw %2953, 0(%2954)
+  slli %2955, 10, 2
+  add %2956, %2953, %2955
+  lw %2957, 0(%2956)
+  mv a0, %2952
+  mv a1, %2957
+  call string_add
+  mv %2958, a0
+  lui %2960, %hi(a2q)
+  addi %2960, %2960, %lo(a2q)
+  lw %2959, 0(%2960)
+  mv a0, %2958
+  mv a1, %2959
+  call string_add
+  mv %2961, a0
+  lui %2963, %hi(c)
+  addi %2963, %2963, %lo(c)
+  lw %2962, 0(%2963)
+  slli %2964, 59, 2
+  add %2965, %2962, %2964
+  lw %2966, 0(%2965)
+  mv a0, %2961
+  mv a1, %2966
+  call string_add
+  mv %2967, a0
+  lui %2969, %hi(c)
+  addi %2969, %2969, %lo(c)
+  lw %2968, 0(%2969)
+  slli %2970, 28, 2
+  add %2971, %2968, %2970
+  lw %2972, 0(%2971)
+  mv a0, %2967
+  mv a1, %2972
+  call string_add
+  mv %2973, a0
+  lui %2975, %hi(a2q)
+  addi %2975, %2975, %lo(a2q)
+  lw %2974, 0(%2975)
+  mv a0, %2973
+  mv a1, %2974
+  call string_add
+  mv %2976, a0
+  lui %2978, %hi(c)
+  addi %2978, %2978, %lo(c)
+  lw %2977, 0(%2978)
+  slli %2979, 26, 2
+  add %2980, %2977, %2979
+  lw %2981, 0(%2980)
+  mv a0, %2976
+  mv a1, %2981
+  call string_add
+  mv %2982, a0
+  mv a0, %2982
+  call println
+  lui %2984, %hi(c)
+  addi %2984, %2984, %lo(c)
+  lw %2983, 0(%2984)
+  slli %2985, 80, 2
+  add %2986, %2983, %2985
+  lui %2988, %hi(c)
+  addi %2988, %2988, %lo(c)
+  lw %2987, 0(%2988)
+  slli %2989, 67, 2
+  add %2990, %2987, %2989
+  lw %2991, 0(%2986)
+  lw %2992, 0(%2990)
+  mv a0, %2991
+  mv a1, %2992
+  call string_add
+  mv %2993, a0
+  lui %2995, %hi(c)
+  addi %2995, %2995, %lo(c)
+  lw %2994, 0(%2995)
+  slli %2996, 82, 2
+  add %2997, %2994, %2996
+  lw %2998, 0(%2997)
+  mv a0, %2993
+  mv a1, %2998
+  call string_add
+  mv %2999, a0
+  lui %3001, %hi(c)
+  addi %3001, %3001, %lo(c)
+  lw %3000, 0(%3001)
+  slli %3002, 83, 2
+  add %3003, %3000, %3002
+  lw %3004, 0(%3003)
+  mv a0, %2999
+  mv a1, %3004
+  call string_add
+  mv %3005, a0
+  lui %3007, %hi(c)
+  addi %3007, %3007, %lo(c)
+  lw %3006, 0(%3007)
+  slli %3008, 80, 2
+  add %3009, %3006, %3008
+  lw %3010, 0(%3009)
+  mv a0, %3005
+  mv a1, %3010
+  call string_add
+  mv %3011, a0
+  lui %3013, %hi(c)
+  addi %3013, %3013, %lo(c)
+  lw %3012, 0(%3013)
+  slli %3014, 76, 2
+  add %3015, %3012, %3014
+  lw %3016, 0(%3015)
+  mv a0, %3011
+  mv a1, %3016
+  call string_add
+  mv %3017, a0
+  lui %3019, %hi(c)
+  addi %3019, %3019, %lo(c)
+  lw %3018, 0(%3019)
+  slli %3020, 0, 2
+  add %3021, %3018, %3020
+  lw %3022, 0(%3021)
+  mv a0, %3017
+  mv a1, %3022
+  call string_add
+  mv %3023, a0
+  lui %3025, %hi(a2q)
+  addi %3025, %3025, %lo(a2q)
+  lw %3024, 0(%3025)
+  mv a0, %3023
+  mv a1, %3024
+  call string_add
+  mv %3026, a0
+  lui %3028, %hi(c)
+  addi %3028, %3028, %lo(c)
+  lw %3027, 0(%3028)
+  slli %3029, 65, 2
+  add %3030, %3027, %3029
+  lw %3031, 0(%3030)
+  mv a0, %3026
+  mv a1, %3031
+  call string_add
+  mv %3032, a0
+  lui %3034, %hi(c)
+  addi %3034, %3034, %lo(c)
+  lw %3033, 0(%3034)
+  slli %3035, 58, 2
+  add %3036, %3033, %3035
+  lw %3037, 0(%3036)
+  mv a0, %3032
+  mv a1, %3037
+  call string_add
+  mv %3038, a0
+  lui %3040, %hi(a2q)
+  addi %3040, %3040, %lo(a2q)
+  lw %3039, 0(%3040)
+  mv a0, %3038
+  mv a1, %3039
+  call string_add
+  mv %3041, a0
+  lui %3043, %hi(c)
+  addi %3043, %3043, %lo(c)
+  lw %3042, 0(%3043)
+  slli %3044, 10, 2
+  add %3045, %3042, %3044
+  lw %3046, 0(%3045)
+  mv a0, %3041
+  mv a1, %3046
+  call string_add
+  mv %3047, a0
+  lui %3049, %hi(c)
+  addi %3049, %3049, %lo(c)
+  lw %3048, 0(%3049)
+  slli %3050, 66, 2
+  add %3051, %3048, %3050
+  lw %3052, 0(%3051)
+  mv a0, %3047
+  mv a1, %3052
+  call string_add
+  mv %3053, a0
+  lui %3055, %hi(c)
+  addi %3055, %3055, %lo(c)
+  lw %3054, 0(%3055)
+  slli %3056, 71, 2
+  add %3057, %3054, %3056
+  lw %3058, 0(%3057)
+  mv a0, %3053
+  mv a1, %3058
+  call string_add
+  mv %3059, a0
+  lui %3061, %hi(c)
+  addi %3061, %3061, %lo(c)
+  lw %3060, 0(%3061)
+  slli %3062, 69, 2
+  add %3063, %3060, %3062
+  lw %3064, 0(%3063)
+  mv a0, %3059
+  mv a1, %3064
+  call string_add
+  mv %3065, a0
+  lui %3067, %hi(c)
+  addi %3067, %3067, %lo(c)
+  lw %3066, 0(%3067)
+  slli %3068, 82, 2
+  add %3069, %3066, %3068
+  lw %3070, 0(%3069)
+  mv a0, %3065
+  mv a1, %3070
+  call string_add
+  mv %3071, a0
+  lui %3073, %hi(c)
+  addi %3073, %3073, %lo(c)
+  lw %3072, 0(%3073)
+  slli %3074, 7, 2
+  add %3075, %3072, %3074
+  lw %3076, 0(%3075)
+  mv a0, %3071
+  mv a1, %3076
+  call string_add
+  mv %3077, a0
+  lui %3079, %hi(c)
+  addi %3079, %3079, %lo(c)
+  lw %3078, 0(%3079)
+  slli %3080, 65, 2
+  add %3081, %3078, %3080
+  lw %3082, 0(%3081)
+  mv a0, %3077
+  mv a1, %3082
+  call string_add
+  mv %3083, a0
+  lui %3085, %hi(c)
+  addi %3085, %3085, %lo(c)
+  lw %3084, 0(%3085)
+  slli %3086, 65, 2
+  add %3087, %3084, %3086
+  lw %3088, 0(%3087)
+  mv a0, %3083
+  mv a1, %3088
+  call string_add
+  mv %3089, a0
+  lui %3091, %hi(c)
+  addi %3091, %3091, %lo(c)
+  lw %3090, 0(%3091)
+  slli %3092, 14, 2
+  add %3093, %3090, %3092
+  lw %3094, 0(%3093)
+  mv a0, %3089
+  mv a1, %3094
+  call string_add
+  mv %3095, a0
+  lui %3097, %hi(c)
+  addi %3097, %3097, %lo(c)
+  lw %3096, 0(%3097)
+  slli %3098, 16, 2
+  add %3099, %3096, %3098
+  lw %3100, 0(%3099)
+  mv a0, %3095
+  mv a1, %3100
+  call string_add
+  mv %3101, a0
+  lui %3103, %hi(c)
+  addi %3103, %3103, %lo(c)
+  lw %3102, 0(%3103)
+  slli %3104, 15, 2
+  add %3105, %3102, %3104
+  lw %3106, 0(%3105)
+  mv a0, %3101
+  mv a1, %3106
+  call string_add
+  mv %3107, a0
+  lui %3109, %hi(c)
+  addi %3109, %3109, %lo(c)
+  lw %3108, 0(%3109)
+  slli %3110, 8, 2
+  add %3111, %3108, %3110
+  lw %3112, 0(%3111)
+  mv a0, %3107
+  mv a1, %3112
+  call string_add
+  mv %3113, a0
+  lui %3115, %hi(c)
+  addi %3115, %3115, %lo(c)
+  lw %3114, 0(%3115)
+  slli %3116, 10, 2
+  add %3117, %3114, %3116
+  lw %3118, 0(%3117)
+  mv a0, %3113
+  mv a1, %3118
+  call string_add
+  mv %3119, a0
+  lui %3121, %hi(c)
+  addi %3121, %3121, %lo(c)
+  lw %3120, 0(%3121)
+  slli %3122, 66, 2
+  add %3123, %3120, %3122
+  lw %3124, 0(%3123)
+  mv a0, %3119
+  mv a1, %3124
+  call string_add
+  mv %3125, a0
+  lui %3127, %hi(c)
+  addi %3127, %3127, %lo(c)
+  lw %3126, 0(%3127)
+  slli %3128, 71, 2
+  add %3129, %3126, %3128
+  lw %3130, 0(%3129)
+  mv a0, %3125
+  mv a1, %3130
+  call string_add
+  mv %3131, a0
+  lui %3133, %hi(c)
+  addi %3133, %3133, %lo(c)
+  lw %3132, 0(%3133)
+  slli %3134, 69, 2
+  add %3135, %3132, %3134
+  lw %3136, 0(%3135)
+  mv a0, %3131
+  mv a1, %3136
+  call string_add
+  mv %3137, a0
+  lui %3139, %hi(c)
+  addi %3139, %3139, %lo(c)
+  lw %3138, 0(%3139)
+  slli %3140, 82, 2
+  add %3141, %3138, %3140
+  lw %3142, 0(%3141)
+  mv a0, %3137
+  mv a1, %3142
+  call string_add
+  mv %3143, a0
+  lui %3145, %hi(c)
+  addi %3145, %3145, %lo(c)
+  lw %3144, 0(%3145)
+  slli %3146, 7, 2
+  add %3147, %3144, %3146
+  lw %3148, 0(%3147)
+  mv a0, %3143
+  mv a1, %3148
+  call string_add
+  mv %3149, a0
+  lui %3151, %hi(c)
+  addi %3151, %3151, %lo(c)
+  lw %3150, 0(%3151)
+  slli %3152, 65, 2
+  add %3153, %3150, %3152
+  lw %3154, 0(%3153)
+  mv a0, %3149
+  mv a1, %3154
+  call string_add
+  mv %3155, a0
+  lui %3157, %hi(c)
+  addi %3157, %3157, %lo(c)
+  lw %3156, 0(%3157)
+  slli %3158, 65, 2
+  add %3159, %3156, %3158
+  lw %3160, 0(%3159)
+  mv a0, %3155
+  mv a1, %3160
+  call string_add
+  mv %3161, a0
+  lui %3163, %hi(c)
+  addi %3163, %3163, %lo(c)
+  lw %3162, 0(%3163)
+  slli %3164, 4, 2
+  add %3165, %3162, %3164
+  lw %3166, 0(%3165)
+  mv a0, %3161
+  mv a1, %3166
+  call string_add
+  mv %3167, a0
+  lui %3169, %hi(c)
+  addi %3169, %3169, %lo(c)
+  lw %3168, 0(%3169)
+  slli %3170, 16, 2
+  add %3171, %3168, %3170
+  lw %3172, 0(%3171)
+  mv a0, %3167
+  mv a1, %3172
+  call string_add
+  mv %3173, a0
+  lui %3175, %hi(c)
+  addi %3175, %3175, %lo(c)
+  lw %3174, 0(%3175)
+  slli %3176, 15, 2
+  add %3177, %3174, %3176
+  lw %3178, 0(%3177)
+  mv a0, %3173
+  mv a1, %3178
+  call string_add
+  mv %3179, a0
+  lui %3181, %hi(c)
+  addi %3181, %3181, %lo(c)
+  lw %3180, 0(%3181)
+  slli %3182, 8, 2
+  add %3183, %3180, %3182
+  lw %3184, 0(%3183)
+  mv a0, %3179
+  mv a1, %3184
+  call string_add
+  mv %3185, a0
+  lui %3187, %hi(c)
+  addi %3187, %3187, %lo(c)
+  lw %3186, 0(%3187)
+  slli %3188, 10, 2
+  add %3189, %3186, %3188
+  lw %3190, 0(%3189)
+  mv a0, %3185
+  mv a1, %3190
+  call string_add
+  mv %3191, a0
+  lui %3193, %hi(a2q)
+  addi %3193, %3193, %lo(a2q)
+  lw %3192, 0(%3193)
+  mv a0, %3191
+  mv a1, %3192
+  call string_add
+  mv %3194, a0
+  lui %3196, %hi(c)
+  addi %3196, %3196, %lo(c)
+  lw %3195, 0(%3196)
+  slli %3197, 59, 2
+  add %3198, %3195, %3197
+  lw %3199, 0(%3198)
+  mv a0, %3194
+  mv a1, %3199
+  call string_add
+  mv %3200, a0
+  lui %3202, %hi(c)
+  addi %3202, %3202, %lo(c)
+  lw %3201, 0(%3202)
+  slli %3203, 28, 2
+  add %3204, %3201, %3203
+  lw %3205, 0(%3204)
+  mv a0, %3200
+  mv a1, %3205
+  call string_add
+  mv %3206, a0
+  lui %3208, %hi(a2q)
+  addi %3208, %3208, %lo(a2q)
+  lw %3207, 0(%3208)
+  mv a0, %3206
+  mv a1, %3207
+  call string_add
+  mv %3209, a0
+  lui %3211, %hi(c)
+  addi %3211, %3211, %lo(c)
+  lw %3210, 0(%3211)
+  slli %3212, 26, 2
+  add %3213, %3210, %3212
+  lw %3214, 0(%3213)
+  mv a0, %3209
+  mv a1, %3214
+  call string_add
+  mv %3215, a0
+  mv a0, %3215
+  call println
+  lui %3217, %hi(c)
+  addi %3217, %3217, %lo(c)
+  lw %3216, 0(%3217)
+  slli %3218, 91, 2
+  add %3219, %3216, %3218
+  lw %3220, 0(%3219)
+  mv a0, %3220
+  call println
+  lui %3222, %hi(c)
+  addi %3222, %3222, %lo(c)
+  lw %3221, 0(%3222)
+  slli %3223, 81, 2
+  add %3224, %3221, %3223
+  lui %3226, %hi(c)
+  addi %3226, %3226, %lo(c)
+  lw %3225, 0(%3226)
+  slli %3227, 82, 2
+  add %3228, %3225, %3227
+  lw %3229, 0(%3224)
+  lw %3230, 0(%3228)
+  mv a0, %3229
+  mv a1, %3230
+  call string_add
+  mv %3231, a0
+  lui %3233, %hi(c)
+  addi %3233, %3233, %lo(c)
+  lw %3232, 0(%3233)
+  slli %3234, 80, 2
+  add %3235, %3232, %3234
+  lw %3236, 0(%3235)
+  mv a0, %3231
+  mv a1, %3236
+  call string_add
+  mv %3237, a0
+  lui %3239, %hi(c)
+  addi %3239, %3239, %lo(c)
+  lw %3238, 0(%3239)
+  slli %3240, 71, 2
+  add %3241, %3238, %3240
+  lw %3242, 0(%3241)
+  mv a0, %3237
+  mv a1, %3242
+  call string_add
+  mv %3243, a0
+  lui %3245, %hi(c)
+  addi %3245, %3245, %lo(c)
+  lw %3244, 0(%3245)
+  slli %3246, 76, 2
+  add %3247, %3244, %3246
+  lw %3248, 0(%3247)
+  mv a0, %3243
+  mv a1, %3248
+  call string_add
+  mv %3249, a0
+  lui %3251, %hi(c)
+  addi %3251, %3251, %lo(c)
+  lw %3250, 0(%3251)
+  slli %3252, 69, 2
+  add %3253, %3250, %3252
+  lw %3254, 0(%3253)
+  mv a0, %3249
+  mv a1, %3254
+  call string_add
+  mv %3255, a0
+  lui %3257, %hi(c)
+  addi %3257, %3257, %lo(c)
+  lw %3256, 0(%3257)
+  slli %3258, 0, 2
+  add %3259, %3256, %3258
+  lw %3260, 0(%3259)
+  mv a0, %3255
+  mv a1, %3260
+  call string_add
+  mv %3261, a0
+  lui %3263, %hi(c)
+  addi %3263, %3263, %lo(c)
+  lw %3262, 0(%3263)
+  slli %3264, 65, 2
+  add %3265, %3262, %3264
+  lw %3266, 0(%3265)
+  mv a0, %3261
+  mv a1, %3266
+  call string_add
+  mv %3267, a0
+  lui %3269, %hi(c)
+  addi %3269, %3269, %lo(c)
+  lw %3268, 0(%3269)
+  slli %3270, 77, 2
+  add %3271, %3268, %3270
+  lw %3272, 0(%3271)
+  mv a0, %3267
+  mv a1, %3272
+  call string_add
+  mv %3273, a0
+  lui %3275, %hi(c)
+  addi %3275, %3275, %lo(c)
+  lw %3274, 0(%3275)
+  slli %3276, 28, 2
+  add %3277, %3274, %3276
+  lw %3278, 0(%3277)
+  mv a0, %3273
+  mv a1, %3278
+  call string_add
+  mv %3279, a0
+  lui %3281, %hi(a2q)
+  addi %3281, %3281, %lo(a2q)
+  lw %3280, 0(%3281)
+  mv a0, %3279
+  mv a1, %3280
+  call string_add
+  mv %3282, a0
+  lui %3284, %hi(c)
+  addi %3284, %3284, %lo(c)
+  lw %3283, 0(%3284)
+  slli %3285, 26, 2
+  add %3286, %3283, %3285
+  lw %3287, 0(%3286)
+  mv a0, %3282
+  mv a1, %3287
+  call string_add
+  mv %3288, a0
+  lui %3290, %hi(a2q)
+  addi %3290, %3290, %lo(a2q)
+  lw %3289, 0(%3290)
+  mv a0, %3288
+  mv a1, %3289
+  call string_add
+  mv %3291, a0
+  lui %3293, %hi(c)
+  addi %3293, %3293, %lo(c)
+  lw %3292, 0(%3293)
+  slli %3294, 26, 2
+  add %3295, %3292, %3294
+  lw %3296, 0(%3295)
+  mv a0, %3291
+  mv a1, %3296
+  call string_add
+  mv %3297, a0
+  mv a0, %3297
+  call println
+  lui %3299, %hi(c)
+  addi %3299, %3299, %lo(c)
+  lw %3298, 0(%3299)
+  slli %3300, 81, 2
+  add %3301, %3298, %3300
+  lui %3303, %hi(c)
+  addi %3303, %3303, %lo(c)
+  lw %3302, 0(%3303)
+  slli %3304, 82, 2
+  add %3305, %3302, %3304
+  lw %3306, 0(%3301)
+  lw %3307, 0(%3305)
+  mv a0, %3306
+  mv a1, %3307
+  call string_add
+  mv %3308, a0
+  lui %3310, %hi(c)
+  addi %3310, %3310, %lo(c)
+  lw %3309, 0(%3310)
+  slli %3311, 80, 2
+  add %3312, %3309, %3311
+  lw %3313, 0(%3312)
+  mv a0, %3308
+  mv a1, %3313
+  call string_add
+  mv %3314, a0
+  lui %3316, %hi(c)
+  addi %3316, %3316, %lo(c)
+  lw %3315, 0(%3316)
+  slli %3317, 71, 2
+  add %3318, %3315, %3317
+  lw %3319, 0(%3318)
+  mv a0, %3314
+  mv a1, %3319
+  call string_add
+  mv %3320, a0
+  lui %3322, %hi(c)
+  addi %3322, %3322, %lo(c)
+  lw %3321, 0(%3322)
+  slli %3323, 76, 2
+  add %3324, %3321, %3323
+  lw %3325, 0(%3324)
+  mv a0, %3320
+  mv a1, %3325
+  call string_add
+  mv %3326, a0
+  lui %3328, %hi(c)
+  addi %3328, %3328, %lo(c)
+  lw %3327, 0(%3328)
+  slli %3329, 69, 2
+  add %3330, %3327, %3329
+  lw %3331, 0(%3330)
+  mv a0, %3326
+  mv a1, %3331
+  call string_add
+  mv %3332, a0
+  lui %3334, %hi(c)
+  addi %3334, %3334, %lo(c)
+  lw %3333, 0(%3334)
+  slli %3335, 0, 2
+  add %3336, %3333, %3335
+  lw %3337, 0(%3336)
+  mv a0, %3332
+  mv a1, %3337
+  call string_add
+  mv %3338, a0
+  lui %3340, %hi(c)
+  addi %3340, %3340, %lo(c)
+  lw %3339, 0(%3340)
+  slli %3341, 63, 2
+  add %3342, %3339, %3341
+  lw %3343, 0(%3342)
+  mv a0, %3338
+  mv a1, %3343
+  call string_add
+  mv %3344, a0
+  lui %3346, %hi(c)
+  addi %3346, %3346, %lo(c)
+  lw %3345, 0(%3346)
+  slli %3347, 17, 2
+  add %3348, %3345, %3347
+  lw %3349, 0(%3348)
+  mv a0, %3344
+  mv a1, %3349
+  call string_add
+  mv %3350, a0
+  lui %3352, %hi(c)
+  addi %3352, %3352, %lo(c)
+  lw %3351, 0(%3352)
+  slli %3353, 79, 2
+  add %3354, %3351, %3353
+  lw %3355, 0(%3354)
+  mv a0, %3350
+  mv a1, %3355
+  call string_add
+  mv %3356, a0
+  lui %3358, %hi(c)
+  addi %3358, %3358, %lo(c)
+  lw %3357, 0(%3358)
+  slli %3359, 28, 2
+  add %3360, %3357, %3359
+  lw %3361, 0(%3360)
+  mv a0, %3356
+  mv a1, %3361
+  call string_add
+  mv %3362, a0
+  lui %3364, %hi(a2q)
+  addi %3364, %3364, %lo(a2q)
+  lw %3363, 0(%3364)
+  mv a0, %3362
+  mv a1, %3363
+  call string_add
+  mv %3365, a0
+  lui %3367, %hi(a2b)
+  addi %3367, %3367, %lo(a2b)
+  lw %3366, 0(%3367)
+  mv a0, %3365
+  mv a1, %3366
+  call string_add
+  mv %3368, a0
+  lui %3370, %hi(a2q)
+  addi %3370, %3370, %lo(a2q)
+  lw %3369, 0(%3370)
+  mv a0, %3368
+  mv a1, %3369
+  call string_add
+  mv %3371, a0
+  lui %3373, %hi(a2q)
+  addi %3373, %3373, %lo(a2q)
+  lw %3372, 0(%3373)
+  mv a0, %3371
+  mv a1, %3372
+  call string_add
+  mv %3374, a0
+  lui %3376, %hi(c)
+  addi %3376, %3376, %lo(c)
+  lw %3375, 0(%3376)
+  slli %3377, 26, 2
+  add %3378, %3375, %3377
+  lw %3379, 0(%3378)
+  mv a0, %3374
+  mv a1, %3379
+  call string_add
+  mv %3380, a0
+  mv a0, %3380
+  call println
+  lui %3382, %hi(c)
+  addi %3382, %3382, %lo(c)
+  lw %3381, 0(%3382)
+  slli %3383, 81, 2
+  add %3384, %3381, %3383
+  lui %3386, %hi(c)
+  addi %3386, %3386, %lo(c)
+  lw %3385, 0(%3386)
+  slli %3387, 82, 2
+  add %3388, %3385, %3387
+  lw %3389, 0(%3384)
+  lw %3390, 0(%3388)
+  mv a0, %3389
+  mv a1, %3390
+  call string_add
+  mv %3391, a0
+  lui %3393, %hi(c)
+  addi %3393, %3393, %lo(c)
+  lw %3392, 0(%3393)
+  slli %3394, 80, 2
+  add %3395, %3392, %3394
+  lw %3396, 0(%3395)
+  mv a0, %3391
+  mv a1, %3396
+  call string_add
+  mv %3397, a0
+  lui %3399, %hi(c)
+  addi %3399, %3399, %lo(c)
+  lw %3398, 0(%3399)
+  slli %3400, 71, 2
+  add %3401, %3398, %3400
+  lw %3402, 0(%3401)
+  mv a0, %3397
+  mv a1, %3402
+  call string_add
+  mv %3403, a0
+  lui %3405, %hi(c)
+  addi %3405, %3405, %lo(c)
+  lw %3404, 0(%3405)
+  slli %3406, 76, 2
+  add %3407, %3404, %3406
+  lw %3408, 0(%3407)
+  mv a0, %3403
+  mv a1, %3408
+  call string_add
+  mv %3409, a0
+  lui %3411, %hi(c)
+  addi %3411, %3411, %lo(c)
+  lw %3410, 0(%3411)
+  slli %3412, 69, 2
+  add %3413, %3410, %3412
+  lw %3414, 0(%3413)
+  mv a0, %3409
+  mv a1, %3414
+  call string_add
+  mv %3415, a0
+  lui %3417, %hi(c)
+  addi %3417, %3417, %lo(c)
+  lw %3416, 0(%3417)
+  slli %3418, 0, 2
+  add %3419, %3416, %3418
+  lw %3420, 0(%3419)
+  mv a0, %3415
+  mv a1, %3420
+  call string_add
+  mv %3421, a0
+  lui %3423, %hi(c)
+  addi %3423, %3423, %lo(c)
+  lw %3422, 0(%3423)
+  slli %3424, 63, 2
+  add %3425, %3422, %3424
+  lw %3426, 0(%3425)
+  mv a0, %3421
+  mv a1, %3426
+  call string_add
+  mv %3427, a0
+  lui %3429, %hi(c)
+  addi %3429, %3429, %lo(c)
+  lw %3428, 0(%3429)
+  slli %3430, 17, 2
+  add %3431, %3428, %3430
+  lw %3432, 0(%3431)
+  mv a0, %3427
+  mv a1, %3432
+  call string_add
+  mv %3433, a0
+  lui %3435, %hi(c)
+  addi %3435, %3435, %lo(c)
+  lw %3434, 0(%3435)
+  slli %3436, 64, 2
+  add %3437, %3434, %3436
+  lw %3438, 0(%3437)
+  mv a0, %3433
+  mv a1, %3438
+  call string_add
+  mv %3439, a0
+  lui %3441, %hi(c)
+  addi %3441, %3441, %lo(c)
+  lw %3440, 0(%3441)
+  slli %3442, 28, 2
+  add %3443, %3440, %3442
+  lw %3444, 0(%3443)
+  mv a0, %3439
+  mv a1, %3444
+  call string_add
+  mv %3445, a0
+  lui %3447, %hi(a2q)
+  addi %3447, %3447, %lo(a2q)
+  lw %3446, 0(%3447)
+  mv a0, %3445
+  mv a1, %3446
+  call string_add
+  mv %3448, a0
+  lui %3450, %hi(a2b)
+  addi %3450, %3450, %lo(a2b)
+  lw %3449, 0(%3450)
+  mv a0, %3448
+  mv a1, %3449
+  call string_add
+  mv %3451, a0
+  lui %3453, %hi(a2b)
+  addi %3453, %3453, %lo(a2b)
+  lw %3452, 0(%3453)
+  mv a0, %3451
+  mv a1, %3452
+  call string_add
+  mv %3454, a0
+  lui %3456, %hi(a2q)
+  addi %3456, %3456, %lo(a2q)
+  lw %3455, 0(%3456)
+  mv a0, %3454
+  mv a1, %3455
+  call string_add
+  mv %3457, a0
+  lui %3459, %hi(c)
+  addi %3459, %3459, %lo(c)
+  lw %3458, 0(%3459)
+  slli %3460, 26, 2
+  add %3461, %3458, %3460
+  lw %3462, 0(%3461)
+  mv a0, %3457
+  mv a1, %3462
+  call string_add
+  mv %3463, a0
+  mv a0, %3463
+  call println
+  lui %3465, %hi(s)
+  addi %3465, %3465, %lo(s)
+  lw %3464, 0(%3465)
+  slli %3466, 0, 2
+  add %3467, %3464, %3466
+  lw %3468, 0(%3467)
+  mv a0, %3468
+  call println
+  sw 0, 0(%1)
+  j .L33
+.L33:
+  lw %3469, 0(%1)
+  slt %3471, %3469, 93
+  beqz %3471, .L36
+  j .L34
+.L34:
+  lw %3472, 0(%1)
+  mv a0, %3472
+  call c2
+  mv %3473, a0
+  lui %3475, %hi(a2q)
+  addi %3475, %3475, %lo(a2q)
+  lw %3474, 0(%3475)
+  mv a0, %3473
+  mv a1, %3474
+  call string_add
+  mv %3476, a0
+  lui %3478, %hi(c)
+  addi %3478, %3478, %lo(c)
+  lw %3477, 0(%3478)
+  lw %3479, 0(%1)
+  slli %3480, %3479, 2
+  add %3481, %3477, %3480
+  lw %3482, 0(%3481)
+  mv a0, %3476
+  mv a1, %3482
+  call string_add
+  mv %3483, a0
+  lui %3485, %hi(a2q)
+  addi %3485, %3485, %lo(a2q)
+  lw %3484, 0(%3485)
+  mv a0, %3483
+  mv a1, %3484
+  call string_add
+  mv %3486, a0
+  lui %3488, %hi(co)
+  addi %3488, %3488, %lo(co)
+  lw %3487, 0(%3488)
+  mv a0, %3486
+  mv a1, %3487
+  call string_add
+  mv %3489, a0
+  mv a0, %3489
+  call println
+  j .L35
+.L35:
+  lw %3490, 0(%1)
+  add %3491, %3490, 1
+  sw %3491, 0(%1)
+  j .L33
+.L36:
+  sw 0, 0(%1)
+  j .L37
+.L37:
+  lw %3492, 0(%1)
+  slt %3494, %3492, 32
+  beqz %3494, .L40
+  j .L38
+.L38:
+  lw %3495, 0(%1)
+  mv a0, %3495
+  call s2
+  mv %3496, a0
+  lui %3498, %hi(a2q)
+  addi %3498, %3498, %lo(a2q)
+  lw %3497, 0(%3498)
+  mv a0, %3496
+  mv a1, %3497
+  call string_add
+  mv %3499, a0
+  lui %3501, %hi(s)
+  addi %3501, %3501, %lo(s)
+  lw %3500, 0(%3501)
+  lw %3502, 0(%1)
+  slli %3503, %3502, 2
+  add %3504, %3500, %3503
+  lw %3505, 0(%3504)
+  mv a0, %3499
+  mv a1, %3505
+  call string_add
+  mv %3506, a0
+  lui %3508, %hi(a2q)
+  addi %3508, %3508, %lo(a2q)
+  lw %3507, 0(%3508)
+  mv a0, %3506
+  mv a1, %3507
+  call string_add
+  mv %3509, a0
+  lui %3511, %hi(co)
+  addi %3511, %3511, %lo(co)
+  lw %3510, 0(%3511)
+  mv a0, %3509
+  mv a1, %3510
+  call string_add
+  mv %3512, a0
+  mv a0, %3512
+  call println
+  j .L39
+.L39:
+  lw %3513, 0(%1)
+  add %3514, %3513, 1
+  sw %3514, 0(%1)
+  j .L37
+.L40:
+  sw 1, 0(%1)
+  j .L41
+.L41:
+  lw %3515, 0(%1)
+  slt %3517, %3515, 32
+  beqz %3517, .L44
+  j .L42
+.L42:
+  lui %3519, %hi(s)
+  addi %3519, %3519, %lo(s)
+  lw %3518, 0(%3519)
+  lw %3520, 0(%1)
+  slli %3521, %3520, 2
+  add %3522, %3518, %3521
+  lw %3523, 0(%3522)
+  mv a0, %3523
+  call println
+  j .L43
+.L43:
+  lw %3524, 0(%1)
+  add %3525, %3524, 1
+  sw %3525, 0(%1)
+  j .L41
+.L44:
+  sw 0, 0(%0)
+  j .L45
+.L45:
+  lw %3526, 0(%0)
+  mv a0, %3526
+  lw ra, 0(sp)
+  add sp, sp, 14120
+  ret
