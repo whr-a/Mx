@@ -8,12 +8,13 @@ import java.util.*;
 
 public class Mem2Reg {
     IRprogram program;
+    HashMap<IREntity, HashSet<IRInst> > UseInInst = new HashMap<>();
     public Mem2Reg(IRprogram program){
         this.program = program;
     }
     IRfunction nowfunc;
     LinkedHashSet<IRRegister> promoteAllocas = new LinkedHashSet<>();
-    HashMap<IRRegister, HashSet<IRbasicblock>> allocaDefs = new HashMap<>();
+    HashMap<IRRegister, HashSet<IRbasicblock> > allocaDefs = new HashMap<>();
     HashMap<IRRegister, IREntity> reachingDef = new HashMap<>();
     public void work(){
         new DomsTreeBuilder(program);
@@ -69,11 +70,17 @@ public class Mem2Reg {
             var inst = block.insts.get(i);
             if(inst instanceof IRAllocaInst && promoteAllocas.contains(((IRAllocaInst)inst).allocaReg))continue;
             if(inst instanceof IRLoadInst x && promoteAllocas.contains(x.srcAddr)){
-                for(int j=i+1;j<block.insts.size();j++){
-                    block.insts.get(j).replaceUse(x.destReg,reachingDef.get(x.srcAddr));
+//                for(int j=i+1;j<block.insts.size();j++){
+//                    block.insts.get(j).replaceUse(x.destReg,reachingDef.get(x.srcAddr));
+//                }
+//                if(block.terminalInst!=null)
+//                    block.terminalInst.replaceUse(x.destReg,reachingDef.get(x.srcAddr));
+                if(UseInInst.containsKey(x.destReg)){
+                    var sets = UseInInst.get(x.destReg);
+                    for(var insts:sets){
+                        insts.replaceUse(x.destReg,reachingDef.get(x.srcAddr));
+                    }
                 }
-                if(block.terminalInst!=null)
-                    block.terminalInst.replaceUse(x.destReg,reachingDef.get(x.srcAddr));
             }
             else if(inst instanceof IRStoreInst store && promoteAllocas.contains(store.destAddr)){
                 reachingDef.put(store.destAddr, store.val);
@@ -112,6 +119,25 @@ public class Mem2Reg {
     }
     void funcwork(IRfunction func){
         nowfunc = func;
+        UseInInst.clear();
+        for(var block:func.blocklist){
+            for(var inst:block.insts){
+                var temp = inst.getUse();
+                for(var entity:temp){
+                    if(!UseInInst.containsKey(entity)){
+                        UseInInst.put(entity,new HashSet<>());
+                    }
+                    UseInInst.get(entity).add(inst);
+                }
+            }
+            var temp = block.terminalInst.getUse();
+            for(var entity:temp){
+                if(!UseInInst.containsKey(entity)){
+                    UseInInst.put(entity,new HashSet<>());
+                }
+                UseInInst.get(entity).add(block.terminalInst);
+            }
+        }
         promoteCollect();
         for(var def:promoteAllocas)doMem2Reg(def);
         reachingDef.clear();;
