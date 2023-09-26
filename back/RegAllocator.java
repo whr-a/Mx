@@ -29,33 +29,33 @@ public class RegAllocator {
     }
 
     public void visitBlock(ASMBlock block) {
-        block.insts.addAll(block.phiConvert);
-        if (block.branch_terminal != null) {
-            block.insts.add(block.branch_terminal);
-        }
-        if (block.terminal != null) {
-            block.insts.add(block.terminal);
-        }
-        block.phiConvert.clear();
-        block.branch_terminal = block.terminal = null;
-        workList = new LinkedList<ASMInst>();
-        for (ASMInst inst : block.insts) {
-            if (inst.rs1 != null && !(inst.rs1 instanceof PhysicsReg)) {
-                allocateSrc(RegT1, inst.rs1);
-                inst.rs1 = RegT1;
-            }//给rs1分配寄存器
-            if (inst.rs2 != null && !(inst.rs2 instanceof PhysicsReg)) {
-                allocateSrc(RegT0, inst.rs2);
-                inst.rs2 = RegT0;
-            }//给rs2分配寄存器
-            workList.add(inst);
-            if (inst.rd != null && !(inst.rd instanceof PhysicsReg)) {
-                allocaDest(RegT0, inst.rd);
-                inst.rd = RegT0;
-            }//给rd分配寄存器
-            
-        }
-        block.insts = workList;//用worklist替换掉原来的指令
+//        block.insts.addAll(block.phiConvert);
+//        if (block.branch_terminal != null) {
+//            block.insts.add(block.branch_terminal);
+//        }
+//        if (block.terminal != null) {
+//            block.insts.add(block.terminal);
+//        }
+//        block.phiConvert.clear();
+//        block.branch_terminal = block.terminal = null;
+//        workList = new LinkedList<ASMInst>();
+//        for (ASMInst inst : block.insts) {
+//            if (inst.rs1 != null && !(inst.rs1 instanceof PhysicsReg)) {
+//                allocateSrc(RegT1, inst.rs1);
+//                inst.rs1 = RegT1;
+//            }//给rs1分配寄存器
+//            if (inst.rs2 != null && !(inst.rs2 instanceof PhysicsReg)) {
+//                allocateSrc(RegT0, inst.rs2);
+//                inst.rs2 = RegT0;
+//            }//给rs2分配寄存器
+//            workList.add(inst);
+//            if (inst.rd != null && !(inst.rd instanceof PhysicsReg)) {
+//                allocaDest(RegT0, inst.rd);
+//                inst.rd = RegT0;
+//            }//给rd分配寄存器
+//
+//        }
+//        block.insts = workList;//用worklist替换掉原来的指令
 
     }
 

@@ -55,7 +55,8 @@ public class Compiler {
             new InstSelector(asmModule).visit(irprogram);
 //            String content_1 = asmModule.toString();
 //            writeToFile("1.shit", content_1);
-            new RegAllocator(asmModule).work();
+//            new RegAllocator(asmModule).work();
+            new modernAllocator(asmModule).work();
             String content = asmModule.toString();
 //            writeToFile("1.s", content);
             System.out.print(content);
